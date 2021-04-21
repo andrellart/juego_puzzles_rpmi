@@ -2,7 +2,21 @@ body {
     height: 100vh;
     margin: 0px;
     overflow: hidden;
-    background-color: bisque;
+}
+
+/*MAPA*/
+#mapa{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+}
+
+#mapaimg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+     
 }
 
 
@@ -11,14 +25,15 @@ body {
 #inicio {
     height: 100%;
     width: 100%;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 200;
 
 }
 
 #titulo {
-    /* background-color: blueviolet; */
     width: 70%;
     height: 15%;
     display: flex;
@@ -37,7 +52,6 @@ body {
 }
 
 #inicio_op{
-    /* background-color: chocolate; */
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -47,6 +61,12 @@ body {
     bottom: 15%;
     font-family: wash;
     font-size: 40pt;
+    opacity: 0;
+    animation-name: inicio_op;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 #inicio_btn1{
@@ -87,13 +107,19 @@ body {
     align-items: center;
 
 
-    z-index: 20;
+    z-index: 210;
+}
+
+#pergamino {
+    height: 100%;
+    position: relative;
+    right: .5%;
+    
 }
 
 
 
 #instrucciones{
-    background-color: skyblue;
     position: absolute;
     top: 7%;
     height: 80%;
@@ -104,14 +130,13 @@ body {
     align-items: center;
     padding: 2%;
     font-family: shine;
-    font-size: 30pt;
+    font-size: 28.5pt;
 }
 
 #instrucciones_btn{
-    /* background-color: slateblue;  */
     position: absolute;
-    top: 2%;
-    right: 2%;
+    top: -2%;
+    right: -8%;
     height: 7%;
     width: 8%;
     cursor: pointer;
@@ -125,15 +150,173 @@ body {
     font-family: antique;
     font-size: 35pt;
     position: absolute;
-    top: 0%;
+    top: 6%;
 }
 
 #instrucciones p{
     position: absolute;
-    width: 80%;
+    width: 70%;
     top: 15%;
 }
 
+/*PUZZLES MAPA*/
+#puzzles{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    
+}
+
+
+#puzzle1_btn{
+    height: 30%;
+    width: 15%;
+    position: absolute;
+    background-color: teal;
+    cursor: pointer;
+    top: 5%;
+    left: 10%;
+} 
+
+#puzzle2_btn{
+    height: 30%;
+    width: 15%;
+    position: absolute;
+    background-color: red;
+    cursor: pointer;
+    top: 8%;
+    left: 40%;
+} 
+
+#puzzle3_btn{
+    height: 30%;
+    width: 15%;
+    position: absolute;
+    background-color: yellow;
+    cursor: pointer;
+    top: 10%;
+    left: 70%;
+} 
+
+#puzzle4_btn{
+    height: 30%;
+    width: 15%;
+    position: absolute;
+    background-color: blueviolet;
+    cursor: pointer;
+    top: 50%;
+    left: 80%;
+} 
+
+#puzzle5_btn{
+    height: 30%;
+    width: 15%;
+    position: absolute;
+    background-color: pink;
+    cursor: pointer;
+    top: 60%;
+    left: 50%;
+} 
+
+#puzzle6_btn{
+    height: 30%;
+    width: 15%;
+    position: absolute;
+    background-color: black;
+    cursor: pointer;
+    top: 60%;
+    left: 20%;
+} 
+
+
+
+/*PUZZLE 1*/
+#puzzle1{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cerrar_btn1{
+    position: absolute;
+    top: 1%;
+    right: -4%;
+    height: 8%;
+    width: 9%;
+    cursor: pointer;
+}
+
+#cerrar_btn1 img{
+    height: 100%;
+}
+
+#puzzle1_txt{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+/*PUZZLE 2*/
+#puzzle2{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;;
+    background-color: red;
+}
+
+/*PUZZLE 3*/
+#puzzle3{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    background-color: yellow;
+}
+
+/*PUZZLE 4*/
+#puzzle4{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    background-color: blueviolet;
+}
+
+/*PUZZLE 5*/
+#puzzle5{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    background-color: pink;
+}
+
+/*PUZZLE 6*/
+#puzzle6{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    background-color: black;
+}
 
 
 
@@ -147,5 +330,15 @@ body {
     
     100% {
         top: 30%;
+    }
+}
+
+@keyframes inicio_op {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
     }
 }

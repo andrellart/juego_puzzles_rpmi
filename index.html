@@ -19,22 +19,12 @@
             }
 
             @font-face {
-                font-family: cow;
-                src: url(fonts/Cowboy\ Hippie\ Pro.otf);
-            }
-            
-            @font-face {
-                font-family: createland;
-                src: url(fonts/Createland.otf);
-            }
-
-            @font-face {
                 font-family: shine;
                 src: url(fonts/Shine\ Brighter.ttf);
             }
             
         </style>
-        <title>Juego Mapa del Tesoro</title>
+        <title>Multiverse Wrap</title>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -42,49 +32,116 @@
 
     <body>
 
-    <!-- PÁGINA DE INICIO -->
 
-        <div id="inicio">
+        <!-- PÁGINA DE INICIO -->
 
-            <div id="titulo">
-                <h1>MULTIVERSE WRAP</h1>
-    
+            <div id="inicio">
+
+
+                <div id="titulo">
+                    <h1>MULTIVERSE WRAP</h1>
+        
+                </div>
+        
+                <div id="inicio_op">
+        
+                    <div id="inicio_btn1">
+                        <p>Comenzar</p>
+            
+                    </div>
+            
+                    <div id="inicio_btn2">
+                        <p>Instrucciones del juego</p>
+            
+                    </div>
+        
+                </div>
+
             </div>
-    
-            <div id="inicio_op">
-    
-                <div id="inicio_btn1">
-                    <p>Comenzar</p>
-        
+
+            <div id="inst">
+
+                <img src="img/pergamino.png" id="pergamino">
+                
+                <div id="instrucciones">
+
+                    <div id="instrucciones_btn">
+                        <img src="img/x.png">
+                    </div>
+
+                    <h1>INSTRUCCIONES</h1>
+
+                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+
+                    
+
+                    </div>
+
                 </div>
-        
-                <div id="inicio_btn2">
-                    <p>Instrucciones del juego</p>
-        
-                </div>
-    
+                
+            </div>
+
+            
+        <!-- MAPA  -->
+
+        <div id="mapa">
+            
+            <img src="img/mapa.jpg" id="mapaimg">
+
+            <div id="puzzles">
+
+                <div id="puzzle1_btn"></div>
+                <div id="puzzle2_btn"></div>
+                <div id="puzzle3_btn"></div>
+                <div id="puzzle4_btn"></div>
+                <div id="puzzle5_btn"></div>
+                <div id="puzzle6_btn"></div>
+
             </div>
 
         </div>
 
-        <div id="inst">
-            
-            <div id="instrucciones">
+        <!-- PUZZLE 1 -->
+        <div id="puzzle1">
+            <div id="cerrar_btn1">
+                <img src="img/x.png">
+            </div>
 
-                <div id="instrucciones_btn">
-                    <img src="img/x.png">
-                </div>
-
-                <h1>INSTRUCCIONES</h1>
-
+            <div id="puzzle1_txt">
+                <h1>TITULO</h1>
                 <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
-
-                
-
+                <div id="puzzle1_cont"></div>
+                <div>
+                    <p>Comprobar</p>
                 </div>
 
             </div>
-            
+
+        </div>
+
+        <!-- PUZZLE 2 -->
+        <div id="puzzle2">
+
+        </div>
+
+        <!-- PUZZLE 3 -->
+        <div id="puzzle3">
+
+        </div>
+
+        <!-- PUZZLE 4 -->
+        <div id="puzzle4">
+
+        </div>
+
+        <!-- PUZZLE 5 -->
+        <div id="puzzle5">
+
+        </div>
+
+        <!-- PUZZLE 6 -->
+        <div id="puzzle6">
+
         </div>
 
 
