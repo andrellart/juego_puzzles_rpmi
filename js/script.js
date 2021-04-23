@@ -89,5 +89,13 @@ $("#puzzle6_btn").click(function(){
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
 
+//CERRAR PUZZLE 1
+$("#cerrar_btn1").click(function(){
+
+    $("#puzzle1").hide();
+
+    $("#mapa").css("-webkit-filter", "blur(0px)");
+});
+
 
 
