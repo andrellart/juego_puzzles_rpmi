@@ -1,12 +1,16 @@
 //INICIALIZACION
 
 $("#inst").hide();
+
 $("#puzzle1").hide();
 $("#puzzle2").hide();
 $("#puzzle3").hide();
 $("#puzzle4").hide();
 $("#puzzle5").hide();
 $("#puzzle6").hide();
+
+$("#puzzle1_cont").hide();
+
 
 
 
@@ -41,13 +45,34 @@ $("#inicio_btn1").click(function(){
 });
 
 
-//BOTON PUZZLE 1
+// PUZZLE 1
 $("#puzzle1_btn").click(function(){
 
     $("#puzzle1").show();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
+
+
+    //COMENZAR PUZZLE 1
+
+$("#puzzle1_btn1").click(function(){
+
+    $("#puzzle1_cont").show();
+    $("#puzzle1_inicio").hide();
+    
+    
+});
+
+    //CERRAR PUZZLE 1
+$("#cerrar_btn1").click(function(){
+
+    $("#puzzle1").hide();
+
+    $("#mapa").css("-webkit-filter", "blur(0px)");
+});
+
+
 
 //BOTON PUZZLE 2
 $("#puzzle2_btn").click(function(){
@@ -89,13 +114,7 @@ $("#puzzle6_btn").click(function(){
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
 
-//CERRAR PUZZLE 1
-$("#cerrar_btn1").click(function(){
 
-    $("#puzzle1").hide();
-
-    $("#mapa").css("-webkit-filter", "blur(0px)");
-});
 
 
 

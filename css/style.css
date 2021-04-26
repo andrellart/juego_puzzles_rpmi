@@ -261,9 +261,47 @@ body {
 }
 
 
+    /*PÁGINA DE INICIO DEL PUZZLE 1*/
 
+#puzzle1_inicio{
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#puzzle1_inicio h1{
+    font-family: wash;
+    font-size: 100pt;
+    position: absolute;
+    top: 15%;
+    
+}
+
+#puzzle1_btn1{
+    background-color: seagreen;
+    height: 6%;
+    width: 12%;
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: wash;
+    font-size: 40pt;
+}
+
+
+
+
+    /*PÁGINA PRINCIPAL DEL PUZZLE 1*/
 #puzzle1_cont{
-    background-color: wheat;
     position: absolute;
     top: 1%;
     height: 90%;
@@ -300,12 +338,14 @@ body {
     
 }
 
-#puzzle1_btn1{
+#puzzle1_btn2{
     background-color: seagreen;
     height: 6%;
     width: 12%;
     position: absolute;
-    bottom: 2%;
+    bottom: -8%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
