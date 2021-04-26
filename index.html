@@ -90,8 +90,22 @@
 
             <div id="puzzles">
 
-                <div id="puzzle1_btn"></div>
-                <div id="puzzle2_btn"></div>
+                <div id="puzzle1_btn">
+                    <img  src="img/pirata_prov.png">
+                </div>
+                <div id="pirata_closed">
+                    <img  src="img/pirata_prov.png">
+                </div>
+
+                
+                <div id="puzzle2_btn">
+                    <img  src="img/narco_prov.png">
+                </div>
+                <div id="narco_closed">
+                    <img  src="img/narco_prov.png">
+                </div>
+
+
                 <div id="puzzle3_btn"></div>
                 <div id="puzzle4_btn"></div>
                 <div id="puzzle5_btn"></div>
@@ -110,7 +124,7 @@
             <!-- PÁGINA DE INICIO DEL PUZZLE 1 -->
 
             <div id="puzzle1_inicio">
-                <h1>BIENVENIDO AL MUNDO X</h1>
+                <h1>BIENVENIDA/O AL MUNDO PIRATA</h1>
 
                 <div id="puzzle1_btn1">
                     <p>Comenzar</p>
@@ -135,20 +149,32 @@
                 </div>
             </div>
 
-            <div id="puzzle1_acierto">
-                <h1>¡Puzzle resuelto!</h1>
-                <p>Enhorabuena, has resuelto el primer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
+            <!-- SI HAS ACERTADO PUZZLE 1 -->
 
+            <div id="puzzle1_acierto">
+                <div id="puzzle1_acierto_txt">
+
+                    <h1>¡Puzzle resuelto!</h1>
+                    <p>Enhorabuena, has resuelto el primer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
+
+                </div>
+                
                 <div id="puzzle1_btn3">
                     <p>Continuar</p>
                 </div>
 
             </div>
 
-            <div id="puzzle1_error">
-                <h1>Respuesta incorrecta</h1>
-                <p>Parece que esa no era la solución al puzzle. Vuelve a intentarlo.</p>
+            <!-- SI HAS FALLADO PUZZLE 1 -->
 
+            <div id="puzzle1_error">
+
+                <div id="puzzle1_error_txt">
+                    <h1>Respuesta incorrecta</h1>
+                    <p>Parece que esa no era la solución al puzzle. Vuelve a intentarlo.</p>
+
+                </div>
+                
                 <div id="puzzle1_btn4">
                     <p>Reintentar</p>
                 </div>
@@ -161,6 +187,71 @@
 
         <!-- PUZZLE 2 -->
         <div id="puzzle2">
+            <div id="cerrar_btn2">
+                <img src="img/x.png">
+            </div>
+
+            <!-- PÁGINA DE INICIO DEL PUZZLE 2 -->
+
+            <div id="puzzle2_inicio">
+                <h1>BIENVENIDA/O AL MUNDO NARCO</h1>
+
+                <div id="puzzle2_btn1">
+                    <p>Comenzar</p>
+                </div>
+
+            </div>
+
+
+            <!-- PÁGINA PRINCIPAL DEL PUZZLE 2 -->
+
+            <div id="puzzle2_cont">
+                <div id="puzzle2_txt">
+                    <h1>PUZZLE 2 (NOMBRE)</h1>
+                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    
+                </div>
+
+                <div id="puzzle2_puzzle"></div>
+
+                <div id="puzzle2_btn2">
+                    <p>Comprobar</p>
+                </div>
+            </div>
+
+            <!-- SI HAS ACERTADO PUZZLE 2 -->
+
+            <div id="puzzle2_acierto">
+                <div id="puzzle2_acierto_txt">
+
+                    <h1>¡Puzzle resuelto!</h1>
+                    <p>Enhorabuena, has resuelto el primer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
+
+                </div>
+                
+                <div id="puzzle2_btn3">
+                    <p>Continuar</p>
+                </div>
+
+            </div>
+
+            <!-- SI HAS FALLADO PUZZLE 2 -->
+
+            <div id="puzzle2_error">
+
+                <div id="puzzle2_error_txt">
+                    <h1>Respuesta incorrecta</h1>
+                    <p>Parece que esa no era la solución al puzzle. Vuelve a intentarlo.</p>
+
+                </div>
+                
+                <div id="puzzle2_btn4">
+                    <p>Reintentar</p>
+                </div>
+
+            </div>
+
+            
 
         </div>
 
