@@ -556,9 +556,73 @@ body {
     width: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center; 
+}
+
+/*PISTAS DEL PUZZLE 1*/
+#puzzle1_pistas{
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    top: 1%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    font-family: wash;
+    font-size: 25pt;
+}
+
+#pista1_btn{
+    background-color: chocolate;
+    height: 80%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#puzzle1_p1, #puzzle1_p2, #puzzle1_p3{
+    background-color: chocolate;
+    height: 50%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+#puzzle1_pt{
+    background-color: blueviolet;
+    position: absolute;
+    top: 15%;
+    height: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    font-family: shine;
+    font-size: 28.5pt;
+    text-align: center;
     
 }
+
+#cerrar_pista_p1{
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    height: 15%;
+    width: 15%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#cerrar_pista_p1 img{
+    height: 100%;
+}
+
+
 
 #puzzle1_btn2{
     background-color: seagreen;

@@ -8,6 +8,7 @@ $("#pirata_closed").hide();
 $("#puzzle1_cont").hide();
 $("#puzzle1_acierto").hide();
 $("#puzzle1_error").hide();
+$("#puzzle1_pt").hide();
 
 $("#puzzle2").hide();
 $("#puzzle2_cont").hide();
@@ -37,6 +38,12 @@ $("#puzzle6").hide();
 $("#puzzle6_cont").hide();
 $("#puzzle6_acierto").hide();
 $("#puzzle6_error").hide();
+
+$("#narco_lock").hide();
+$("#bosque_lock").hide();
+$("#alien_lock").hide();
+$("#western_lock").hide();
+$("#zombie_lock").hide();
 
 
 
@@ -81,6 +88,11 @@ $("#inicio_btn1").click(function(){
     $("#inicio").hide();
     $("#help").show();
 
+    $("#narco_lock").show();
+    $("#bosque_lock").show();
+    $("#alien_lock").show();
+    $("#western_lock").show();
+    $("#zombie_lock").show();
 
 });
 
@@ -117,6 +129,15 @@ $("#cerrar_btn1").click(function(){
 
 
     $("#mapa").css("-webkit-filter", "blur(0px)");
+});
+
+    //COGER PISTAS
+$("#pista1_btn").click(function(){
+
+    $("#puzzle1_pt").show();
+
+    $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
+    $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
 });
 
 
