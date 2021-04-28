@@ -1,6 +1,7 @@
 //INICIALIZACION
 
 $("#inst").hide();
+$("#help").hide();
 
 $("#puzzle1").hide();
 $("#pirata_closed").hide();
@@ -41,14 +42,22 @@ $("#puzzle6_error").hide();
 
 
 
-
-
 //ABRIR VENTANA DE INSTRUCCIONES
 
 $("#inicio_btn2").click(function(){
 
     $("#inst").show();
 
+    $("#inicio").css("-webkit-filter", "blur(10px)");
+    $("#mapa").css("-webkit-filter", "blur(10px)");
+});
+
+//ABRIR VENTANA DE INSTRUCCIONES EN EL MAPA
+
+$("#help").click(function(){
+
+    $("#inst").show();
+    
     $("#inicio").css("-webkit-filter", "blur(10px)");
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
@@ -70,6 +79,8 @@ $("#instrucciones_btn").click(function(){
 $("#inicio_btn1").click(function(){
 
     $("#inicio").hide();
+    $("#help").show();
+
 
 });
 
@@ -80,6 +91,7 @@ $("#inicio_btn1").click(function(){
 $("#puzzle1_btn").click(function(){
 
     $("#puzzle1").show();
+    $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
@@ -99,6 +111,7 @@ $("#puzzle1_btn1").click(function(){
 $("#cerrar_btn1").click(function(){
 
     $("#puzzle1").hide();
+    $("#help").show();
     $("#puzzle1_cont").hide();
     $("#puzzle1_inicio").show();
 
@@ -132,9 +145,11 @@ $("#puzzle1_btn2").click(function(){
 $("#puzzle1_btn3").click(function(){
 
     $("#puzzle1").hide();
+    $("#help").show();
 
     $("#pirata_closed").show();
     $("#narco_closed").hide();
+    $("#narco_lock").hide();
     
     $("#mapa").css("-webkit-filter", "blur(0px)");
 });
@@ -154,6 +169,7 @@ $("#puzzle1_btn4").click(function(){
 $("#puzzle2_btn").click(function(){
 
     $("#puzzle2").show();
+    $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
@@ -175,6 +191,7 @@ $("#puzzle2_btn").click(function(){
         $("#puzzle2").hide();
         $("#puzzle2_cont").hide();
         $("#puzzle2_inicio").show();
+        $("#help").show();
     
     
         $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -206,9 +223,11 @@ $("#puzzle2_btn").click(function(){
     $("#puzzle2_btn3").click(function(){
     
         $("#puzzle2").hide();
+        $("#help").show();
     
         $("#narco_closed").show();
         $("#bosque_closed").hide();
+        $("#bosque_lock").hide();
         $("#narco_closed").css("-webkit-filter", "grayscale(1)");
         
         
@@ -231,6 +250,7 @@ $("#puzzle2_btn").click(function(){
 $("#puzzle3_btn").click(function(){
 
     $("#puzzle3").show();
+    $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
@@ -249,6 +269,7 @@ $("#puzzle3_btn1").click(function(){
 $("#cerrar_btn3").click(function(){
 
     $("#puzzle3").hide();
+    $("#help").show();
     $("#puzzle3_cont").hide();
     $("#puzzle3_inicio").show();
 
@@ -282,10 +303,12 @@ $("#puzzle3_btn2").click(function(){
 $("#puzzle3_btn3").click(function(){
 
     $("#puzzle3").hide();
+    $("#help").show();
 
     $("#bosque_closed").show();
     $("#bosque_closed").css("-webkit-filter", "grayscale(1)");
     $("#alien_closed").hide();
+    $("#alien_lock").hide();
     
     
     $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -308,6 +331,7 @@ $("#puzzle3_btn4").click(function(){
 $("#puzzle4_btn").click(function(){
 
     $("#puzzle4").show();
+    $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
@@ -327,6 +351,7 @@ $("#puzzle4_btn").click(function(){
     $("#cerrar_btn4").click(function(){
     
         $("#puzzle4").hide();
+        $("#help").show();
         $("#puzzle4_cont").hide();
         $("#puzzle4_inicio").show();
     
@@ -360,10 +385,12 @@ $("#puzzle4_btn").click(function(){
     $("#puzzle4_btn3").click(function(){
     
         $("#puzzle4").hide();
+        $("#help").show();
     
         $("#alien_closed").show();
         $("#alien_closed").css("-webkit-filter", "grayscale(1)");
         $("#western_closed").hide();
+        $("#western_lock").hide();
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -384,6 +411,7 @@ $("#puzzle4_btn").click(function(){
 $("#puzzle5_btn").click(function(){
 
     $("#puzzle5").show();
+    $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
@@ -403,6 +431,7 @@ $("#puzzle5_btn").click(function(){
     $("#cerrar_btn5").click(function(){
     
         $("#puzzle5").hide();
+        $("#help").show();
         $("#puzzle5_cont").hide();
         $("#puzzle5_inicio").show();
     
@@ -436,10 +465,12 @@ $("#puzzle5_btn").click(function(){
     $("#puzzle5_btn3").click(function(){
     
         $("#puzzle5").hide();
+        $("#help").show();
     
         $("#western_closed").show();
         $("#western_closed").css("-webkit-filter", "grayscale(1)");
         $("#zombie_closed").hide();
+        $("#zombie_lock").hide();
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -459,6 +490,7 @@ $("#puzzle5_btn").click(function(){
 $("#puzzle6_btn").click(function(){
 
     $("#puzzle6").show();
+    $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
@@ -479,6 +511,7 @@ $("#puzzle6_btn").click(function(){
     $("#cerrar_btn6").click(function(){
     
         $("#puzzle6").hide();
+        $("#help").show();
         $("#puzzle6_cont").hide();
         $("#puzzle6_inicio").show();
     
@@ -512,6 +545,7 @@ $("#puzzle6_btn").click(function(){
     $("#puzzle6_btn3").click(function(){
     
         $("#puzzle6").hide();
+        $("#help").show();
     
         $("#zombie_closed").show();
         $("#zombie_closed").css("-webkit-filter", "grayscale(1)");
