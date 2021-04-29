@@ -14,36 +14,43 @@ $("#puzzle2").hide();
 $("#puzzle2_cont").hide();
 $("#puzzle2_acierto").hide();
 $("#puzzle2_error").hide();
+$("#puzzle2_pt").hide();
 
 
 $("#puzzle3").hide();
 $("#puzzle3_cont").hide();
 $("#puzzle3_acierto").hide();
 $("#puzzle3_error").hide();
+$("#puzzle3_pt").hide();
 
 
 $("#puzzle4").hide();
 $("#puzzle4_cont").hide();
 $("#puzzle4_acierto").hide();
 $("#puzzle4_error").hide();
+$("#puzzle4_pt").hide();
 
 
 $("#puzzle5").hide();
 $("#puzzle5_cont").hide();
 $("#puzzle5_acierto").hide();
 $("#puzzle5_error").hide();
+$("#puzzle5_pt").hide();
 
 
 $("#puzzle6").hide();
 $("#puzzle6_cont").hide();
 $("#puzzle6_acierto").hide();
 $("#puzzle6_error").hide();
+$("#puzzle6_pt").hide();
 
 $("#narco_lock").hide();
 $("#bosque_lock").hide();
 $("#alien_lock").hide();
 $("#western_lock").hide();
 $("#zombie_lock").hide();
+
+$("#final").hide();
 
 
 //VARIABLES
@@ -53,6 +60,8 @@ let puzzle3_pt = 0;
 let puzzle4_pt = 0;
 let puzzle5_pt = 0;
 let puzzle6_pt = 0;
+
+let puntos = 18;
 
 
 
@@ -156,6 +165,7 @@ $("#pista1_btn").click(function(){
             $("#puzzle1_pt_txt").html('Esta es la PRIMERA pista del puzzle 1');
 
             puzzle1_pt++;
+            puntos--;
         break;
 
         case 1:
@@ -170,6 +180,7 @@ $("#pista1_btn").click(function(){
             $("#puzzle1_pt_txt").html('Esta es la SEGUNDA pista del puzzle 1');
 
             puzzle1_pt++;
+            puntos--;
         break;
 
         case 2:
@@ -187,6 +198,7 @@ $("#pista1_btn").click(function(){
             $("#puzzle1_pt_txt").html('Esta es la TERCERA pista del puzzle 1');
 
             puzzle1_pt++;
+            puntos--;
         break;
 
     }
@@ -194,7 +206,7 @@ $("#pista1_btn").click(function(){
 
 });
 
-
+    //VOLVER A ABRIR LAS PISTAS COGIDAS DEL PUZZLE 1
 $("#puzzle1_p1").click(function(){
 
     if(puzzle1_pt > 0){
@@ -329,6 +341,126 @@ $("#puzzle2_btn").click(function(){
     
         $("#mapa").css("-webkit-filter", "blur(0px)");
     });
+
+
+    
+    //COGER PISTAS PUZLE 2
+$("#pista2_btn").click(function(){
+
+
+    switch(puzzle2_pt){
+        case 0:
+            $("#puzzle2_pt").show();
+
+            $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle2_p1").css("background-color", "chocolate");
+            $("#puzzle2_p1").css("cursor", "pointer");
+
+            $("#puzzle2_pt_txt").html('Esta es la PRIMERA pista del puzzle 2');
+
+            puzzle2_pt++;
+            puntos--;
+        break;
+
+        case 1:
+            $("#puzzle2_pt").show();
+
+            $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle2_p2").css("background-color", "chocolate");
+            $("#puzzle2_p2").css("cursor", "pointer");
+
+            $("#puzzle2_pt_txt").html('Esta es la SEGUNDA pista del puzzle 2');
+
+            puzzle2_pt++;
+            puntos--;
+        break;
+
+        case 2:
+            $("#puzzle2_pt").show();
+
+            $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
+
+            $("#pista2_btn").css("background-color", "grey");
+            $("#pista2_btn").css("cursor", "default");
+
+            $("#puzzle2_p3").css("background-color", "chocolate");
+            $("#puzzle2_p3").css("cursor", "pointer");
+
+            $("#puzzle2_pt_txt").html('Esta es la TERCERA pista del puzzle 2');
+
+            puzzle2_pt++;
+            puntos--;
+        break;
+
+    }
+
+
+});
+
+    //VOLVER A ABRIR LAS PISTAS COGIDAS DEL PUZZLE 2
+$("#puzzle2_p1").click(function(){
+
+    if(puzzle2_pt > 0){
+
+        $("#puzzle2_pt").show();
+
+        $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle2_pt_txt").html('Esta es la PRIMERA pista del puzzle 2');
+
+    }
+
+});
+
+
+$("#puzzle2_p2").click(function(){
+
+    if(puzzle2_pt > 1){
+
+        $("#puzzle2_pt").show();
+
+        $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle2_pt_txt").html('Esta es la SEGUNDA pista del puzzle 2');
+
+    }
+
+});
+
+$("#puzzle2_p3").click(function(){
+
+    if(puzzle2_pt > 2){
+
+        $("#puzzle2_pt").show();
+
+        $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle2_pt_txt").html('Esta es la TERCERA pista del puzzle 1');
+
+    }
+
+});
+
+
+
+    //CERRAR PISTAS PUZZLE 2
+ $("#cerrar_pista_p2").click(function(){
+
+    $("#puzzle2_pt").hide();
+
+    $("#puzzle2_cont").css("-webkit-filter", "blur(0px)");
+    $("#cerrar_btn2").css("-webkit-filter", "blur(0px)");
+});
+
+
     
     
         //COMPROBAR PUZZLE 2 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
@@ -411,6 +543,124 @@ $("#cerrar_btn3").click(function(){
 });
 
 
+    //COGER PISTAS PUZLE 3
+ $("#pista3_btn").click(function(){
+
+
+    switch(puzzle3_pt){
+        case 0:
+            $("#puzzle3_pt").show();
+
+            $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle3_p1").css("background-color", "chocolate");
+            $("#puzzle3_p1").css("cursor", "pointer");
+
+            $("#puzzle3_pt_txt").html('Esta es la PRIMERA pista del puzzle 3');
+
+            puzzle3_pt++;
+            puntos--;
+        break;
+
+        case 1:
+            $("#puzzle3_pt").show();
+
+            $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle3_p2").css("background-color", "chocolate");
+            $("#puzzle3_p2").css("cursor", "pointer");
+
+            $("#puzzle3_pt_txt").html('Esta es la SEGUNDA pista del puzzle 3');
+
+            puzzle3_pt++;
+            puntos--;
+        break;
+
+        case 2:
+            $("#puzzle3_pt").show();
+
+            $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+
+            $("#pista3_btn").css("background-color", "grey");
+            $("#pista3_btn").css("cursor", "default");
+
+            $("#puzzle3_p3").css("background-color", "chocolate");
+            $("#puzzle3_p3").css("cursor", "pointer");
+
+            $("#puzzle3_pt_txt").html('Esta es la TERCERA pista del puzzle 3');
+
+            puzzle3_pt++;
+            puntos--;
+        break;
+
+    }
+
+
+});
+
+    //VOLVER A ABRIR LAS PISTAS COGIDAS DEL PUZZLE 3
+$("#puzzle3_p1").click(function(){
+
+    if(puzzle3_pt > 0){
+
+        $("#puzzle3_pt").show();
+
+        $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle3_pt_txt").html('Esta es la PRIMERA pista del puzzle 3');
+
+    }
+
+});
+
+
+$("#puzzle3_p2").click(function(){
+
+    if(puzzle3_pt > 1){
+
+        $("#puzzle3_pt").show();
+
+        $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle3_pt_txt").html('Esta es la SEGUNDA pista del puzzle 3');
+
+    }
+
+});
+
+$("#puzzle3_p3").click(function(){
+
+    if(puzzle3_pt > 2){
+
+        $("#puzzle3_pt").show();
+
+        $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle3_pt_txt").html('Esta es la TERCERA pista del puzzle 3');
+
+    }
+
+});
+
+
+
+    //CERRAR PISTAS PUZZLE 3
+ $("#cerrar_pista_p3").click(function(){
+
+    $("#puzzle3_pt").hide();
+
+    $("#puzzle3_cont").css("-webkit-filter", "blur(0px)");
+    $("#cerrar_btn3").css("-webkit-filter", "blur(0px)");
+});
+
+
+
     //COMPROBAR PUZZLE 3 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
 $("#puzzle3_btn2").click(function(){
 
@@ -491,6 +741,124 @@ $("#puzzle4_btn").click(function(){
     
         $("#mapa").css("-webkit-filter", "blur(0px)");
     });
+
+
+    
+    //COGER PISTAS PUZLE 4
+$("#pista4_btn").click(function(){
+
+
+    switch(puzzle4_pt){
+        case 0:
+            $("#puzzle4_pt").show();
+
+            $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle4_p1").css("background-color", "chocolate");
+            $("#puzzle4_p1").css("cursor", "pointer");
+
+            $("#puzzle4_pt_txt").html('Esta es la PRIMERA pista del puzzle 4');
+
+            puzzle4_pt++;
+            puntos--;
+        break;
+
+        case 1:
+            $("#puzzle4_pt").show();
+
+            $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle4_p2").css("background-color", "chocolate");
+            $("#puzzle4_p2").css("cursor", "pointer");
+
+            $("#puzzle4_pt_txt").html('Esta es la SEGUNDA pista del puzzle 4');
+
+            puzzle4_pt++;
+            puntos--;
+        break;
+
+        case 2:
+            $("#puzzle4_pt").show();
+
+            $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
+
+            $("#pista4_btn").css("background-color", "grey");
+            $("#pista4_btn").css("cursor", "default");
+
+            $("#puzzle4_p3").css("background-color", "chocolate");
+            $("#puzzle4_p3").css("cursor", "pointer");
+
+            $("#puzzle4_pt_txt").html('Esta es la TERCERA pista del puzzle 4');
+
+            puzzle4_pt++;
+            puntos--;
+        break;
+
+    }
+
+
+});
+
+    //VOLVER A ABRIR LAS PISTAS COGIDAS DEL PUZZLE 4
+$("#puzzle4_p1").click(function(){
+
+    if(puzzle4_pt > 0){
+
+        $("#puzzle4_pt").show();
+
+        $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle4_pt_txt").html('Esta es la PRIMERA pista del puzzle 4');
+
+    }
+
+});
+
+
+$("#puzzle4_p2").click(function(){
+
+    if(puzzle4_pt > 1){
+
+        $("#puzzle4_pt").show();
+
+        $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle4_pt_txt").html('Esta es la SEGUNDA pista del puzzle 4');
+
+    }
+
+});
+
+$("#puzzle4_p3").click(function(){
+
+    if(puzzle4_pt > 2){
+
+        $("#puzzle4_pt").show();
+
+        $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle4_pt_txt").html('Esta es la TERCERA pista del puzzle 4');
+
+    }
+
+});
+
+
+
+    //CERRAR PISTAS PUZZLE 4
+ $("#cerrar_pista_p4").click(function(){
+
+    $("#puzzle4_pt").hide();
+
+    $("#puzzle4_cont").css("-webkit-filter", "blur(0px)");
+    $("#cerrar_btn4").css("-webkit-filter", "blur(0px)");
+});
     
     
         //COMPROBAR PUZZLE 4 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
@@ -571,6 +939,129 @@ $("#puzzle5_btn").click(function(){
     
         $("#mapa").css("-webkit-filter", "blur(0px)");
     });
+
+
+    
+    //COGER PISTAS PUZLE 5
+$("#pista5_btn").click(function(){
+
+
+    switch(puzzle5_pt){
+        case 0:
+            $("#puzzle5_pt").show();
+
+            $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle5_p1").css("background-color", "chocolate");
+            $("#puzzle5_p1").css("cursor", "pointer");
+
+            $("#puzzle5_pt_txt").html('Esta es la PRIMERA pista del puzzle 5');
+
+            puzzle5_pt++;
+            puntos--;
+        break;
+
+        case 1:
+            $("#puzzle5_pt").show();
+
+            $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle5_p2").css("background-color", "chocolate");
+            $("#puzzle5_p2").css("cursor", "pointer");
+
+            $("#puzzle5_pt_txt").html('Esta es la SEGUNDA pista del puzzle 5');
+
+            puzzle5_pt++;
+            puntos--;
+        break;
+
+        case 2:
+            $("#puzzle5_pt").show();
+
+            $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+
+            $("#pista5_btn").css("background-color", "grey");
+            $("#pista5_btn").css("cursor", "default");
+
+            $("#puzzle5_p3").css("background-color", "chocolate");
+            $("#puzzle5_p3").css("cursor", "pointer");
+
+            $("#puzzle5_pt_txt").html('Esta es la TERCERA pista del puzzle 5');
+
+            puzzle5_pt++;
+            puntos--;
+        break;
+
+    }
+
+
+});
+
+    //VOLVER A ABRIR LAS PISTAS COGIDAS DEL PUZZLE 5
+$("#puzzle5_p1").click(function(){
+
+    if(puzzle5_pt > 0){
+
+        $("#puzzle5_pt").show();
+
+        $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle5_pt_txt").html('Esta es la PRIMERA pista del puzzle 5');
+
+    }
+
+});
+
+
+$("#puzzle5_p2").click(function(){
+
+    if(puzzle5_pt > 1){
+
+        $("#puzzle5_pt").show();
+
+        $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle5_pt_txt").html('Esta es la SEGUNDA pista del puzzle 5');
+
+    }
+
+});
+
+$("#puzzle5_p3").click(function(){
+
+    if(puzzle5_pt > 2){
+
+        $("#puzzle5_pt").show();
+
+        $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle5_pt_txt").html('Esta es la TERCERA pista del puzzle 5');
+
+    }
+
+});
+
+
+
+    //CERRAR PISTAS PUZZLE 5
+ $("#cerrar_pista_p5").click(function(){
+
+    $("#puzzle5_pt").hide();
+
+    $("#puzzle5_cont").css("-webkit-filter", "blur(0px)");
+    $("#cerrar_btn5").css("-webkit-filter", "blur(0px)");
+});
+
+
+
+
+
     
     
         //COMPROBAR PUZZLE 5 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
@@ -651,6 +1142,128 @@ $("#puzzle6_btn").click(function(){
     
         $("#mapa").css("-webkit-filter", "blur(0px)");
     });
+
+
+    
+    //COGER PISTAS PUZLE 6
+$("#pista6_btn").click(function(){
+
+
+    switch(puzzle6_pt){
+        case 0:
+            $("#puzzle6_pt").show();
+
+            $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle6_p1").css("background-color", "chocolate");
+            $("#puzzle6_p1").css("cursor", "pointer");
+
+            $("#puzzle6_pt_txt").html('Esta es la PRIMERA pista del puzzle 6');
+
+            puzzle6_pt++;
+            puntos--;
+        break;
+
+        case 1:
+            $("#puzzle6_pt").show();
+
+            $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+
+            $("#puzzle6_p2").css("background-color", "chocolate");
+            $("#puzzle6_p2").css("cursor", "pointer");
+
+            $("#puzzle6_pt_txt").html('Esta es la SEGUNDA pista del puzzle 6');
+
+            puzzle6_pt++;
+            puntos--;
+        break;
+
+        case 2:
+            $("#puzzle6_pt").show();
+
+            $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+
+            $("#pista6_btn").css("background-color", "grey");
+            $("#pista6_btn").css("cursor", "default");
+
+            $("#puzzle6_p3").css("background-color", "chocolate");
+            $("#puzzle6_p3").css("cursor", "pointer");
+
+            $("#puzzle6_pt_txt").html('Esta es la TERCERA pista del puzzle 6');
+
+            puzzle6_pt++;
+            puntos--;
+        break;
+
+    }
+
+
+});
+
+    //VOLVER A ABRIR LAS PISTAS COGIDAS DEL PUZZLE 6
+$("#puzzle6_p1").click(function(){
+
+    if(puzzle6_pt > 0){
+
+        $("#puzzle6_pt").show();
+
+        $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle6_pt_txt").html('Esta es la PRIMERA pista del puzzle 6');
+
+    }
+
+});
+
+
+$("#puzzle6_p2").click(function(){
+
+    if(puzzle6_pt > 1){
+
+        $("#puzzle6_pt").show();
+
+        $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle6_pt_txt").html('Esta es la SEGUNDA pista del puzzle 6');
+
+    }
+
+});
+
+$("#puzzle6_p3").click(function(){
+
+    if(puzzle6_pt > 2){
+
+        $("#puzzle6_pt").show();
+
+        $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+
+        $("#puzzle6_pt_txt").html('Esta es la TERCERA pista del puzzle 6');
+
+    }
+
+});
+
+
+
+    //CERRAR PISTAS PUZZLE 6
+ $("#cerrar_pista_p6").click(function(){
+
+    $("#puzzle6_pt").hide();
+
+    $("#puzzle6_cont").css("-webkit-filter", "blur(0px)");
+    $("#cerrar_btn6").css("-webkit-filter", "blur(0px)");
+});
+
+
+
+
     
     
         //COMPROBAR PUZZLE 6 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
@@ -679,12 +1292,29 @@ $("#puzzle6_btn").click(function(){
     
         $("#puzzle6").hide();
         $("#help").show();
+        $("#final").show();
     
         $("#zombie_closed").show();
         $("#zombie_closed").css("-webkit-filter", "grayscale(1)");
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
+
+        if( puntos < 6 ){
+
+            $("#final_txt").html('Esta es el final 3, es decir, la puntuación obtenida está entre 0 y 5');
+            $("#final_img").attr("src", "img/final3_prov.png");
+        
+        } else if ( puntos < 13 ){
+
+            $("#final_txt").html('Esta es el final 2, es decir, la puntuación obtenida está entre 6 y 12');
+            $("#final_img").attr("src", "img/final2_prov.jpg");
+        } else {
+
+            $("#final_txt").html('Esta es el final 1, es decir, la puntuación obtenida está entre 13 y 18');
+            $("#final_img").attr("src", "img/final1_prov.png");
+        } 
+        
     });
     
     //FALLAR PUZZLE 6
@@ -695,6 +1325,19 @@ $("#puzzle6_btn").click(function(){
         $("#puzzle6_cont").css("-webkit-filter", "blur(0px)");
         $("#cerrar_btn6").css("-webkit-filter", "blur(0px)");
     });
+
+
+//FINALES
+  
+
+//VOLVER A JUGAR 
+$("#final_btn").click(function(){
+    
+    location.reload();
+});
+
+
+
 
 
 

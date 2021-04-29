@@ -559,6 +559,23 @@ body {
     align-items: center; 
 }
 
+#puzzle1_btn2{
+    background-color: seagreen;
+    height: 6%;
+    width: 12%;
+    position: absolute;
+    bottom: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: wash;
+    font-size: 40pt;
+}
+
 /*PISTAS DEL PUZZLE 1*/
 #puzzle1_pistas{
     width: 20%;
@@ -626,22 +643,7 @@ body {
 
 
 
-#puzzle1_btn2{
-    background-color: seagreen;
-    height: 6%;
-    width: 12%;
-    position: absolute;
-    bottom: -8%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: wash;
-    font-size: 40pt;
-}
+
 
 
     /*VENTANA ACIERTO DEL PUZZLE 1*/
@@ -877,6 +879,73 @@ body {
 }
 
 
+/*PISTAS DEL PUZZLE 2*/
+#puzzle2_pistas{
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: wash;
+    font-size: 25pt;
+}
+
+#pista2_btn{
+    background-color: chocolate;
+    height: 80%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#puzzle2_p1, #puzzle2_p2, #puzzle2_p3{
+    background-color: grey;
+    height: 50%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+#puzzle2_pt{
+    background-color: blueviolet;
+    position: absolute;
+    top: 15%;
+    height: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: shine;
+    font-size: 28.5pt;
+    text-align: center;
+    
+}
+
+#cerrar_pista_p2{
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    height: 15%;
+    width: 15%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#cerrar_pista_p2 img{
+    height: 100%;
+}
+
+
+
     /*VENTANA ACIERTO DEL PUZZLE 2*/
 #puzzle2_acierto{
     position: absolute;
@@ -1107,6 +1176,73 @@ body {
     font-family: wash;
     font-size: 40pt;
 }
+
+/*PISTAS DEL PUZZLE 3*/
+#puzzle3_pistas{
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: wash;
+    font-size: 25pt;
+}
+
+#pista3_btn{
+    background-color: chocolate;
+    height: 80%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#puzzle3_p1, #puzzle3_p2, #puzzle3_p3{
+    background-color: grey;
+    height: 50%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+#puzzle3_pt{
+    background-color: blueviolet;
+    position: absolute;
+    top: 15%;
+    height: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: shine;
+    font-size: 28.5pt;
+    text-align: center;
+    
+}
+
+#cerrar_pista_p3{
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    height: 15%;
+    width: 15%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#cerrar_pista_p3 img{
+    height: 100%;
+}
+
+
 
 
     /*VENTANA ACIERTO DEL PUZZLE 3*/
@@ -1342,6 +1478,73 @@ body {
 }
 
 
+/*PISTAS DEL PUZZLE 4*/
+#puzzle4_pistas{
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: wash;
+    font-size: 25pt;
+}
+
+#pista4_btn{
+    background-color: chocolate;
+    height: 80%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#puzzle4_p1, #puzzle4_p2, #puzzle4_p3{
+    background-color: grey;
+    height: 50%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+#puzzle4_pt{
+    background-color: blueviolet;
+    position: absolute;
+    top: 15%;
+    height: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: shine;
+    font-size: 28.5pt;
+    text-align: center;
+    
+}
+
+#cerrar_pista_p4{
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    height: 15%;
+    width: 15%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#cerrar_pista_p4 img{
+    height: 100%;
+}
+
+
+
     /*VENTANA ACIERTO DEL PUZZLE 4*/
 #puzzle4_acierto{
     position: absolute;
@@ -1573,6 +1776,75 @@ body {
     font-family: wash;
     font-size: 40pt;
 }
+
+
+
+/*PISTAS DEL PUZZLE 5*/
+#puzzle5_pistas{
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: wash;
+    font-size: 25pt;
+}
+
+#pista5_btn{
+    background-color: chocolate;
+    height: 80%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#puzzle5_p1, #puzzle5_p2, #puzzle5_p3{
+    background-color: grey;
+    height: 50%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+#puzzle5_pt{
+    background-color: blueviolet;
+    position: absolute;
+    top: 15%;
+    height: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: shine;
+    font-size: 28.5pt;
+    text-align: center;
+    
+}
+
+#cerrar_pista_p5{
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    height: 15%;
+    width: 15%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#cerrar_pista_p5 img{
+    height: 100%;
+}
+
+
 
 
     /*VENTANA ACIERTO DEL PUZZLE 5*/
@@ -1808,6 +2080,76 @@ body {
 }
 
 
+
+/*PISTAS DEL PUZZLE 6*/
+#puzzle6_pistas{
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: wash;
+    font-size: 25pt;
+}
+
+#pista6_btn{
+    background-color: chocolate;
+    height: 80%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#puzzle6_p1, #puzzle6_p2, #puzzle6_p3{
+    background-color: grey;
+    height: 50%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+#puzzle6_pt{
+    background-color: blueviolet;
+    position: absolute;
+    top: 15%;
+    height: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: shine;
+    font-size: 28.5pt;
+    text-align: center;
+    
+}
+
+#cerrar_pista_p6{
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    height: 15%;
+    width: 15%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#cerrar_pista_p6 img{
+    height: 100%;
+}
+
+
+
+
+
     /*VENTANA ACIERTO DEL PUZZLE 6*/
 #puzzle6_acierto{
     position: absolute;
@@ -1911,6 +2253,74 @@ body {
     font-family: wash;
     font-size: 40pt;
 }
+
+
+/*FINAL DE JUEGO*/
+
+#final{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: shine;
+    font-size: 40pt;
+    text-align: center;
+    opacity: 0;
+    animation-name: final;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#final img{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+#final_txt{
+    z-index: 15;
+    background-color: rgba(255, 255, 255, 0.486);
+    padding: .5%;
+    border-radius: 10px;
+    opacity: 0;
+    animation-name: final;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#final_btn{
+
+    background-color: seagreen;
+    height: 6%;
+    width: 15%;
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: wash;
+    font-size: 40pt;
+    z-index: 15;
+    opacity: 0;
+    animation-name: final;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+
     
 
 
@@ -1928,6 +2338,16 @@ body {
 }
 
 @keyframes inicio_op {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes final {
     0% {
         opacity: 0;
     }
