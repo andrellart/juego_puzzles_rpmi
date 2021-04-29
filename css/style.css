@@ -579,11 +579,11 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 #puzzle1_p1, #puzzle1_p2, #puzzle1_p3{
-    background-color: chocolate;
+    background-color: grey;
     height: 50%;
     padding: 2%;
     display: flex;
@@ -601,6 +601,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 1%;
     border-radius: 10px;
     font-family: shine;
     font-size: 28.5pt;
