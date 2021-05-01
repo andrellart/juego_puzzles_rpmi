@@ -164,10 +164,15 @@ body {
     width: 5%;
     height: 5%;
     position: absolute;
-    right: 1%;
-    top: 1%;
+    right: 6.5%;
+    top: 2.5%;
     cursor: pointer;
     z-index: 20;
+    transition: all 1s;
+}
+
+#help:hover{
+    scale: 1.1;
 }
 
 #help img{
@@ -183,14 +188,29 @@ body {
 
 /*---*/
 
-#puzzle1_btn{
+#puzzle1_btn, #puzzle2_btn, #puzzle3_btn, #puzzle4_btn, #puzzle5_btn, #puzzle6_btn{
     height: 30%;
     width: 15%;
-    position: absolute;
-    background-color: teal;
-    top: 5%;
-    left: 10%;
     cursor: pointer;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    position: absolute;
+    transition: all 1s;
+
+}
+
+#puzzle1_btn:hover, #puzzle2_btn:hover, #puzzle3_btn:hover, #puzzle4_btn:hover, #puzzle5_btn:hover, #puzzle6_btn:hover{
+    scale: 1.3;
+
+}
+
+#puzzle1_btn{
+    
+    top: 12%;
+    left: 13.5%;
+    
+    
 } 
 
 #puzzle1_btn img{
@@ -202,8 +222,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 12%;
+    left: 13.5%;
     z-index: 10;
 } 
 
@@ -215,13 +235,10 @@ body {
 /*---*/
 
 #puzzle2_btn{
-    height: 30%;
-    width: 15%;
-    position: absolute;
-    background-color: red;
-    cursor: pointer;
-    top: 8%;
-    left: 40%;
+
+    top: 4%;
+    left: 55.5%;
+    
 } 
 
 
@@ -234,8 +251,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 8%;
-    left: 40%;
+    top: 4%;
+    left: 55.5%;
     z-index: 10;
 } 
 
@@ -245,10 +262,10 @@ body {
 
 #narco_lock{
     height: 30%;
-    width: 15%;
+    width: 15%;;
     position: absolute;
-    top: 8%;
-    left: 40%;
+    top: 4%;
+    left: 55.5%;
     z-index: 15;
     display: flex;
     justify-content: center;
@@ -262,13 +279,10 @@ body {
 /*---*/
 
 #puzzle3_btn{
-    height: 30%;
-    width: 15%;
-    position: absolute;
-    background-color: yellow;
-    cursor: pointer;
-    top: 10%;
-    left: 70%;
+    
+    top: 9%;
+    left: 76%;
+    
 } 
 
 
@@ -281,8 +295,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 10%;
-    left: 70%;
+    top: 9%;
+    left: 76%;
     z-index: 10;
 } 
 
@@ -294,8 +308,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 10%;
-    left: 70%;
+    top: 9%;
+    left: 76%;
     z-index: 15;
     display: flex;
     justify-content: center;
@@ -309,13 +323,10 @@ body {
 /*---*/
 
 #puzzle4_btn{
-    height: 30%;
-    width: 15%;
-    position: absolute;
-    background-color: blueviolet;
-    cursor: pointer;
-    top: 50%;
-    left: 80%;
+    
+    top: 55%;
+    left: 73.5%;
+    
 } 
 
 
@@ -328,8 +339,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 50%;
-    left: 80%;
+    top: 55%;
+    left: 73.5%;
     z-index: 10;
 } 
 
@@ -341,8 +352,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 50%;
-    left: 80%;
+    top: 55%;
+    left: 73.5%;
     z-index: 15;
     display: flex;
     justify-content: center;
@@ -356,13 +367,10 @@ body {
 /*---*/
 
 #puzzle5_btn{
-    height: 30%;
-    width: 15%;
-    position: absolute;
-    background-color: pink;
-    cursor: pointer;
-    top: 60%;
-    left: 50%;
+    
+    top: 40%;
+    left: 43.5%;
+    
 } 
 
 
@@ -375,8 +383,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 40%;
+    left: 43.5%;
     z-index: 10;
 } 
 
@@ -388,8 +396,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 40%;
+    left: 43.5%;
     z-index: 15;
     display: flex;
     justify-content: center;
@@ -403,13 +411,10 @@ body {
 /*---*/
 
 #puzzle6_btn{
-    height: 30%;
-    width: 15%;
-    position: absolute;
-    background-color: black;
-    cursor: pointer;
-    top: 60%;
-    left: 20%;
+    
+    top: 57%;
+    left: 21%;
+    
 } 
 
 
@@ -422,8 +427,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 60%;
-    left: 20%;
+    top: 57%;
+    left: 21%;
     z-index: 10;
 } 
 
@@ -435,8 +440,8 @@ body {
     height: 30%;
     width: 15%;
     position: absolute;
-    top: 60%;
-    left: 20%;
+    top: 57%;
+    left: 21%;
     z-index: 15;
     display: flex;
     justify-content: center;
@@ -2354,5 +2359,20 @@ body {
     
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes mundos {
+    0% {
+        transform: translateY(0%);
+    }
+    
+
+    50% {
+        transform: translateY(2%);
+    }
+
+    100% {
+        transform: translateY(0%);
     }
 }

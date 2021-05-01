@@ -110,6 +110,8 @@ $("#inicio_btn1").click(function(){
     $("#alien_lock").show();
     $("#western_lock").show();
     $("#zombie_lock").show();
+    $("#mapaimg").attr("src", "img/mapa.png");
+    $("#puzzle1_btn").css("animation-name", "mundos");
 
 });
 
@@ -297,6 +299,8 @@ $("#puzzle1_btn3").click(function(){
     $("#narco_lock").hide();
     
     $("#mapa").css("-webkit-filter", "blur(0px)");
+    $("#puzzle1_btn").css("animation-name", "none");
+    $("#puzzle2_btn").css("animation-name", "mundos");
 });
 
 //FALLAR PUZZLE 1
@@ -494,6 +498,9 @@ $("#puzzle2_p3").click(function(){
         $("#bosque_closed").hide();
         $("#bosque_lock").hide();
         $("#narco_closed").css("-webkit-filter", "grayscale(1)");
+
+        $("#puzzle2_btn").css("animation-name", "none");
+        $("#puzzle3_btn").css("animation-name", "mundos");
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -692,6 +699,9 @@ $("#puzzle3_btn3").click(function(){
     $("#bosque_closed").css("-webkit-filter", "grayscale(1)");
     $("#alien_closed").hide();
     $("#alien_lock").hide();
+
+    $("#puzzle3_btn").css("animation-name", "none");
+    $("#puzzle4_btn").css("animation-name", "mundos");
     
     
     $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -892,6 +902,9 @@ $("#puzzle4_p3").click(function(){
         $("#alien_closed").css("-webkit-filter", "grayscale(1)");
         $("#western_closed").hide();
         $("#western_lock").hide();
+
+        $("#puzzle4_btn").css("animation-name", "none");
+        $("#puzzle5_btn").css("animation-name", "mundos");
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -1095,6 +1108,9 @@ $("#puzzle5_p3").click(function(){
         $("#western_closed").css("-webkit-filter", "grayscale(1)");
         $("#zombie_closed").hide();
         $("#zombie_lock").hide();
+
+        $("#puzzle5_btn").css("animation-name", "none");
+        $("#puzzle6_btn").css("animation-name", "mundos");
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -1296,6 +1312,8 @@ $("#puzzle6_p3").click(function(){
     
         $("#zombie_closed").show();
         $("#zombie_closed").css("-webkit-filter", "grayscale(1)");
+
+        $("#puzzle6_btn").css("animation-name", "none");
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
