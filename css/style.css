@@ -1702,7 +1702,7 @@ body {
 }
 
 #puzzle5_inicio h1{
-    font-family: wash;
+    font-family: western1;
     font-size: 100pt;
     position: absolute;
     top: 15%;
@@ -1720,7 +1720,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: western1;
     font-size: 40pt;
 }
 
@@ -1734,18 +1734,18 @@ body {
     height: 90%;
     width: 98%;
     display: flex;
-    font-family: shine;
+    font-family: western2;
     font-size: 28.5pt;
     
 }
 
 #puzzle5_cont h1{
-    font-family: wash;
+    font-family: western1;
     font-size: 40pt;
 }
 
 #puzzle5_txt{
-    background-color: blue;
+    
     height: 100%;
     width: 20%;
     display: flex;
@@ -1763,7 +1763,8 @@ body {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    right: 0%;
+    right: -1%;
+    top: 2%;
     
 }
 
@@ -1772,15 +1773,14 @@ body {
     height: 6%;
     width: 12%;
     position: absolute;
-    bottom: -8%;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -9%;
+    left: 53%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: western1;
     font-size: 40pt;
 }
 
@@ -1795,7 +1795,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: wash;
+    font-family: western1;
     font-size: 25pt;
     z-index: 50;
 }
@@ -1832,7 +1832,7 @@ body {
     justify-content: center;
     padding: 1%;
     border-radius: 10px;
-    font-family: shine;
+    font-family: western2;
     font-size: 28.5pt;
     text-align: center;
     
@@ -1856,6 +1856,7 @@ body {
     /* PUZZLE DEL MUNDO 5 (VACAS Y BOTELLAS)*/
 #puzzle5_fondo{
     width: 100%;
+    height: 100%;
     z-index: 0;
     position: absolute;
     top: 0;
@@ -1864,7 +1865,7 @@ body {
 #puzzle5_balsa{
     z-index: 5;
     position: absolute;
-    bottom: 8%;
+   top: 65%;
     left: 27%;
     /*animation-name: puzzle5_balsa_ida; */
     animation-duration: 2s;
@@ -1879,34 +1880,34 @@ body {
 }
 
 #puzzle5_vaca1{
-    width: 15%;
+    
     z-index: 10;
     position: absolute;
-    top: 43%;
+    top: 45%;
     left: 20%;
     cursor: pointer;
 }
 
 #puzzle5_vaca2{
-    width: 15%;
+    
     z-index: 10;
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 1%;
     cursor: pointer;
 }
 
 #puzzle5_vaca3{
-    width: 15%;
+    
     z-index: 10;
     position: absolute;
-    top: 64%;
+    top: 66%;
     left: 15%;
     cursor: pointer;
 }
 
 #puzzle5_botella1{
-    width: 5%;
+    
     z-index: 10;
     position: absolute;
     top: 87%;
@@ -1915,7 +1916,7 @@ body {
 }
 
 #puzzle5_botella2{
-    width: 5%;
+    
     z-index: 10;
     position: absolute;
     top: 87%;
@@ -1924,7 +1925,7 @@ body {
 }
 
 #puzzle5_botella3{
-    width: 5%;
+    
     z-index: 10;
     position: absolute;
     top: 87%;
@@ -2475,13 +2476,13 @@ body {
 
 
     100% {
-        left: 40%;
+        left: 48%;
     }
 }
 
 @keyframes puzzle5_balsa_vuelta {
     0% {
-        left: 40%;
+        left: 48%;
     }
     
 

@@ -58,7 +58,7 @@ $("#final").hide();
 
 let vaca1_b1 = false;
 let vaca1_b2 = false;
-let vaca1_y = "43%";
+let vaca1_y = "45%";
 let vaca1_izq_x = "20%";
 let vaca1_der_x = "68%";
 let vaca1_izq = true;
@@ -66,7 +66,7 @@ let vaca1_der = false;
 
 let vaca2_b1 = false;
 let vaca2_b2 = false;
-let vaca2_y = "50%";
+let vaca2_y = "52%";
 let vaca2_izq_x = "1%";
 let vaca2_der_x = "85%";
 let vaca2_izq = true;
@@ -74,7 +74,7 @@ let vaca2_der = false;
 
 let vaca3_b1 = false;
 let vaca3_b2 = false;
-let vaca3_y = "64%";
+let vaca3_y = "66%";
 let vaca3_izq_x = "15%";
 let vaca3_der_x = "73%";
 let vaca3_izq = true;
@@ -111,13 +111,22 @@ let balsa_der = false;
 let balsa_b1 = false;
 let balsa_b2 = false;
 
-let balsa_y = "55%";
 
-let balsa_b1_izq_x = "30%";
-let balsa_b1_der_x = "42%";
-let balsa_b2_izq_x = "45%";
-let balsa_b2_der_x = "57%";
 
+let vaca_b_y = "58%";
+
+let vaca_b1_izq_x = "27%";
+let vaca_b1_der_x = "48%";
+let vaca_b2_izq_x = "40%";
+let vaca_b2_der_x = "61%";
+
+
+let botella_b_y = "67%";
+
+let botella_b1_izq_x = "32%";
+let botella_b1_der_x = "53%";
+let botella_b2_izq_x = "42%";
+let botella_b2_der_x = "53%";
 
 
 
@@ -1087,7 +1096,7 @@ $("#pista5_btn").click(function(){
             $("#puzzle5_p1").css("background-color", "chocolate");
             $("#puzzle5_p1").css("cursor", "pointer");
 
-            $("#puzzle5_pt_txt").html('Esta es la PRIMERA pista del puzzle 5');
+            $("#puzzle5_pt_txt").html('¿No paras de ir y venir de una orilla a otra y después de tanto viaje resulta que te encuentras exactamente en la posición de partida? En un punto determinado estás haciendo algo que devuelve a las vacas y las botellas a su posición de partida. Cuando sepas en qué punto lo haces, prueba a hacer algo diferente. Quizás así encuentres la solución más fácilmente.');
 
             puzzle5_pt++;
             puntos--;
@@ -1102,7 +1111,7 @@ $("#pista5_btn").click(function(){
             $("#puzzle5_p2").css("background-color", "chocolate");
             $("#puzzle5_p2").css("cursor", "pointer");
 
-            $("#puzzle5_pt_txt").html('Esta es la SEGUNDA pista del puzzle 5');
+            $("#puzzle5_pt_txt").html('No es obligatorio ocupar dos plazas a la ida y volver con una sola ocupada. A veces tendrás que volver con dos. Para empezar, prueba a llevar las tres vacas a la orilla derecha. Luego ve intercambiando con paciencia vacas por botellas.');
 
             puzzle5_pt++;
             puntos--;
@@ -1120,7 +1129,7 @@ $("#pista5_btn").click(function(){
             $("#puzzle5_p3").css("background-color", "chocolate");
             $("#puzzle5_p3").css("cursor", "pointer");
 
-            $("#puzzle5_pt_txt").html('Esta es la TERCERA pista del puzzle 5');
+            $("#puzzle5_pt_txt").html('Retomemos la pista anterior. Primero tenías que llevar todas las vacas a la orilla derecha del río y luego empezar a intercambiar vacas por botellas. Pues bien, después, cuando veas que tienes pocas botellas en la orilla izquierda, puedes llevarte una botella y una vaca de vuelta para evitar que las vacas se beban el alcohol que te queda.');
 
             puzzle5_pt++;
             puntos--;
@@ -1141,7 +1150,7 @@ $("#puzzle5_p1").click(function(){
         $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle5_pt_txt").html('Esta es la PRIMERA pista del puzzle 5');
+        $("#puzzle5_pt_txt").html('¿No paras de ir y venir de una orilla a otra y después de tanto viaje resulta que te encuentras exactamente en la posición de partida? En un punto determinado estás haciendo algo que devuelve a las vacas y las botellas a su posición de partida. Cuando sepas en qué punto lo haces, prueba a hacer algo diferente. Quizás así encuentres la solución más fácilmente.');
 
     }
 
@@ -1157,7 +1166,7 @@ $("#puzzle5_p2").click(function(){
         $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle5_pt_txt").html('Esta es la SEGUNDA pista del puzzle 5');
+        $("#puzzle5_pt_txt").html('No es obligatorio ocupar dos plazas a la ida y volver con una sola ocupada. A veces tendrás que volver con dos. Para empezar, prueba a llevar las tres vacas a la orilla derecha. Luego ve intercambiando con paciencia vacas por botellas.');
 
     }
 
@@ -1172,7 +1181,7 @@ $("#puzzle5_p3").click(function(){
         $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle5_pt_txt").html('Esta es la TERCERA pista del puzzle 5');
+        $("#puzzle5_pt_txt").html('Retomemos la pista anterior. Primero tenías que llevar todas las vacas a la orilla derecha del río y luego empezar a intercambiar vacas por botellas. Pues bien, después, cuando veas que tienes pocas botellas en la orilla izquierda, puedes llevarte una botella y una vaca de vuelta para evitar que las vacas se beban el alcohol que te queda.');
 
     }
 
@@ -1197,8 +1206,8 @@ $("#puzzle5_p3").click(function(){
 
 document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
     if(balsa_izq == true && balsa_b1 == false && vaca1_izq == true){
-        document.getElementById("puzzle5_vaca1").style.left = balsa_b1_izq_x ;
-        document.getElementById("puzzle5_vaca1").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca1").style.left = vaca_b1_izq_x ;
+        document.getElementById("puzzle5_vaca1").style.top = vaca_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1207,8 +1216,8 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
         vaca1_izq = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && vaca1_izq == true){
-        document.getElementById("puzzle5_vaca1").style.left = balsa_b2_izq_x ;
-        document.getElementById("puzzle5_vaca1").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca1").style.left = vaca_b2_izq_x ;
+        document.getElementById("puzzle5_vaca1").style.top = vaca_b_y ;
 
         balsa_b2 = true;
         vaca1_b2 = true;
@@ -1216,8 +1225,8 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
     }
 
     if(balsa_der == true && balsa_b1 == false && vaca1_der == true){
-        document.getElementById("puzzle5_vaca1").style.left = balsa_b1_der_x ;
-        document.getElementById("puzzle5_vaca1").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca1").style.left = vaca_b1_der_x ;
+        document.getElementById("puzzle5_vaca1").style.top = vaca_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1226,8 +1235,8 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
         vaca1_der = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && vaca1_der == true){
-        document.getElementById("puzzle5_vaca1").style.left = balsa_b2_der_x ;
-        document.getElementById("puzzle5_vaca1").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca1").style.left = vaca_b2_der_x ;
+        document.getElementById("puzzle5_vaca1").style.top = vaca_b_y ;
 
         balsa_b2 = true;
         vaca1_b2 = true;
@@ -1243,8 +1252,8 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
 
 document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
     if(balsa_izq == true && balsa_b1 == false && vaca2_izq == true){
-        document.getElementById("puzzle5_vaca2").style.left = balsa_b1_izq_x ;
-        document.getElementById("puzzle5_vaca2").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca2").style.left = vaca_b1_izq_x ;
+        document.getElementById("puzzle5_vaca2").style.top = vaca_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1253,8 +1262,8 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
         vaca2_izq = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && vaca2_izq == true){
-        document.getElementById("puzzle5_vaca2").style.left = balsa_b2_izq_x ;
-        document.getElementById("puzzle5_vaca2").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca2").style.left = vaca_b2_izq_x ;
+        document.getElementById("puzzle5_vaca2").style.top = vaca_b_y ;
 
         balsa_b2 = true;
         vaca2_b2 = true;
@@ -1262,8 +1271,8 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
     }
 
     if(balsa_der == true && balsa_b1 == false && vaca2_der == true){
-        document.getElementById("puzzle5_vaca2").style.left = balsa_b1_der_x ;
-        document.getElementById("puzzle5_vaca2").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca2").style.left = vaca_b1_der_x ;
+        document.getElementById("puzzle5_vaca2").style.top = vaca_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1272,8 +1281,8 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
         vaca2_der = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && vaca2_der == true){
-        document.getElementById("puzzle5_vaca2").style.left = balsa_b2_der_x ;
-        document.getElementById("puzzle5_vaca2").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca2").style.left = vaca_b2_der_x ;
+        document.getElementById("puzzle5_vaca2").style.top = vaca_b_y ;
 
         balsa_b2 = true;
         vaca2_b2 = true;
@@ -1288,8 +1297,8 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
 
 document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
     if(balsa_izq == true && balsa_b1 == false && vaca3_izq == true){
-        document.getElementById("puzzle5_vaca3").style.left = balsa_b1_izq_x ;
-        document.getElementById("puzzle5_vaca3").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca3").style.left = vaca_b1_izq_x ;
+        document.getElementById("puzzle5_vaca3").style.top = vaca_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1298,8 +1307,8 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
         vaca3_izq = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && vaca3_izq == true){
-        document.getElementById("puzzle5_vaca3").style.left = balsa_b2_izq_x ;
-        document.getElementById("puzzle5_vaca3").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca3").style.left = vaca_b2_izq_x ;
+        document.getElementById("puzzle5_vaca3").style.top = vaca_b_y ;
 
         balsa_b2 = true;
         vaca3_b2 = true;
@@ -1307,8 +1316,8 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
     }
 
     if(balsa_der == true && balsa_b1 == false && vaca3_der == true){
-        document.getElementById("puzzle5_vaca3").style.left = balsa_b1_der_x ;
-        document.getElementById("puzzle5_vaca3").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca3").style.left = vaca_b1_der_x ;
+        document.getElementById("puzzle5_vaca3").style.top = vaca_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1317,8 +1326,8 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
         vaca3_der = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && vaca3_der == true){
-        document.getElementById("puzzle5_vaca3").style.left = balsa_b2_der_x ;
-        document.getElementById("puzzle5_vaca3").style.top = balsa_y ;
+        document.getElementById("puzzle5_vaca3").style.left = vaca_b2_der_x ;
+        document.getElementById("puzzle5_vaca3").style.top = vaca_b_y ;
 
         balsa_b2 = true;
         vaca3_b2 = true;
@@ -1333,8 +1342,8 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
 
 document.getElementById("puzzle5_botella1").addEventListener("click", function(){
     if(balsa_izq == true && balsa_b1 == false && botella1_izq == true){
-        document.getElementById("puzzle5_botella1").style.left = balsa_b1_izq_x ;
-        document.getElementById("puzzle5_botella1").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella1").style.left = botella_b1_izq_x ;
+        document.getElementById("puzzle5_botella1").style.top = botella_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1343,8 +1352,8 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
         botella1_izq = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && botella1_izq == true){
-        document.getElementById("puzzle5_botella1").style.left = balsa_b2_izq_x ;
-        document.getElementById("puzzle5_botella1").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella1").style.left = botella_b2_izq_x ;
+        document.getElementById("puzzle5_botella1").style.top = botella_b_y ;
 
         balsa_b2 = true;
         botella1_b2 = true;
@@ -1352,8 +1361,8 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
     }
 
     if(balsa_der == true && balsa_b1 == false && botella1_der == true){
-        document.getElementById("puzzle5_botella1").style.left = balsa_b1_der_x ;
-        document.getElementById("puzzle5_botella1").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella1").style.left = botella_b1_der_x ;
+        document.getElementById("puzzle5_botella1").style.top = botella_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1362,8 +1371,8 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
         botella1_der = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && botella1_der == true){
-        document.getElementById("puzzle5_botella1").style.left = balsa_b2_der_x ;
-        document.getElementById("puzzle5_botella1").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella1").style.left = botella_b2_der_x ;
+        document.getElementById("puzzle5_botella1").style.top = botella_b_y ;
 
         balsa_b2 = true;
         botella1_b2 = true;
@@ -1377,8 +1386,8 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
 
 document.getElementById("puzzle5_botella2").addEventListener("click", function(){
     if(balsa_izq == true && balsa_b1 == false && botella1_izq == true){
-        document.getElementById("puzzle5_botella2").style.left = balsa_b1_izq_x ;
-        document.getElementById("puzzle5_botella2").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella2").style.left = botella_b1_izq_x ;
+        document.getElementById("puzzle5_botella2").style.top = botella_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1387,8 +1396,8 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
         botella2_izq = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && botella2_izq == true){
-        document.getElementById("puzzle5_botella2").style.left = balsa_b2_izq_x ;
-        document.getElementById("puzzle5_botella2").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella2").style.left = botella_b2_izq_x ;
+        document.getElementById("puzzle5_botella2").style.top = botella_b_y ;
 
         balsa_b2 = true;
         botella2_b2 = true;
@@ -1396,8 +1405,8 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
     }
 
     if(balsa_der == true && balsa_b1 == false && botella2_der == true){
-        document.getElementById("puzzle5_botella2").style.left = balsa_b1_der_x ;
-        document.getElementById("puzzle5_botella2").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella2").style.left = botella_b1_der_x ;
+        document.getElementById("puzzle5_botella2").style.top = botella_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1406,8 +1415,8 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
         botella2_der = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && botella2_der == true){
-        document.getElementById("puzzle5_botella2").style.left = balsa_b2_der_x ;
-        document.getElementById("puzzle5_botella2").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella2").style.left = botella_b2_der_x ;
+        document.getElementById("puzzle5_botella2").style.top = botella_b_y ;
 
         balsa_b2 = true;
         botella2_b2 = true;
@@ -1421,8 +1430,8 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
 
 document.getElementById("puzzle5_botella3").addEventListener("click", function(){
     if(balsa_izq == true && balsa_b1 == false && botella1_izq == true){
-        document.getElementById("puzzle5_botella3").style.left = balsa_b1_izq_x ;
-        document.getElementById("puzzle5_botella3").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella3").style.left = botella_b1_izq_x ;
+        document.getElementById("puzzle5_botella3").style.top = botella_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1431,8 +1440,8 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
         botella3_izq = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && botella3_izq == true){
-        document.getElementById("puzzle5_botella3").style.left = balsa_b2_izq_x ;
-        document.getElementById("puzzle5_botella3").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella3").style.left = botella_b2_izq_x ;
+        document.getElementById("puzzle5_botella3").style.top = botella_b_y ;
 
         balsa_b2 = true;
         botella3_b2 = true;
@@ -1440,8 +1449,8 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
     }
 
     if(balsa_der == true && balsa_b1 == false && botella3_der == true){
-        document.getElementById("puzzle5_botella3").style.left = balsa_b1_der_x ;
-        document.getElementById("puzzle5_botella3").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella3").style.left = botella_b1_der_x ;
+        document.getElementById("puzzle5_botella3").style.top = botella_b_y ;
 
         //Ahora el hueco 1 de la balsa 1 está ocupado
 
@@ -1450,8 +1459,8 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
         botella3_der = false;
 
     } else if (balsa_izq == true && balsa_b2 == false && botella3_der == true){
-        document.getElementById("puzzle5_botella3").style.left = balsa_b2_der_x ;
-        document.getElementById("puzzle5_botella3").style.top = balsa_y ;
+        document.getElementById("puzzle5_botella3").style.left = botella_b2_der_x ;
+        document.getElementById("puzzle5_botella3").style.top = botella_b_y ;
 
         balsa_b2 = true;
         botella3_b2 = true;
