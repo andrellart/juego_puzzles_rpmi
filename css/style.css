@@ -1762,6 +1762,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    right: 0%;
     
 }
 
@@ -1795,6 +1797,7 @@ body {
     align-items: center;
     font-family: wash;
     font-size: 25pt;
+    z-index: 50;
 }
 
 #pista5_btn{
@@ -1848,6 +1851,93 @@ body {
 #cerrar_pista_p5 img{
     height: 100%;
 }
+
+
+    /* PUZZLE DEL MUNDO 5 (VACAS Y BOTELLAS)*/
+#puzzle5_fondo{
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+
+#puzzle5_balsa{
+    z-index: 5;
+    position: absolute;
+    bottom: 8%;
+    left: 27%;
+    /*animation-name: puzzle5_balsa_ida; */
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#puzzle5_vaca1, #puzzle5_vaca2, #puzzle5_vaca3, #puzzle5_botella1 , #puzzle5_botella2, #puzzle5_botella3 {
+    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+}
+
+#puzzle5_vaca1{
+    width: 15%;
+    z-index: 10;
+    position: absolute;
+    top: 43%;
+    left: 20%;
+    cursor: pointer;
+}
+
+#puzzle5_vaca2{
+    width: 15%;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    cursor: pointer;
+}
+
+#puzzle5_vaca3{
+    width: 15%;
+    z-index: 10;
+    position: absolute;
+    top: 64%;
+    left: 15%;
+    cursor: pointer;
+}
+
+#puzzle5_botella1{
+    width: 5%;
+    z-index: 10;
+    position: absolute;
+    top: 87%;
+    left: 18%;
+    cursor: pointer;
+}
+
+#puzzle5_botella2{
+    width: 5%;
+    z-index: 10;
+    position: absolute;
+    top: 87%;
+    left: 10%;
+    cursor: pointer;
+}
+
+#puzzle5_botella3{
+    width: 5%;
+    z-index: 10;
+    position: absolute;
+    top: 87%;
+    left: 2%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
 
 
@@ -2374,5 +2464,29 @@ body {
 
     100% {
         transform: translateY(0%);
+    }
+}
+
+@keyframes puzzle5_balsa_ida {
+    0% {
+        left: 27%;
+    }
+    
+
+
+    100% {
+        left: 40%;
+    }
+}
+
+@keyframes puzzle5_balsa_vuelta {
+    0% {
+        left: 40%;
+    }
+    
+
+
+    100% {
+        left: 27%;
     }
 }

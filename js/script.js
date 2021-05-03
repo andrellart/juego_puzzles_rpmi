@@ -53,6 +53,74 @@ $("#zombie_lock").hide();
 $("#final").hide();
 
 
+
+    //INICIALIZACIÓN DEL PUZZLE 5
+
+let vaca1_b1 = false;
+let vaca1_b2 = false;
+let vaca1_y = "43%";
+let vaca1_izq_x = "20%";
+let vaca1_der_x = "68%";
+let vaca1_izq = true;
+let vaca1_der = false;
+
+let vaca2_b1 = false;
+let vaca2_b2 = false;
+let vaca2_y = "50%";
+let vaca2_izq_x = "1%";
+let vaca2_der_x = "85%";
+let vaca2_izq = true;
+let vaca2_der = false;
+
+let vaca3_b1 = false;
+let vaca3_b2 = false;
+let vaca3_y = "64%";
+let vaca3_izq_x = "15%";
+let vaca3_der_x = "73%";
+let vaca3_izq = true;
+let vaca3_der = false;
+
+
+let botella_y = "87%";
+
+let botella1_b1 = false;
+let botella1_b2 = false;
+let botella1_izq_x = "18%";
+let botella1_der_x = "94%";
+let botella1_izq = true;
+let botella1_der = false;
+
+let botella2_b1 = false;
+let botella2_b2 = false;
+let botella2_izq_x = "10%";
+let botella2_der_x = "86%";
+let botella2_izq = true;
+let botella2_der = false;
+
+let botella3_b1 = false;
+let botella3_b2 = false;
+let botella3_izq_x = "2%";
+let botella3_der_x = "78%";
+let botella3_izq = true;
+let botella3_der = false;
+
+
+let balsa_izq = true;
+let balsa_der = false;
+
+let balsa_b1 = false;
+let balsa_b2 = false;
+
+let balsa_y = "55%";
+
+let balsa_b1_izq_x = "30%";
+let balsa_b1_der_x = "42%";
+let balsa_b2_izq_x = "45%";
+let balsa_b2_der_x = "57%";
+
+
+
+
 //VARIABLES
 let puzzle1_pt = 0;
 let puzzle2_pt = 0;
@@ -137,6 +205,8 @@ $("#puzzle1_btn1").click(function(){
     
     
 });
+
+
 
     //CERRAR PUZZLE 1
 $("#cerrar_btn1").click(function(){
@@ -951,6 +1021,54 @@ $("#puzzle5_btn").click(function(){
     
     
         $("#mapa").css("-webkit-filter", "blur(0px)");
+
+
+         vaca1_b2 = false;
+         vaca1_b1 = false;
+         vaca1_izq = true;
+         vaca1_der = false;
+         vaca2_b1 = false;
+         vaca2_b2 = false;
+         vaca2_izq = true;
+         vaca2_der = false;
+         vaca3_b1 = false;
+         vaca3_b2 = false;
+         vaca3_izq = true;
+         vaca3_der = false;
+         botella1_b1 = false;
+         botella1_b2 = false;
+         botella1_izq = true;
+         botella1_der = false;
+         botella2_b1 = false;
+         botella2_b2 = false;
+         botella2_izq = true;
+         botella2_der = false;
+         botella3_b1 = false;
+         botella3_b2 = false;
+         botella3_izq = true;
+         botella3_der = false;
+         balsa_izq = true;
+         balsa_der = false;
+         balsa_b1 = false;
+         balsa_b2 = false;
+
+         document.getElementById("puzzle5_vaca1").style.left = "20%";
+         document.getElementById("puzzle5_vaca1").style.top = "43%" ;
+         document.getElementById("puzzle5_vaca2").style.left = "1%";
+         document.getElementById("puzzle5_vaca2").style.top = "50%" ;
+         document.getElementById("puzzle5_vaca3").style.left = "15%";
+         document.getElementById("puzzle5_vaca3").style.top = "64%" ;
+
+         document.getElementById("puzzle5_botella1").style.left = "18%";
+         document.getElementById("puzzle5_botella1").style.top = "87%" ;
+         document.getElementById("puzzle5_botella2").style.left = "10%";
+         document.getElementById("puzzle5_botella2").style.top = "87%" ;
+         document.getElementById("puzzle5_botella3").style.left = "2%";
+         document.getElementById("puzzle5_botella3").style.top = "87%" ;
+
+
+
+
     });
 
 
@@ -1073,58 +1191,333 @@ $("#puzzle5_p3").click(function(){
 
 
 
+/* PUZZLE 5, EL PUZZLE SEÑORES*/
+
+    //COLOCAR LA VACA 1 
+
+document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
+    if(balsa_izq == true && balsa_b1 == false && vaca1_izq == true){
+        document.getElementById("puzzle5_vaca1").style.left = balsa_b1_izq_x ;
+        document.getElementById("puzzle5_vaca1").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        vaca1_b1 = true;
+        vaca1_izq = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && vaca1_izq == true){
+        document.getElementById("puzzle5_vaca1").style.left = balsa_b2_izq_x ;
+        document.getElementById("puzzle5_vaca1").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        vaca1_b2 = true;
+        vaca1_izq = false;
+    }
+
+    if(balsa_der == true && balsa_b1 == false && vaca1_der == true){
+        document.getElementById("puzzle5_vaca1").style.left = balsa_b1_der_x ;
+        document.getElementById("puzzle5_vaca1").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        vaca1_b1 = true;
+        vaca1_der = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && vaca1_der == true){
+        document.getElementById("puzzle5_vaca1").style.left = balsa_b2_der_x ;
+        document.getElementById("puzzle5_vaca1").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        vaca1_b2 = true;
+        vaca1_der = false;
+    }
+
+    
+
+    
+})
+
+//COLOCAR LA VACA 2 
+
+document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
+    if(balsa_izq == true && balsa_b1 == false && vaca2_izq == true){
+        document.getElementById("puzzle5_vaca2").style.left = balsa_b1_izq_x ;
+        document.getElementById("puzzle5_vaca2").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        vaca2_b1 = true;
+        vaca2_izq = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && vaca2_izq == true){
+        document.getElementById("puzzle5_vaca2").style.left = balsa_b2_izq_x ;
+        document.getElementById("puzzle5_vaca2").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        vaca2_b2 = true;
+        vaca2_izq = false;
+    }
+
+    if(balsa_der == true && balsa_b1 == false && vaca2_der == true){
+        document.getElementById("puzzle5_vaca2").style.left = balsa_b1_der_x ;
+        document.getElementById("puzzle5_vaca2").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        vaca2_b1 = true;
+        vaca2_der = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && vaca2_der == true){
+        document.getElementById("puzzle5_vaca2").style.left = balsa_b2_der_x ;
+        document.getElementById("puzzle5_vaca2").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        vaca2_b2 = true;
+        vaca2_der = false;
+    }
+
+    
+})
+
+
+//COLOCAR LA VACA 3 
+
+document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
+    if(balsa_izq == true && balsa_b1 == false && vaca3_izq == true){
+        document.getElementById("puzzle5_vaca3").style.left = balsa_b1_izq_x ;
+        document.getElementById("puzzle5_vaca3").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        vaca3_b1 = true;
+        vaca3_izq = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && vaca3_izq == true){
+        document.getElementById("puzzle5_vaca3").style.left = balsa_b2_izq_x ;
+        document.getElementById("puzzle5_vaca3").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        vaca3_b2 = true;
+        vaca3_izq = false;
+    }
+
+    if(balsa_der == true && balsa_b1 == false && vaca3_der == true){
+        document.getElementById("puzzle5_vaca3").style.left = balsa_b1_der_x ;
+        document.getElementById("puzzle5_vaca3").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        vaca3_b1 = true;
+        vaca3_der = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && vaca3_der == true){
+        document.getElementById("puzzle5_vaca3").style.left = balsa_b2_der_x ;
+        document.getElementById("puzzle5_vaca3").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        vaca3_b2 = true;
+        vaca3_der = false;
+    }
+
+    
+})
+
+
+//COLOCAR LA BOTELLA 1 
+
+document.getElementById("puzzle5_botella1").addEventListener("click", function(){
+    if(balsa_izq == true && balsa_b1 == false && botella1_izq == true){
+        document.getElementById("puzzle5_botella1").style.left = balsa_b1_izq_x ;
+        document.getElementById("puzzle5_botella1").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        botella1_b1 = true;
+        botella1_izq = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && botella1_izq == true){
+        document.getElementById("puzzle5_botella1").style.left = balsa_b2_izq_x ;
+        document.getElementById("puzzle5_botella1").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        botella1_b2 = true;
+        botella1_izq = false;
+    }
+
+    if(balsa_der == true && balsa_b1 == false && botella1_der == true){
+        document.getElementById("puzzle5_botella1").style.left = balsa_b1_der_x ;
+        document.getElementById("puzzle5_botella1").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        botella1_b1 = true;
+        botella1_der = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && botella1_der == true){
+        document.getElementById("puzzle5_botella1").style.left = balsa_b2_der_x ;
+        document.getElementById("puzzle5_botella1").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        botella1_b2 = true;
+        botella1_der = false;
+    }
+
+})
+
+
+//COLOCAR LA BOTELLA 2 
+
+document.getElementById("puzzle5_botella2").addEventListener("click", function(){
+    if(balsa_izq == true && balsa_b1 == false && botella1_izq == true){
+        document.getElementById("puzzle5_botella2").style.left = balsa_b1_izq_x ;
+        document.getElementById("puzzle5_botella2").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        botella2_b1 = true;
+        botella2_izq = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && botella2_izq == true){
+        document.getElementById("puzzle5_botella2").style.left = balsa_b2_izq_x ;
+        document.getElementById("puzzle5_botella2").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        botella2_b2 = true;
+        botella2_izq = false;
+    }
+
+    if(balsa_der == true && balsa_b1 == false && botella2_der == true){
+        document.getElementById("puzzle5_botella2").style.left = balsa_b1_der_x ;
+        document.getElementById("puzzle5_botella2").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        botella2_b1 = true;
+        botella2_der = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && botella2_der == true){
+        document.getElementById("puzzle5_botella2").style.left = balsa_b2_der_x ;
+        document.getElementById("puzzle5_botella2").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        botella2_b2 = true;
+        botella2_der = false;
+    }
+
+})
+
+
+//COLOCAR LA BOTELLA 3 
+
+document.getElementById("puzzle5_botella3").addEventListener("click", function(){
+    if(balsa_izq == true && balsa_b1 == false && botella1_izq == true){
+        document.getElementById("puzzle5_botella3").style.left = balsa_b1_izq_x ;
+        document.getElementById("puzzle5_botella3").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        botella3_b1 = true;
+        botella3_izq = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && botella3_izq == true){
+        document.getElementById("puzzle5_botella3").style.left = balsa_b2_izq_x ;
+        document.getElementById("puzzle5_botella3").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        botella3_b2 = true;
+        botella3_izq = false;
+    }
+
+    if(balsa_der == true && balsa_b1 == false && botella3_der == true){
+        document.getElementById("puzzle5_botella3").style.left = balsa_b1_der_x ;
+        document.getElementById("puzzle5_botella3").style.top = balsa_y ;
+
+        //Ahora el hueco 1 de la balsa 1 está ocupado
+
+        balsa_b1 = true;
+        botella3_b1 = true;
+        botella3_der = false;
+
+    } else if (balsa_izq == true && balsa_b2 == false && botella3_der == true){
+        document.getElementById("puzzle5_botella3").style.left = balsa_b2_der_x ;
+        document.getElementById("puzzle5_botella3").style.top = balsa_y ;
+
+        balsa_b2 = true;
+        botella3_b2 = true;
+        botella3_der = false;
+    }
+
+})
+
+
 
 
     
-    
-        //COMPROBAR PUZZLE 5 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
-    $("#puzzle5_btn2").click(function(){
-    
-        $("#puzzle5_acierto").show();
-    
-        $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
-        $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
-    });
-    
-    /*
-    //COMPROBAR PUZZLE 5 PROVISIONAL (SIEMPRE FALLA) --> ACTIVAR CUANDO CORRESPONDA
-    $("#puzzle5_btn2").click(function(){
-    
-        $("#puzzle5_error").show();
-    
-    
-        $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
-        $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
-    });
-    */
-    
-        //ACERTAR PUZZLE 5
-    $("#puzzle5_btn3").click(function(){
-    
-        $("#puzzle5").hide();
-        $("#help").show();
-    
-        $("#western_closed").show();
-        $("#western_closed").css("-webkit-filter", "grayscale(1)");
-        $("#zombie_closed").hide();
-        $("#zombie_lock").hide();
 
-        $("#puzzle5_btn").css("animation-name", "none");
-        $("#puzzle6_btn").css("animation-name", "mundos");
-        
-        
-        $("#mapa").css("-webkit-filter", "blur(0px)");
-    });
+
+
+
+/*
+
+    //COMPROBAR PUZZLE 5 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
+$("#puzzle5_btn2").click(function(){
+
+    $("#puzzle5_acierto").show();
+
+    $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+    $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+});
+*/
+/*
+//COMPROBAR PUZZLE 5 PROVISIONAL (SIEMPRE FALLA) --> ACTIVAR CUANDO CORRESPONDA
+$("#puzzle5_btn2").click(function(){
+
+    $("#puzzle5_error").show();
+
+
+    $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+    $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+});
+*/
+
+    //ACERTAR PUZZLE 5
+$("#puzzle5_btn3").click(function(){
+
+    $("#puzzle5").hide();
+    $("#help").show();
+
+    $("#western_closed").show();
+    $("#western_closed").css("-webkit-filter", "grayscale(1)");
+    $("#zombie_closed").hide();
+    $("#zombie_lock").hide();
+
+    $("#puzzle5_btn").css("animation-name", "none");
+    $("#puzzle6_btn").css("animation-name", "mundos");
     
+    
+    $("#mapa").css("-webkit-filter", "blur(0px)");
+});
+
     //FALLAR PUZZLE 5
-    $("#puzzle5_btn4").click(function(){
+$("#puzzle5_btn4").click(function(){
+
+    $("#puzzle5_error").hide();
     
-        $("#puzzle5_error").hide();
-        
-        $("#puzzle5_cont").css("-webkit-filter", "blur(0px)");
-        $("#cerrar_btn5").css("-webkit-filter", "blur(0px)");
-    });
-    
+    $("#puzzle5_cont").css("-webkit-filter", "blur(0px)");
+    $("#cerrar_btn5").css("-webkit-filter", "blur(0px)");
+});
+
 
 //BOTON PUZZLE 6
 $("#puzzle6_btn").click(function(){
@@ -1353,7 +1746,6 @@ $("#final_btn").click(function(){
     
     location.reload();
 });
-
 
 
 
