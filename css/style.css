@@ -1760,6 +1760,11 @@ body {
     
 }
 
+#puzzle5_txt p{
+    position: relative;
+    bottom: 5%;
+}
+
 #puzzle5_puzzle{
     
     height: 100%;
@@ -1982,7 +1987,7 @@ body {
 #puzzle5_acierto_txt{
     
     position: absolute;
-    top: 15%;
+    top: 25%;
     height: 40%;
     width: 50%;
     display: flex;
@@ -1998,6 +2003,11 @@ body {
 #puzzle5_acierto_txt h1{
     font-family: western1;
     font-size: 40pt;
+    
+}
+
+#puzzle5_acierto_txt p, #puzzle5_error_txt p{
+    width: 70%;
     
 }
 
@@ -2036,7 +2046,7 @@ body {
 #puzzle5_error_txt{
     
     position: absolute;
-    top: 15%;
+    top: 25%;
     height: 40%;
     width: 50%;
     display: flex;
@@ -2073,11 +2083,21 @@ body {
     z-index: 10;
 }
 
-#fondo_error_puzzle5, #fondo_acierto_puzzle5, #fondo_pistas_puzzle5{
+#fondo_pistas_puzzle5{
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 5;
+   
+}
+
+#fondo_error_puzzle5, #fondo_acierto_puzzle5{
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    z-index: 5;
+    
 }
     
 
