@@ -1663,13 +1663,18 @@ body {
     width: 95%;
     top: 2.5%;
     left: 2.5%;
-    background-color: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
     
+}
+
+#fondo_papel_puzzle5{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
 
 #cerrar_btn5{
@@ -1710,7 +1715,7 @@ body {
 }
 
 #puzzle5_btn1{
-    background-color: seagreen;
+    background-color:sienna;
     height: 6%;
     width: 12%;
     position: absolute;
@@ -1756,7 +1761,7 @@ body {
 }
 
 #puzzle5_puzzle{
-    background-color: red;
+    
     height: 100%;
     width: 80%;
     display: flex;
@@ -1769,7 +1774,7 @@ body {
 }
 
 #puzzle5_btn2{
-    background-color: seagreen;
+    background-color:sienna;
     height: 6%;
     width: 12%;
     position: absolute;
@@ -1821,7 +1826,7 @@ body {
 
 
 #puzzle5_pt{
-    background-color: blueviolet;
+    
     position: absolute;
     top: 15%;
     height: 40%;
@@ -1845,11 +1850,16 @@ body {
     height: 15%;
     width: 15%;
     cursor: pointer;
-    z-index: 5;
+    z-index: 10;
 }
 
 #cerrar_pista_p5 img{
     height: 100%;
+}
+
+#puzzle5_pt_txt, #puzzle5_acierto_txt, #puzzle5_error_txt{
+    z-index: 10;
+    width: 75%;
 }
 
 
@@ -1868,7 +1878,7 @@ body {
    top: 65%;
     left: 27%;
     /*animation-name: puzzle5_balsa_ida; */
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -1877,6 +1887,20 @@ body {
     z-index: 10;
     position: absolute;
     cursor: pointer;
+}
+
+#puzzle5_vaca1, #puzzle5_vaca2, #puzzle5_vaca3 {
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+#puzzle5_botella1 , #puzzle5_botella2, #puzzle5_botella3 {
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
 }
 
 #puzzle5_vaca1{
@@ -1956,7 +1980,7 @@ body {
 }
 
 #puzzle5_acierto_txt{
-    background-color: blueviolet;
+    
     position: absolute;
     top: 15%;
     height: 40%;
@@ -1965,20 +1989,20 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: western2;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle5_acierto_txt h1{
-    font-family: wash;
+    font-family: western1;
     font-size: 40pt;
     
 }
 
 #puzzle5_btn3{
-    background-color: seagreen;
+    background-color:sienna;
     height: 6%;
     width: 12%;
     position: absolute;
@@ -1990,8 +2014,9 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: western1;
     font-size: 40pt;
+    z-index: 10;
 }
   
 
@@ -2009,7 +2034,7 @@ body {
 }
 
 #puzzle5_error_txt{
-    background-color: blueviolet;
+    
     position: absolute;
     top: 15%;
     height: 40%;
@@ -2018,20 +2043,20 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: western2;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle5_error_txt h1{
-    font-family: wash;
+    font-family: western1;
     font-size: 40pt;
     
 }
 
 #puzzle5_btn4{
-    background-color: seagreen;
+    background-color:sienna;
     height: 6%;
     width: 12%;
     position: absolute;
@@ -2043,8 +2068,16 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: western1;
     font-size: 40pt;
+    z-index: 10;
+}
+
+#fondo_error_puzzle5, #fondo_acierto_puzzle5, #fondo_pistas_puzzle5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
 }
     
 
@@ -2468,6 +2501,9 @@ body {
     }
 }
 
+
+/*ANIMACIONES DEL PUZZLE 5*/
+
 @keyframes puzzle5_balsa_ida {
     0% {
         left: 27%;
@@ -2491,3 +2527,101 @@ body {
         left: 27%;
     }
 }
+
+@keyframes puzzle5_vacas_b1_ida{
+    0% {
+        left: 27%;
+    }
+    
+
+
+    100% {
+        left: 48%;
+    }
+}
+
+@keyframes puzzle5_vacas_b1_vuelta{
+    0% {
+        left: 48%;
+    }
+    
+
+
+    100% {
+        left: 27%;
+    }
+}
+
+@keyframes puzzle5_vacas_b2_ida{
+    0% {
+        left: 40%;
+    }
+    
+
+
+    100% {
+        left: 61%;
+    }
+}
+
+@keyframes puzzle5_vacas_b2_vuelta{
+    0% {
+        left: 61%;
+    }
+    
+
+
+    100% {
+        left: 40%;
+    }
+}
+
+
+@keyframes puzzle5_botellas_b1_ida{
+    0% {
+        left: 32%;
+    }
+    
+
+
+    100% {
+        left: 53%;
+    }
+}
+
+@keyframes puzzle5_botellas_b1_vuelta{
+    0% {
+        left: 53%;
+    }
+    
+
+
+    100% {
+        left: 32%;
+    }
+}
+
+@keyframes puzzle5_botellas_b2_ida{
+    0% {
+        left: 42%;
+    }
+    
+
+
+    100% {
+        left: 63%;
+    }
+}
+
+@keyframes puzzle5_botellas_b2_vuelta{
+    0% {
+        left: 63%;
+    }
+    
+
+
+    100% {
+        left: 42%;
+    }
+}
+
