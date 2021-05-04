@@ -54,6 +54,23 @@ $("#final").hide();
 
 
 
+//VARIABLES
+let puzzle1_pt = 0;
+let puzzle2_pt = 0;
+let puzzle3_pt = 0;
+let puzzle4_pt = 0;
+let puzzle5_pt = 0;
+let puzzle6_pt = 0;
+
+let puntos = 18;
+
+let musica_puzzle5 = document.getElementById("musica_puzzle5");
+musica_puzzle5.loop = true;
+
+
+
+
+
     //INICIALIZACIÓN DEL PUZZLE 5
 
 let vaca1 = false;
@@ -139,17 +156,6 @@ let n_vacas_der = 0;
 let n_botellas_izq = 3;
 let n_botellas_der = 0;
 
-
-
-//VARIABLES
-let puzzle1_pt = 0;
-let puzzle2_pt = 0;
-let puzzle3_pt = 0;
-let puzzle4_pt = 0;
-let puzzle5_pt = 0;
-let puzzle6_pt = 0;
-
-let puntos = 18;
 
 
 
@@ -387,6 +393,7 @@ $("#puzzle1_btn3").click(function(){
     $("#pirata_closed").show();
     $("#narco_closed").hide();
     $("#narco_lock").hide();
+    $("#puzzle1_btn").css("-webkit-filter", "grayscale(1)");
     
     $("#mapa").css("-webkit-filter", "blur(0px)");
     $("#puzzle1_btn").css("animation-name", "none");
@@ -588,6 +595,7 @@ $("#puzzle2_p3").click(function(){
         $("#bosque_closed").hide();
         $("#bosque_lock").hide();
         $("#narco_closed").css("-webkit-filter", "grayscale(1)");
+        $("#puzzle2_btn").css("-webkit-filter", "grayscale(1)");
 
         $("#puzzle2_btn").css("animation-name", "none");
         $("#puzzle3_btn").css("animation-name", "mundos");
@@ -789,6 +797,7 @@ $("#puzzle3_btn3").click(function(){
     $("#bosque_closed").css("-webkit-filter", "grayscale(1)");
     $("#alien_closed").hide();
     $("#alien_lock").hide();
+    $("#puzzle3_btn").css("-webkit-filter", "grayscale(1)");
 
     $("#puzzle3_btn").css("animation-name", "none");
     $("#puzzle4_btn").css("animation-name", "mundos");
@@ -992,6 +1001,7 @@ $("#puzzle4_p3").click(function(){
         $("#alien_closed").css("-webkit-filter", "grayscale(1)");
         $("#western_closed").hide();
         $("#western_lock").hide();
+        $("#puzzle4_btn").css("-webkit-filter", "grayscale(1)");
 
         $("#puzzle4_btn").css("animation-name", "none");
         $("#puzzle5_btn").css("animation-name", "mundos");
@@ -1018,6 +1028,8 @@ $("#puzzle5_btn").click(function(){
     $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
+    musica_puzzle5.currentTime = 0
+    musica_puzzle5.play();
 });
 
 
@@ -1038,6 +1050,8 @@ $("#puzzle5_btn").click(function(){
         $("#help").show();
         $("#puzzle5_cont").hide();
         $("#puzzle5_inicio").show();
+
+        musica_puzzle5.pause();
     
     
         $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -1387,6 +1401,7 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
         $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
         $("#fondo_papel_puzzle5").css("-webkit-filter", "blur(10px)");
+        
 
     }
 
@@ -2472,9 +2487,12 @@ $("#puzzle5_btn3").click(function(){
     $("#western_closed").css("-webkit-filter", "grayscale(1)");
     $("#zombie_closed").hide();
     $("#zombie_lock").hide();
+    $("#puzzle5_btn").css("-webkit-filter", "grayscale(1)");
 
     $("#puzzle5_btn").css("animation-name", "none");
     $("#puzzle6_btn").css("animation-name", "mundos");
+
+    musica_puzzle5.pause();
     
     
     $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -2728,6 +2746,7 @@ $("#puzzle6_p3").click(function(){
     
         $("#zombie_closed").show();
         $("#zombie_closed").css("-webkit-filter", "grayscale(1)");
+        $("#puzzle6_btn").css("-webkit-filter", "grayscale(1)");
 
         $("#puzzle6_btn").css("animation-name", "none");
         
