@@ -112,7 +112,6 @@ let balsa_b1 = false;
 let balsa_b2 = false;
 
 
-
 let vaca_b_y = "58%";
 
 let vaca_b1_izq_x = "27%";
@@ -1246,7 +1245,7 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
     
 
     
-})
+});
 
 //COLOCAR LA VACA 2 
 
@@ -1290,7 +1289,7 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
     }
 
     
-})
+});
 
 
 //COLOCAR LA VACA 3 
@@ -1335,7 +1334,7 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
     }
 
     
-})
+});
 
 
 //COLOCAR LA BOTELLA 1 
@@ -1379,7 +1378,7 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
         botella1_der = false;
     }
 
-})
+});
 
 
 //COLOCAR LA BOTELLA 2 
@@ -1423,7 +1422,7 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
         botella2_der = false;
     }
 
-})
+});
 
 
 //COLOCAR LA BOTELLA 3 
@@ -1467,7 +1466,23 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
         botella3_der = false;
     }
 
-})
+});
+
+    //BOTÓN MOVER PARA MOVER LA MARCA
+
+document.getElementById("puzzle5_btn2").addEventListener("click", function(){
+  
+    if (balsa_izq == true){
+        
+        if(vaca1_b1 == true){
+            document.getElementById("puzzle5_vaca1").style.animationName("")
+            
+        }
+    }
+
+    
+
+});
 
 
 
