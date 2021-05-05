@@ -1052,7 +1052,8 @@ $("#puzzle5_btn").click(function(){
         $("#puzzle5_inicio").show();
 
         musica_puzzle5.pause();
-    
+        
+        //Aquí reinicializo todas las variables
     
         $("#mapa").css("-webkit-filter", "blur(0px)");
 
@@ -1122,6 +1123,8 @@ $("#pista5_btn").click(function(){
 
 
     switch(puzzle5_pt){
+
+        //Coger la primera pista
         case 0:
             $("#puzzle5_pt").show();
 
@@ -1138,6 +1141,8 @@ $("#pista5_btn").click(function(){
             puntos--;
         break;
 
+        //Coger la segunda pista
+
         case 1:
             $("#puzzle5_pt").show();
 
@@ -1153,6 +1158,8 @@ $("#pista5_btn").click(function(){
             puzzle5_pt++;
             puntos--;
         break;
+
+        //Coger la tercera pista
 
         case 2:
             $("#puzzle5_pt").show();
@@ -1179,6 +1186,8 @@ $("#pista5_btn").click(function(){
 });
 
     //VOLVER A ABRIR LAS PISTAS COGIDAS DEL PUZZLE 5
+
+    //Volver a abrir pista 1
 $("#puzzle5_p1").click(function(){
 
     if(puzzle5_pt > 0){
@@ -1194,6 +1203,8 @@ $("#puzzle5_p1").click(function(){
     }
 
 });
+
+    //Volver a abrir pista 2
 
 
 $("#puzzle5_p2").click(function(){
@@ -1211,6 +1222,8 @@ $("#puzzle5_p2").click(function(){
     }
 
 });
+
+    //Volver a abrir pista 3
 
 $("#puzzle5_p3").click(function(){
 
@@ -1242,11 +1255,12 @@ $("#puzzle5_p3").click(function(){
 
 
 
-/* PUZZLE 5, EL PUZZLE MI GENTE*/
+/* PUZZLE 5, EL PUZZLE PUZZLE PUZZLECÍSMO*/
 
-//COLOCAR LA VACA 1 
+//COLOCAR LA VACA 1
 
 document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
+
 
     n_vacas_izq = 0;
     n_vacas_der = 0;
@@ -1255,6 +1269,8 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
 
     document.getElementById("puzzle5_vaca1").style.animationName = "none";
 
+    
+    //Colocar vaca1 en la balsa
     if (vaca1 == false){
 
     
@@ -1262,7 +1278,6 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
             document.getElementById("puzzle5_vaca1").style.left = vaca_b1_izq_x ;
             document.getElementById("puzzle5_vaca1").style.top = vaca_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             vaca1_b1 = true;
@@ -1298,6 +1313,7 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
 
         vaca1 = true;
 
+        //Sacar a vaca1 de la balsa
     } else{
 
     
@@ -1305,7 +1321,6 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
             document.getElementById("puzzle5_vaca1").style.left = vaca1_izq_x ;
             document.getElementById("puzzle5_vaca1").style.top = vaca1_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = false;
             vaca1_b1 = false;
@@ -1324,7 +1339,6 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
             document.getElementById("puzzle5_vaca1").style.left = vaca1_der_x ;
             document.getElementById("puzzle5_vaca1").style.top = vaca1_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = false;
             vaca1_b1 = false;
@@ -1344,7 +1358,7 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
     }
 
 
-    
+    //Contabilizador del número de vacas y botellas que hay en cada orilla
 
     if (vaca1_izq == true){
         n_vacas_izq++;
@@ -1395,6 +1409,8 @@ document.getElementById("puzzle5_vaca1").addEventListener("click", function(){
     if (botella3_der == true){
         n_botellas_der++;
     }
+
+    //Comprobar si has ganado el puzzle
 
     if (n_botellas_der == 3 && n_vacas_der == 3){
 
@@ -1422,6 +1438,8 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
 
     document.getElementById("puzzle5_vaca2").style.animationName = "none";
 
+    //Colocar la vaca2 en la balsa
+
     if (vaca2 == false){
 
     
@@ -1429,7 +1447,6 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
             document.getElementById("puzzle5_vaca2").style.left = vaca_b1_izq_x ;
             document.getElementById("puzzle5_vaca2").style.top = vaca_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             vaca2_b1 = true;
@@ -1448,7 +1465,6 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
             document.getElementById("puzzle5_vaca2").style.left = vaca_b1_der_x ;
             document.getElementById("puzzle5_vaca2").style.top = vaca_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             vaca2_b1 = true;
@@ -1465,14 +1481,14 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
 
         vaca2 = true;
 
+        //Sacar a la vaca2 de la balsa
+
     } else{
 
     
         if(balsa_izq == true && balsa_b1 == true && vaca2_izq == false&& vaca2_b1==true){
             document.getElementById("puzzle5_vaca2").style.left = vaca2_izq_x ;
             document.getElementById("puzzle5_vaca2").style.top = vaca2_y ;
-
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = false;
             vaca2_b1 = false;
@@ -1490,8 +1506,6 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
         if(balsa_der == true && balsa_b1 == true && vaca2_der == false&& vaca2_b1==true){
             document.getElementById("puzzle5_vaca2").style.left = vaca2_der_x ;
             document.getElementById("puzzle5_vaca2").style.top = vaca2_y ;
-
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = false;
             vaca2_b1 = false;
@@ -1511,6 +1525,7 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
     }
 
     
+    //Contabilizador del número de vacas y botellas que hay en cada orilla
 
     if (vaca1_izq == true){
         n_vacas_izq++;
@@ -1562,6 +1577,8 @@ document.getElementById("puzzle5_vaca2").addEventListener("click", function(){
         n_botellas_der++;
     }
 
+    //Comprobar si has ganado el puzzle
+
     if (n_botellas_der == 3 && n_vacas_der == 3){
 
         $("#puzzle5_acierto").show();
@@ -1588,6 +1605,8 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
 
     document.getElementById("puzzle5_vaca3").style.animationName = "none";
 
+    //Colocar vaca3 en la balsa
+
     if (vaca3 == false){
 
     
@@ -1595,7 +1614,6 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
             document.getElementById("puzzle5_vaca3").style.left = vaca_b1_izq_x ;
             document.getElementById("puzzle5_vaca3").style.top = vaca_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             vaca3_b1 = true;
@@ -1614,7 +1632,6 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
             document.getElementById("puzzle5_vaca3").style.left = vaca_b1_der_x ;
             document.getElementById("puzzle5_vaca3").style.top = vaca_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             vaca3_b1 = true;
@@ -1630,6 +1647,9 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
         }
 
         vaca3 = true;
+
+
+        //Sacar vaca1 de la balsa
 
     } else{
 
@@ -1677,6 +1697,7 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
     }
 
     
+    //Contabilizador del número de vacas y botellas que hay en cada orilla
 
     if (vaca1_izq == true){
         n_vacas_izq++;
@@ -1727,6 +1748,8 @@ document.getElementById("puzzle5_vaca3").addEventListener("click", function(){
     if (botella3_der == true){
         n_botellas_der++;
     }
+
+    //Comprobar si has ganado el puzzle
 
     if (n_botellas_der == 3 && n_vacas_der == 3){
 
@@ -1754,6 +1777,8 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
 
     document.getElementById("puzzle5_botella1").style.animationName = "none";
 
+    //Colocar botella1 en la balsa
+
     if (botella1 == false){
 
     
@@ -1761,7 +1786,6 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
             document.getElementById("puzzle5_botella1").style.left = botella_b1_izq_x ;
             document.getElementById("puzzle5_botella1").style.top = botella_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             botella1_b1 = true;
@@ -1780,7 +1804,6 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
             document.getElementById("puzzle5_botella1").style.left = botella_b1_der_x ;
             document.getElementById("puzzle5_botella1").style.top = botella_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             botella1_b1 = true;
@@ -1797,6 +1820,8 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
 
         botella1 = true;
 
+        //Sacar botella1 de la balsa
+
     } else{
 
     
@@ -1804,7 +1829,6 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
             document.getElementById("puzzle5_botella1").style.left = botella1_izq_x ;
             document.getElementById("puzzle5_botella1").style.top = botella_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = false;
             botella1_b1 = false;
@@ -1823,8 +1847,6 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
             document.getElementById("puzzle5_botella1").style.left = botella1_der_x ;
             document.getElementById("puzzle5_botella1").style.top = botella_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
-
             balsa_b1 = false;
             botella1_b1 = false;
             botella1_der = true;
@@ -1842,7 +1864,7 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
 
     }
 
-    
+    //Contabilizador del número de vacas y botellas que hay en cada orilla
 
     if (vaca1_izq == true){
         n_vacas_izq++;
@@ -1893,6 +1915,9 @@ document.getElementById("puzzle5_botella1").addEventListener("click", function()
     if (botella3_der == true){
         n_botellas_der++;
     }
+
+
+    //Comprobar si has ganado el puzzle
 
     if (n_botellas_der == 3 && n_vacas_der == 3){
 
@@ -1920,6 +1945,8 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
 
     document.getElementById("puzzle5_botella2").style.animationName = "none";
 
+    //Colocar botella2 en la balsa
+
     if (botella2 == false){
 
     
@@ -1927,7 +1954,6 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
             document.getElementById("puzzle5_botella2").style.left = botella_b1_izq_x ;
             document.getElementById("puzzle5_botella2").style.top = botella_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             botella2_b1 = true;
@@ -1946,7 +1972,6 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
             document.getElementById("puzzle5_botella2").style.left = botella_b1_der_x ;
             document.getElementById("puzzle5_botella2").style.top = botella_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             botella2_b1 = true;
@@ -1963,6 +1988,8 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
 
         botella2 = true;
 
+        //Sacar botella2 de la balsa
+
     } else{
 
     
@@ -1970,7 +1997,6 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
             document.getElementById("puzzle5_botella2").style.left = botella2_izq_x ;
             document.getElementById("puzzle5_botella2").style.top = botella_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = false;
             botella2_b1 = false;
@@ -1989,7 +2015,6 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
             document.getElementById("puzzle5_botella2").style.left = botella2_der_x ;
             document.getElementById("puzzle5_botella2").style.top = botella_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = false;
             botella2_b1 = false;
@@ -2008,7 +2033,8 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
 
     }
 
-    
+
+    //Contabilizador del número de vacas y botellas que hay en cada orilla
 
     if (vaca1_izq == true){
         n_vacas_izq++;
@@ -2059,6 +2085,9 @@ document.getElementById("puzzle5_botella2").addEventListener("click", function()
     if (botella3_der == true){
         n_botellas_der++;
     }
+
+
+    //Comprobar si has ganado el puzzle
 
     if (n_botellas_der == 3 && n_vacas_der == 3){
 
@@ -2086,6 +2115,8 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
 
     document.getElementById("puzzle5_botella3").style.animationName = "none";
 
+    //Colocar botella3 en la balsa
+
     if (botella3 == false){
 
     
@@ -2093,7 +2124,6 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
             document.getElementById("puzzle5_botella3").style.left = botella_b1_izq_x ;
             document.getElementById("puzzle5_botella3").style.top = botella_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             botella3_b1 = true;
@@ -2112,7 +2142,6 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
             document.getElementById("puzzle5_botella3").style.left = botella_b1_der_x ;
             document.getElementById("puzzle5_botella3").style.top = botella_b_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = true;
             botella3_b1 = true;
@@ -2129,6 +2158,8 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
 
         botella3 = true;
 
+        //Sacar botella3 de la balsa
+
     } else{
 
     
@@ -2136,7 +2167,6 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
             document.getElementById("puzzle5_botella3").style.left = botella3_izq_x ;
             document.getElementById("puzzle5_botella3").style.top = botella_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = false;
             botella3_b1 = false;
@@ -2155,7 +2185,6 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
             document.getElementById("puzzle5_botella3").style.left = botella3_der_x ;
             document.getElementById("puzzle5_botella3").style.top = botella_y ;
 
-            //Ahora el hueco 1 de la balsa 1 está ocupado
 
             balsa_b1 = false;
             botella3_b1 = false;
@@ -2174,7 +2203,7 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
 
     }
 
-    
+    //Contabilizador del número de vacas y botellas que hay en cada orilla
 
     if (vaca1_izq == true){
         n_vacas_izq++;
@@ -2227,6 +2256,9 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
     }
 
 
+    //Comprobar si has ganado el puzzle
+
+
     if (n_botellas_der == 3 && n_vacas_der == 3){
 
         $("#puzzle5_acierto").show();
@@ -2247,12 +2279,16 @@ document.getElementById("puzzle5_botella3").addEventListener("click", function()
 
 document.getElementById("puzzle5_btn2").addEventListener("click", function(){
 
+    //Si el hueco 1 y/o el hueco 2 de la balsa está ocupado, entonces la barca se moverá
+
     if (balsa_b1 == true || balsa_b2 == true){
 
         n_vacas_izq = 0;
         n_vacas_der = 0;
         n_botellas_izq = 0;
         n_botellas_der = 0;
+
+        //Si la balsa está a la izquierda
 
         
         if (balsa_izq == true){
@@ -2314,7 +2350,7 @@ document.getElementById("puzzle5_btn2").addEventListener("click", function(){
         }
 
 
-
+        //Si la balsa está a la derecha
 
         if (balsa_der == true){
 
@@ -2375,7 +2411,7 @@ document.getElementById("puzzle5_btn2").addEventListener("click", function(){
         }
 
 
-
+        //Registrar la posición de la balsa
 
         if (balsa_izq == true){
             balsa_izq = false;
@@ -2386,6 +2422,7 @@ document.getElementById("puzzle5_btn2").addEventListener("click", function(){
         }
 
 
+        //Contabilizador del número de vacas y botellas que hay en cada orilla
 
 
         if (vaca1_izq == true){
@@ -2439,7 +2476,7 @@ document.getElementById("puzzle5_btn2").addEventListener("click", function(){
         }
 
 
-
+        //Comprobar que has fallado el puzzle
 
         if (n_botellas_izq > 0){
 
@@ -2509,6 +2546,8 @@ $("#puzzle5_btn4").click(function(){
     $("#puzzle5_cont").css("-webkit-filter", "blur(0px)");
     $("#cerrar_btn5").css("-webkit-filter", "blur(0px)");
     $("#fondo_papel_puzzle5").css("-webkit-filter", "blur(0px)");
+
+    //Reinilización de las variables necesarias para el puzzle5
 
     vaca1_b2 = false;
     vaca1_b1 = false;
