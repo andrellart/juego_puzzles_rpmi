@@ -162,7 +162,7 @@ $("#pista1_btn").click(function(){
             $("#puzzle1_p1").css("background-color", "chocolate");
             $("#puzzle1_p1").css("cursor", "pointer");
 
-            $("#puzzle1_pt_txt").html('Esta es la PRIMERA pista del puzzle 1');
+            $("#puzzle1_pt_txt").html('primera pista');
 
             puzzle1_pt++;
             puntos--;
@@ -177,7 +177,7 @@ $("#pista1_btn").click(function(){
             $("#puzzle1_p2").css("background-color", "chocolate");
             $("#puzzle1_p2").css("cursor", "pointer");
 
-            $("#puzzle1_pt_txt").html('Esta es la SEGUNDA pista del puzzle 1');
+            $("#puzzle1_pt_txt").html('segunda pista');
 
             puzzle1_pt++;
             puntos--;
