@@ -1052,6 +1052,16 @@ body {
 
 /*PUZZLE 3*/
 
+@font-face{
+    font-family: animal;
+    src: url(../fonts/CartooNature.ttf);
+}
+
+@font-face{
+    font-family: animalnormal;
+    src: url(../fonts/PinkChicken-Regular.ttf);
+}
+
 #puzzle3{
     position: absolute;
     height: 95%;
@@ -1066,16 +1076,109 @@ body {
     border-radius: 10px;
     
 }
+/* RAMItas */
 
-#lolo{
-    height: 30%;
-    width: 15%;
+#lolo1_1{
+    height: 15%;
+    width: 7%;
     position: absolute;
-    top: 5%;
-    left: 10%;
+    top: 15%;
+    left: 35%;
     z-index: 800;
     cursor: pointer;
 }
+
+#lolo1_2{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_3{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_4{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_5{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_6{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_7{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_8{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_9{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_10{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+/* RAMItas */
 
 #cerrar_btn3{
     position: absolute;
@@ -1107,7 +1210,7 @@ body {
 }
 
 #puzzle3_inicio h1{
-    font-family: wash;
+    font-family: animal;
     font-size: 100pt;
     position: absolute;
     top: 15%;
@@ -1125,7 +1228,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: animal;
     font-size: 40pt;
 }
 
@@ -1139,13 +1242,13 @@ body {
     height: 90%;
     width: 98%;
     display: flex;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: animalnormal;
+    font-size: 20pt;
     
 }
 
 #puzzle3_cont h1{
-    font-family: wash;
+    font-family: animal;
     font-size: 40pt;
 }
 
@@ -1183,16 +1286,13 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
 }
 
 /*PISTAS DEL PUZZLE 3*/
 
-#pesesito{
-    width: 50%;
-    left: 20%;
-}
+
 #puzzle3_pistas{
     width: 20%;
     height: 5%;
@@ -1201,7 +1301,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 25pt;
 }
 
@@ -1237,7 +1337,7 @@ body {
     justify-content: center;
     padding: 1%;
     border-radius: 10px;
-    font-family: shine;
+    font-family: animalnormal;
     font-size: 28.5pt;
     text-align: center;
     
@@ -1282,14 +1382,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: animalnormal;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle3_acierto_txt h1{
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
     
 }
@@ -1307,7 +1407,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
 }
   
@@ -1335,14 +1435,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: animalnormal;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle3_error_txt h1{
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
     
 }
@@ -1360,7 +1460,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
 }
     

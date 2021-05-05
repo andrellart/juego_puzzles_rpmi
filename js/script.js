@@ -64,9 +64,21 @@ let puzzle6_pt = 0;
 
 let puntos = 18;
 
+//Puzle 3 
+/* Ramitas */
 
-let angulololo = 0;
+let angulo1_1 = 0;
+let angulo1_2 = 0;
+let angulo1_3 = 0;
+let angulo1_4 = 0;
+let angulo1_5 = 0;
+let angulo1_6 = 0;
+let angulo1_7 = 0;
+let angulo1_8 = 0;
+let angulo1_9 = 0;
+let angulo1_10 = 0;
 
+/* Ramitas */
 
 
 //ABRIR VENTANA DE INSTRUCCIONES
@@ -545,20 +557,158 @@ $("#cerrar_btn3").click(function(){
     $("#mapa").css("-webkit-filter", "blur(0px)");
 });
 
-$("#lolo").rotate({bind:{
+/*Ramitas*/
+
+$("#lolo1_1").rotate({bind:{
     click: function(){
       $(this).rotate({
-        angle: angulololo,
-        animateTo: angulololo+90,
+        angle: angulo1_1,
+        animateTo: angulo1_1+90,
         })
-        angulololo=angulololo+90;
-        if(angulololo==360){
-          angulololo=0;
+        angulo1_1=angulo1_1+90;
+        if(angulo1_1==360){
+          angulo1_1=0;
         }
-        console.log(angulololo);
+        console.log(angulo1_1);
       }
     }
   });
+
+ $("#lolo1_2").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_2,
+        animateTo: angulo1_2+90,
+        })
+        angulo1_2=angulo1_2+90;
+        if(angulo1_2==360){
+          angulo1_2=0;
+        }
+        console.log(angulo1_2);
+      }
+    }
+  });
+
+  $("#lolo1_3").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_3,
+        animateTo: angulo1_3+90,
+        })
+        angulo1_3=angulo1_3+90;
+        if(angulo1_3==360){
+          angulo1_3=0;
+        }
+        console.log(angulo1_3);
+      }
+    }
+  });
+
+  $("#lolo1_4").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_4,
+        animateTo: angulo1_4+90,
+        })
+        angulo1_4=angulo1_4+90;
+        if(angulo1_4==360){
+          angulo1_4=0;
+        }
+        console.log(angulo1_4);
+      }
+    }
+  });
+
+  $("#lolo1_5").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_5,
+        animateTo: angulo1_5+90,
+        })
+        angulo1_5=angulo1_5+90;
+        if(angulo1_5==360){
+          angulo1_5=0;
+        }
+        console.log(angulo1_5);
+      }
+    }
+  });
+
+    $("#lolo1_6").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_6,
+        animateTo: angulo1_6+90,
+        })
+        angulo1_6=angulo1_6+90;
+        if(angulo1_6==360){
+          angulo1_6=0;
+        }
+        console.log(angulo1_6);
+      }
+    }
+  });
+  
+  $("#lolo1_7").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_7,
+        animateTo: angulo1_7+90,
+        })
+        angulo1_7=angulo1_7+90;
+        if(angulo1_7==360){
+          angulo1_7=0;
+        }
+        console.log(angulo1_7);
+      }
+    }
+  });
+
+  $("#lolo1_8").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_7,
+        animateTo: angulo1_7+90,
+        })
+        angulo1_7=angulo1_7+90;
+        if(angulo1_7==360){
+          angulo1_7=0;
+        }
+        console.log(angulo1_7);
+      }
+    }
+  });
+
+  $("#lolo1_9").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_7,
+        animateTo: angulo1_7+90,
+        })
+        angulo1_7=angulo1_7+90;
+        if(angulo1_7==360){
+          angulo1_7=0;
+        }
+        console.log(angulo1_7);
+      }
+    }
+  });
+
+  $("#lolo1_10").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_7,
+        animateTo: angulo1_7+90,
+        })
+        angulo1_7=angulo1_7+90;
+        if(angulo1_7==360){
+          angulo1_7=0;
+        }
+        console.log(angulo1_7);
+      }
+    }
+  });
+  /*Ramitas*/
 
     //COGER PISTAS PUZLE 3
  $("#pista3_btn").click(function(){
@@ -572,9 +722,9 @@ $("#lolo").rotate({bind:{
             $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
 
             $("#puzzle3_p1").css("background-color", "chocolate");
-            $("#puzzle3_p1").css("cursor", "pointer");
+            $("#puzzle3_p1").css("cursor","pointer");
 
-            $("#puzzle3_pt_txt").html('Esta es la PRIMERA pista del puzzle 3');
+            $("#puzzle3_pt_txt").html('Mira que guay compañero, parece que estas ramitas apuntan en diferentes direcciones');
 
             puzzle3_pt++;
             puntos--;
@@ -589,7 +739,7 @@ $("#lolo").rotate({bind:{
             $("#puzzle3_p2").css("background-color", "chocolate");
             $("#puzzle3_p2").css("cursor", "pointer");
 
-            $("#puzzle3_pt_txt").html('Esta es la SEGUNDA pista del puzzle 3');
+            $("#puzzle3_pt_txt").html('Vale tío, si no lo haces bien te vas a perder y es algo que ningúno de nosotros quiere. Guia el reguero de ramas hacia la nave.');
 
             puzzle3_pt++;
             puntos--;
@@ -607,7 +757,7 @@ $("#lolo").rotate({bind:{
             $("#puzzle3_p3").css("background-color", "chocolate");
             $("#puzzle3_p3").css("cursor", "pointer");
 
-            $("#puzzle3_pt_txt").html('Esta es la TERCERA pista del puzzle 3');
+            $("#puzzle3_pt_txt").html('Tu girar ramas dirección nave seguir camino GANAR GANAR GANAR.');
 
             puzzle3_pt++;
             puntos--;
@@ -628,7 +778,7 @@ $("#puzzle3_p1").click(function(){
         $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle3_pt_txt").html('Esta es la PRIMERA pista del puzzle 3');
+        $("#puzzle3_pt_txt").html('Mira que guay compañero, parece que estas ramitas apuntan en diferentes direcciones');
 
     }
 
@@ -644,7 +794,7 @@ $("#puzzle3_p2").click(function(){
         $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle3_pt_txt").html('Esta es la SEGUNDA pista del puzzle 3');
+        $("#puzzle3_pt_txt").html('Vale tío, si no lo haces bien te vas a perder y es algo que ningúno de nosotros quiere. Guia el reguero de ramas hacia la nave.');
 
     }
 
@@ -659,7 +809,7 @@ $("#puzzle3_p3").click(function(){
         $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle3_pt_txt").html('Esta es la TERCERA pista del puzzle 3');
+        $("#puzzle3_pt_txt").html('Tu girar ramas dirección nave seguir camino GANAR GANAR GANAR.');
 
     }
 
@@ -678,7 +828,7 @@ $("#puzzle3_p3").click(function(){
 
 
 
-    //COMPROBAR PUZZLE 3 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
+//COMPROBAR PUZZLE 3 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
 $("#puzzle3_btn2").click(function(){
 
     $("#puzzle3_acierto").show();
