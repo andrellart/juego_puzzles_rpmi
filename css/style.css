@@ -2,6 +2,7 @@ body {
     height: 100vh;
     margin: 0px;
     overflow: hidden;
+    background-color: black;
 }
 
 /*MAPA*/
@@ -2208,6 +2209,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    right: -1%;
+    top: 2%;
     
 }
 
@@ -2216,9 +2220,8 @@ body {
     height: 6%;
     width: 12%;
     position: absolute;
-    bottom: -8%;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -9%;
+    left: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2294,6 +2297,115 @@ body {
 #cerrar_pista_p6 img{
     height: 100%;
 }
+
+
+
+
+  /* PUZZLE DEL MUNDO 6 (FICHAS)*/
+  #puzzle6_fondo{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+
+#puzzle6_m1, #puzzle6_m2, #puzzle6_m3, #puzzle6_m4, #puzzle6_m5, #puzzle6_m6, #puzzle6_m7{
+    z-index: 5;
+    background-color: rgba(137, 43, 226, 0.377);
+    width: 16%;
+    height: 24%;
+    position: absolute;
+
+}
+
+#puzzle6_m1{
+    top: 4%;
+    left: 19%;
+}
+
+#puzzle6_m2{
+    top: 40%;
+    left: 19%;
+}
+
+#puzzle6_m3{
+    top: 72%;
+    left: 19%;
+}
+
+#puzzle6_m4{
+    top: 40%;
+    left: 41%;
+    
+}
+
+#puzzle6_m5{
+    top: 6%;
+    left: 64%;
+}
+
+#puzzle6_m6{
+    top: 40%;
+    left: 64%;
+}
+
+#puzzle6_m7{
+    top: 74%;
+    left: 64%;
+}
+
+#puzzle6_pieza1, #puzzle6_pieza2, #puzzle6_pieza3, #puzzle6_pieza4, #puzzle6_pieza5, #puzzle6_pieza6, #puzzle6_pieza7, #puzzle6_pieza8, #puzzle6_pieza9{
+    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+}
+
+#puzzle6_pieza1{
+    top: 2%;
+    left: 2%;
+}
+
+#puzzle6_pieza2{
+    top: 22%;
+    left: 2%;
+}
+
+#puzzle6_pieza3{
+    top: 42%;
+    left: 2%;
+}
+
+#puzzle6_pieza4{
+    top: 62%;
+    left: 2%;
+}
+
+#puzzle6_pieza5{
+    top: 82%;
+    left: 2%;
+}
+
+#puzzle6_pieza6{
+    top: 22%;
+    left: 89%;
+}
+
+#puzzle6_pieza7{
+    top: 42%;
+    left: 89%;
+}
+
+#puzzle6_pieza8{
+    top: 62%;
+    left: 89%;
+}
+
+#puzzle6_pieza9{
+    top: 82%;
+    left: 89%;
+}
+
 
 
 

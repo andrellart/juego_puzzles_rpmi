@@ -207,6 +207,28 @@ $("#inicio_btn1").click(function(){
     $("#mapaimg").attr("src", "img/mapa.png");
     $("#puzzle1_btn").css("animation-name", "mundos");
 
+
+
+
+    //TEMPORAL!!!!!!! PARA HACER PUZZLE 6!!!!!
+
+    $("#puzzle5").hide();
+    $("#help").show();
+
+    $("#western_closed").show();
+    $("#western_closed").css("-webkit-filter", "grayscale(1)");
+    $("#zombie_closed").hide();
+    $("#zombie_lock").hide();
+    $("#puzzle5_btn").css("-webkit-filter", "grayscale(1)");
+
+    $("#puzzle5_btn").css("animation-name", "none");
+    $("#puzzle6_btn").css("animation-name", "mundos");
+
+    musica_puzzle5.pause();
+    
+    
+    $("#mapa").css("-webkit-filter", "blur(0px)");
+
 });
 
 
@@ -2604,6 +2626,9 @@ $("#puzzle5_btn4").click(function(){
 });
 
 
+
+
+
 //BOTON PUZZLE 6
 $("#puzzle6_btn").click(function(){
 
@@ -2615,27 +2640,91 @@ $("#puzzle6_btn").click(function(){
 
 
 
-    //COMENZAR PUZZLE 6
+//COMENZAR PUZZLE 6
 
-    $("#puzzle6_btn1").click(function(){
+$("#puzzle6_btn1").click(function(){
 
-        $("#puzzle6_cont").show();
-        $("#puzzle6_inicio").hide();
-        
-        
-    });
-    
-        //CERRAR PUZZLE 6
-    $("#cerrar_btn6").click(function(){
-    
-        $("#puzzle6").hide();
-        $("#help").show();
-        $("#puzzle6_cont").hide();
-        $("#puzzle6_inicio").show();
+    $("#puzzle6_cont").show();
+    $("#puzzle6_inicio").hide();
     
     
-        $("#mapa").css("-webkit-filter", "blur(0px)");
-    });
+});
+
+    //CERRAR PUZZLE 6
+$("#cerrar_btn6").click(function(){
+
+    $("#puzzle6").hide();
+    $("#help").show();
+    $("#puzzle6_cont").hide();
+    $("#puzzle6_inicio").show();
+
+
+    $("#mapa").css("-webkit-filter", "blur(0px)");
+});
+
+
+$("#puzzle6_pieza1").draggable({
+    containment: "#puzzle6_puzzle"
+     
+});
+
+
+$("#puzzle6_pieza2").draggable({
+    containment: "#puzzle6_puzzle"
+     
+});
+
+
+$("#puzzle6_pieza3").draggable({
+    containment: "#puzzle6_puzzle"
+     
+});
+
+
+$("#puzzle6_pieza4").draggable({
+    containment: "#puzzle6_puzzle"
+     
+});
+
+
+$("#puzzle6_pieza5").draggable({
+    containment: "#puzzle6_puzzle"
+     
+});
+
+
+$("#puzzle6_pieza6").draggable({
+    containment: "#puzzle6_puzzle"
+     
+});
+
+
+$("#puzzle6_pieza7").draggable({
+    containment: "#puzzle6_puzzle"
+     
+});
+
+
+$("#puzzle6_pieza8").draggable({
+    containment: "#puzzle6_puzzle"
+     
+});
+
+
+$("#puzzle6_pieza9").draggable({
+    containment: "#puzzle6_puzzle"
+     
+});
+
+
+$("#puzzle6_m1").droppable(function(){
+    $(ui.draggable).css("top", "9%");
+    $(ui.draggable).css("left", "22%");
+
+});
+
+
+
 
 
     
