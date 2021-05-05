@@ -1106,6 +1106,8 @@ $("#puzzle5_btn").click(function(){
          document.getElementById("puzzle5_botella1").style.animationName = "none";
          document.getElementById("puzzle5_botella2").style.animationName = "none";
          document.getElementById("puzzle5_botella3").style.animationName = "none";
+
+         document.getElementById("puzzle5_balsa").style.animationName = "none";
          
 
 
@@ -2448,6 +2450,7 @@ document.getElementById("puzzle5_btn2").addEventListener("click", function(){
                 $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
                 $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
                 $("#fondo_papel_puzzle5").css("-webkit-filter", "blur(10px)");
+                
             }
 
 
@@ -2556,6 +2559,8 @@ $("#puzzle5_btn4").click(function(){
     document.getElementById("puzzle5_botella1").style.animationName = "none";
     document.getElementById("puzzle5_botella2").style.animationName = "none";
     document.getElementById("puzzle5_botella3").style.animationName = "none";
+
+    document.getElementById("puzzle5_balsa").style.animationName = "none";
 
 });
 
