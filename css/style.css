@@ -1067,6 +1067,16 @@ body {
     
 }
 
+#lolo{
+    height: 30%;
+    width: 15%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    z-index: 800;
+    cursor: pointer;
+}
+
 #cerrar_btn3{
     position: absolute;
     top: 1%;
@@ -1178,6 +1188,11 @@ body {
 }
 
 /*PISTAS DEL PUZZLE 3*/
+
+#pesesito{
+    width: 50%;
+    left: 20%;
+}
 #puzzle3_pistas{
     width: 20%;
     height: 5%;

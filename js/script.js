@@ -24,6 +24,7 @@ $("#puzzle3_error").hide();
 $("#puzzle3_pt").hide();
 
 
+
 $("#puzzle4").hide();
 $("#puzzle4_cont").hide();
 $("#puzzle4_acierto").hide();
@@ -63,6 +64,8 @@ let puzzle6_pt = 0;
 
 let puntos = 18;
 
+
+let angulololo = 0;
 
 
 
@@ -542,6 +545,20 @@ $("#cerrar_btn3").click(function(){
     $("#mapa").css("-webkit-filter", "blur(0px)");
 });
 
+$("#lolo").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulololo,
+        animateTo: angulololo+90,
+        })
+        angulololo=angulololo+90;
+        if(angulololo==360){
+          angulololo=0;
+        }
+        console.log(angulololo);
+      }
+    }
+  });
 
     //COGER PISTAS PUZLE 3
  $("#pista3_btn").click(function(){
