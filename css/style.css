@@ -1178,6 +1178,105 @@ body {
     cursor: pointer;
 }
 
+#lolo1_11{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_12{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_13{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_14{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_15{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_16{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_17{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_18{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_19{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_20{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    z-index: 800;
+    cursor: pointer;
+}
 /* RAMItas */
 
 #cerrar_btn3{

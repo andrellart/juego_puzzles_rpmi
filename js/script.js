@@ -77,6 +77,16 @@ let angulo1_7 = 0;
 let angulo1_8 = 0;
 let angulo1_9 = 0;
 let angulo1_10 = 0;
+let angulo1_11 = 0;
+let angulo1_12 = 0;
+let angulo1_13 = 0;
+let angulo1_14 = 0;
+let angulo1_15 = 0;
+let angulo1_16 = 0;
+let angulo1_17 = 0;
+let angulo1_18 = 0;
+let angulo1_19 = 0;
+let angulo1_20 = 0;
 
 /* Ramitas */
 
@@ -667,14 +677,14 @@ $("#lolo1_1").rotate({bind:{
   $("#lolo1_8").rotate({bind:{
     click: function(){
       $(this).rotate({
-        angle: angulo1_7,
-        animateTo: angulo1_7+90,
+        angle: angulo1_8,
+        animateTo: angulo1_8+90,
         })
-        angulo1_7=angulo1_7+90;
-        if(angulo1_7==360){
-          angulo1_7=0;
+        angulo1_8=angulo1_8+90;
+        if(angulo1_8==360){
+          angulo1_8=0;
         }
-        console.log(angulo1_7);
+        console.log(angulo1_8);
       }
     }
   });
@@ -682,14 +692,14 @@ $("#lolo1_1").rotate({bind:{
   $("#lolo1_9").rotate({bind:{
     click: function(){
       $(this).rotate({
-        angle: angulo1_7,
-        animateTo: angulo1_7+90,
+        angle: angulo1_9,
+        animateTo: angulo1_9+90,
         })
-        angulo1_7=angulo1_7+90;
-        if(angulo1_7==360){
-          angulo1_7=0;
+        angulo1_9=angulo1_9+90;
+        if(angulo1_9==360){
+          angulo1_9=0;
         }
-        console.log(angulo1_7);
+        console.log(angulo1_9);
       }
     }
   });
@@ -697,17 +707,167 @@ $("#lolo1_1").rotate({bind:{
   $("#lolo1_10").rotate({bind:{
     click: function(){
       $(this).rotate({
-        angle: angulo1_7,
-        animateTo: angulo1_7+90,
+        angle: angulo1_10,
+        animateTo: angulo1_10+90,
         })
-        angulo1_7=angulo1_7+90;
-        if(angulo1_7==360){
-          angulo1_7=0;
+        angulo1_10=angulo1_10+90;
+        if(angulo1_10==360){
+          angulo1_10=0;
         }
-        console.log(angulo1_7);
+        console.log(angulo1_10);
       }
     }
   });
+
+  $("#lolo1_11").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_11,
+        animateTo: angulo1_11+90,
+        })
+        angulo1_11=angulo1_11+90;
+        if(angulo1_11==360){
+          angulo1_11=0;
+        }
+        console.log(angulo1_11);
+      }
+    }
+  });
+
+  $("#lolo1_12").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_12,
+        animateTo: angulo1_12+90,
+        })
+        angulo1_12=angulo1_12+90;
+        if(angulo1_12==360){
+          angulo1_12=0;
+        }
+        console.log(angulo1_12);
+      }
+    }
+  });
+
+  $("#lolo1_13").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_13,
+        animateTo: angulo1_13+90,
+        })
+        angulo1_13=angulo1_13+90;
+        if(angulo1_13==360){
+          angulo1_13=0;
+        }
+        console.log(angulo1_13);
+      }
+    }
+  });
+
+  $("#lolo1_14").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_14,
+        animateTo: angulo1_14+90,
+        })
+        angulo1_14=angulo1_14+90;
+        if(angulo1_14==360){
+          angulo1_14=0;
+        }
+        console.log(angulo1_14);
+      }
+    }
+  });
+
+  $("#lolo1_15").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_15,
+        animateTo: angulo1_15+90,
+        })
+        angulo1_15=angulo1_15+90;
+        if(angulo1_15==360){
+          angulo1_15=0;
+        }
+        console.log(angulo1_15);
+      }
+    }
+  });
+
+  $("#lolo1_16").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_16,
+        animateTo: angulo1_16+90,
+        })
+        angulo1_16=angulo1_16+90;
+        if(angulo1_16==360){
+          angulo1_16=0;
+        }
+        console.log(angulo1_16);
+      }
+    }
+  });8
+  $("#lolo1_17").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_17,
+        animateTo: angulo1_17+90,
+        })
+        angulo1_17=angulo1_17+90;
+        if(angulo1_17==360){
+          angulo1_17=0;
+        }
+        console.log(angulo1_17);
+      }
+    }
+  });
+
+  $("#lolo1_18").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_18,
+        animateTo: angulo1_18+90,
+        })
+        angulo1_18=angulo1_18+90;
+        if(angulo1_18==360){
+          angulo1_18=0;
+        }
+        console.log(angulo1_18);
+      }
+    }
+  });
+
+  $("#lolo1_19").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_19,
+        animateTo: angulo1_19+90,
+        })
+        angulo1_19=angulo1_19+90;
+        if(angulo1_19==360){
+          angulo1_19=0;
+        }
+        console.log(angulo1_19);
+      }
+    }
+  });
+
+  $("#lolo1_20").rotate({bind:{
+    click: function(){
+      $(this).rotate({
+        angle: angulo1_20,
+        animateTo: angulo1_20+90,
+        })
+        angulo1_20=angulo1_20+90;
+        if(angulo1_20==360){
+          angulo1_20=0;
+        }
+        console.log(angulo1_20);
+      }
+    }
+  });
+
   /*Ramitas*/
 
     //COGER PISTAS PUZLE 3
