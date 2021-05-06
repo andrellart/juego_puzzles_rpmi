@@ -32,6 +32,16 @@
                 font-family: western2;
                 src: url(fonts/Go\ 2\ Old\ Western.otf);
             }
+
+            @font-face {
+                font-family: mb;
+                src: url(fonts/MB-ThinkTwice_Regular.ttf);
+            }
+
+            @font-face {
+                font-family: city;
+                src: url(fonts/cityburn-®.ttf);
+            }
             
         </style>
         <title>Multiverse Wrap</title>
@@ -713,14 +723,17 @@
         <!-- PUZZLE 6 -->
 
         <div id="puzzle6">
+
+            <img src="img/fondo_papel_puzzle6.png" id="fondo_papel_puzzle6">
+
             <div id="cerrar_btn6">
-                <img src="img/x.png">
+                <img src="img/x_puzzle6.png">
             </div>
 
             <!-- PÁGINA DE INICIO DEL PUZZLE 6 -->
 
             <div id="puzzle6_inicio">
-                <h1>BIENVENIDA/O AL MUNDO ZOMBIE</h1>
+                <h1>HAS LLEGADO A "SANTA CLARITA"</h1>
 
                 <div id="puzzle6_btn1">
                     <p>Comenzar</p>
@@ -733,8 +746,8 @@
 
             <div id="puzzle6_cont">
                 <div id="puzzle6_txt">
-                    <h1>PUZZLE 6 (NOMBRE)</h1>
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <h1>MATEMÁTICAS ZOMBIE</h1>
+                    <P>Santa Clarita es un lugar famoso en todo el universo por su acogedor ambiente postapocalíptico, los habitantes zombies, la comida local basada en turistas frescos y los locales clandestinos movidos por los juegos y apuestas. Siguiendo la común ruta turística de este universo, llegas a uno de estos locales y te aventuras a participar en uno de los juegos, pero la participación no te saldrá gratis. Si solucionas el puzzle, podrás salir íntegramente del universo, por el contrario, si fallas, los otros jugadores zombies te comerán vio. <br> Este puzzle consiste en colocar 7 de las fichas numeradas del 1 al 9 sobre esas manchas verdes tan sospechosas, de manera que den el mismo resultado cuando se multipliquen los números horizontal y verticalmente.</P>
                     
                 </div>
 
@@ -789,8 +802,11 @@
 
              <!-- VENTANA DE PISTAS PUZZLE 6 -->
              <div id="puzzle6_pt">
+
+                <img src="img/fondo_ventanas_puzzle6.png" id="fondo_pistas_puzzle6">
+                
                 <div id="cerrar_pista_p6">
-                    <img src="img/x.png">
+                    <img src="img/x_puzzle6.png">
                 </div>
 
                 <p id="puzzle6_pt_txt"> <!--  Aquí escribimos las pistas a través del script --> </p>
@@ -800,10 +816,12 @@
             <!-- SI HAS ACERTADO PUZZLE 6 -->
 
             <div id="puzzle6_acierto">
+
+                <img src="img/fondo_ventanas_puzzle6.png" id="fondo_acierto_puzzle6">
                 <div id="puzzle6_acierto_txt">
 
                     <h1>¡Puzzle resuelto!</h1>
-                    <p>Enhorabuena, has resuelto el primer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
+                    <p>¡Enhorabuena! Ya has recorrido todos los universos, ahora puedes volver a casa... ¿Seguirá todo tal y como lo recordabas?</p>
 
                 </div>
                 
@@ -817,9 +835,11 @@
 
             <div id="puzzle6_error">
 
+                <img src="img/fondo_ventanas_puzzle6.png" id="fondo_error_puzzle6">
+
                 <div id="puzzle6_error_txt">
                     <h1>Respuesta incorrecta</h1>
-                    <p>Parece que esa no era la solución al puzzle. Vuelve a intentarlo.</p>
+                    <p>Parece que esa no era la solución al puzzle, ahora nunca podrás salir de aquí. Vuelve a intentarlo.</p>
 
                 </div>
                 

@@ -2742,7 +2742,7 @@ $("#pista6_btn").click(function(){
             $("#puzzle6_p1").css("background-color", "chocolate");
             $("#puzzle6_p1").css("cursor", "pointer");
 
-            $("#puzzle6_pt_txt").html('Esta es la PRIMERA pista del puzzle 6');
+            $("#puzzle6_pt_txt").html('Hay varias soluciones posibles, así que lo mejor es ser paciente y seguir intentándolo. Si la paciencia no es una de tus virtudes, aquí tienes una pista más obvia: puedes descartar la ficha 5.');
 
             puzzle6_pt++;
             puntos--;
@@ -2757,7 +2757,7 @@ $("#pista6_btn").click(function(){
             $("#puzzle6_p2").css("background-color", "chocolate");
             $("#puzzle6_p2").css("cursor", "pointer");
 
-            $("#puzzle6_pt_txt").html('Esta es la SEGUNDA pista del puzzle 6');
+            $("#puzzle6_pt_txt").html('La ficha 5 no se usa en la solución, ni tampoco la ficha 7. Ahora que ya sabes cuáles son las fichas que sí necesitas, vuelve a intentar encontrar la solución.');
 
             puzzle6_pt++;
             puntos--;
@@ -2775,7 +2775,7 @@ $("#pista6_btn").click(function(){
             $("#puzzle6_p3").css("background-color", "chocolate");
             $("#puzzle6_p3").css("cursor", "pointer");
 
-            $("#puzzle6_pt_txt").html('Esta es la TERCERA pista del puzzle 6');
+            $("#puzzle6_pt_txt").html('El resultado de cada multiplicación en este puzle tiene que ser 72. Si todavía necesitas una pista, ahí va: coloca la ficha 2 en el centro.');
 
             puzzle6_pt++;
             puntos--;
@@ -2796,7 +2796,7 @@ $("#puzzle6_p1").click(function(){
         $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle6_pt_txt").html('Esta es la PRIMERA pista del puzzle 6');
+        $("#puzzle6_pt_txt").html('Hay varias soluciones posibles, así que lo mejor es ser paciente y seguir intentándolo. Si la paciencia no es una de tus virtudes, aquí tienes una pista más obvia: puedes descartar la ficha 5.');
 
     }
 
@@ -2812,7 +2812,7 @@ $("#puzzle6_p2").click(function(){
         $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle6_pt_txt").html('Esta es la SEGUNDA pista del puzzle 6');
+        $("#puzzle6_pt_txt").html('La ficha 5 no se usa en la solución, ni tampoco la ficha 7. Ahora que ya sabes cuáles son las fichas que sí necesitas, vuelve a intentar encontrar la solución.');
 
     }
 
@@ -2827,7 +2827,7 @@ $("#puzzle6_p3").click(function(){
         $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle6_pt_txt").html('Esta es la TERCERA pista del puzzle 6');
+        $("#puzzle6_pt_txt").html('El resultado de cada multiplicación en este puzle tiene que ser 72. Si todavía necesitas una pista, ahí va: coloca la ficha 2 en el centro.');
 
     }
 

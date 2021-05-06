@@ -2119,6 +2119,12 @@ body {
     
 }
 
+#fondo_papel_puzzle6{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
 #cerrar_btn6{
     position: absolute;
     top: 1%;
@@ -2149,15 +2155,16 @@ body {
 }
 
 #puzzle6_inicio h1{
-    font-family: wash;
-    font-size: 100pt;
+    font-family: mb;
+    font-size: 150pt;
     position: absolute;
     top: 15%;
+    color: rgb(104, 1, 1);
     
 }
 
 #puzzle6_btn1{
-    background-color: seagreen;
+    background-color: rgb(104, 1, 1);
     height: 6%;
     width: 12%;
     position: absolute;
@@ -2167,8 +2174,8 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
-    font-size: 40pt;
+    font-family: mb;
+    font-size: 50pt;
 }
 
 
@@ -2181,29 +2188,35 @@ body {
     height: 90%;
     width: 98%;
     display: flex;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: city;
+    font-size: 20pt;
     
 }
 
 #puzzle6_cont h1{
-    font-family: wash;
-    font-size: 40pt;
+    font-family: mb;
+    font-size: 50pt;
 }
 
 #puzzle6_txt{
-    background-color: blue;
+    
     height: 100%;
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: white;
     
 }
 
+#puzzle6_txt p{
+    position: relative;
+    bottom: 5%;
+}
+
 #puzzle6_puzzle{
-    background-color: red;
+    
     height: 100%;
     width: 80%;
     display: flex;
@@ -2216,7 +2229,7 @@ body {
 }
 
 #puzzle6_btn2{
-    background-color: seagreen;
+    background-color: rgb(104, 1, 1);
     height: 6%;
     width: 12%;
     position: absolute;
@@ -2227,8 +2240,8 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
-    font-size: 40pt;
+    font-family: mb;
+    font-size: 45pt;
 }
 
 
@@ -2242,8 +2255,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: wash;
-    font-size: 25pt;
+    font-family: mb;
+    font-size: 30pt;
+    z-index: 50;
 }
 
 #pista6_btn{
@@ -2267,7 +2281,7 @@ body {
 
 
 #puzzle6_pt{
-    background-color: blueviolet;
+    
     position: absolute;
     top: 15%;
     height: 40%;
@@ -2278,16 +2292,16 @@ body {
     justify-content: center;
     padding: 1%;
     border-radius: 10px;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: city;
+    font-size: 20pt;
     text-align: center;
     
 }
 
 #cerrar_pista_p6{
     position: absolute;
-    top: -10%;
-    right: -15%;
+    top: -5%;
+    right: -10%;
     height: 15%;
     width: 15%;
     cursor: pointer;
@@ -2296,6 +2310,11 @@ body {
 
 #cerrar_pista_p6 img{
     height: 100%;
+}
+
+#puzzle6_pt_txt, #puzzle6_acierto_txt, #puzzle6_error_txt{
+    z-index: 10;
+    width: 75%;
 }
 
 
@@ -2424,29 +2443,29 @@ body {
 }
 
 #puzzle6_acierto_txt{
-    background-color: blueviolet;
+    
     position: absolute;
-    top: 15%;
+    top: 20%;
     height: 40%;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: city;
+    font-size: 20pt;
     text-align: center;
 
 }
 
 #puzzle6_acierto_txt h1{
-    font-family: wash;
-    font-size: 40pt;
+    font-family: mb;
+    font-size: 50pt;
     
 }
 
 #puzzle6_btn3{
-    background-color: seagreen;
+    background-color: rgb(104, 1, 1);
     height: 6%;
     width: 12%;
     position: absolute;
@@ -2458,8 +2477,8 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
-    font-size: 40pt;
+    font-family: mb;
+    font-size: 45pt;
 }
   
 
@@ -2477,29 +2496,37 @@ body {
 }
 
 #puzzle6_error_txt{
-    background-color: blueviolet;
+    
     position: absolute;
-    top: 15%;
+    top: 20%;
     height: 40%;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: city;
+    font-size: 20pt;
     text-align: center;
 
 }
 
 #puzzle6_error_txt h1{
-    font-family: wash;
-    font-size: 40pt;
+    font-family: mb;
+    font-size: 50pt;
     
 }
 
+#fondo_pistas_puzzle6{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+   
+}
+
 #puzzle6_btn4{
-    background-color: seagreen;
+    background-color: rgb(104, 1, 1);
     height: 6%;
     width: 12%;
     position: absolute;
@@ -2511,9 +2538,20 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
-    font-size: 40pt;
+    font-family: mb;
+    font-size: 45pt;
 }
+
+#fondo_error_puzzle6, #fondo_acierto_puzzle6{
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    z-index: 5;
+    
+}
+
+
 
 
 /*FINAL DE JUEGO*/
