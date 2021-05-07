@@ -1566,6 +1566,16 @@ body {
 
 /*PUZZLE 4*/
 
+@font-face{
+    font-family: alienss;
+    src: url(../fonts/Varino\ -\ Normal.otf);
+}
+
+@font-face{
+    font-family: alienss2;
+    src: url(../fonts/Rocket\ Rinder.otf);
+}
+
 #puzzle4{
     position: absolute;
     height: 95%;
@@ -1580,6 +1590,69 @@ body {
     border-radius: 10px;
     
 }
+
+/*manijas*/
+
+#lolo41{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo42{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo43{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo44{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo45{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo46{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    z-index: 800;
+    cursor: pointer;
+}
+/*manijas*/
 
 #cerrar_btn4{
     position: absolute;
@@ -1629,7 +1702,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: alienss;
     font-size: 40pt;
 }
 
@@ -1643,13 +1716,13 @@ body {
     height: 90%;
     width: 98%;
     display: flex;
-    font-family: shine;
+    font-family: alienss;
     font-size: 28.5pt;
     
 }
 
 #puzzle4_cont h1{
-    font-family: wash;
+    font-family: alienss2;
     font-size: 40pt;
 }
 
@@ -1687,7 +1760,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: alienss2;
     font-size: 40pt;
 }
 
@@ -1701,7 +1774,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: wash;
+    font-family: alienss2;
     font-size: 25pt;
 }
 
@@ -1737,7 +1810,7 @@ body {
     justify-content: center;
     padding: 1%;
     border-radius: 10px;
-    font-family: shine;
+    font-family: alienss;
     font-size: 28.5pt;
     text-align: center;
     
@@ -1781,14 +1854,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: alienss;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle4_acierto_txt h1{
-    font-family: wash;
+    font-family: alienss2;
     font-size: 40pt;
     
 }
@@ -1806,7 +1879,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: alienss2;
     font-size: 40pt;
 }
   
@@ -1834,14 +1907,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: alienss2;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle4_error_txt h1{
-    font-family: wash;
+    font-family: alienss;
     font-size: 40pt;
     
 }
@@ -1859,7 +1932,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: alienss;
     font-size: 40pt;
 }
     

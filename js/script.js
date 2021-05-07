@@ -89,7 +89,17 @@ let angulo1_19 = 0;
 let angulo1_20 = 0;
 
 /* Ramitas */
+//Puzzle 4
+/* manijas */
 
+let angulo41 = 0;
+let angulo42 = 0;
+let angulo43 = 0;
+let angulo44 = 0;
+let angulo45 = 0;
+let angulo46 = 0;
+
+/*manijas */
 
 //ABRIR VENTANA DE INSTRUCCIONES
 
@@ -990,24 +1000,20 @@ $("#puzzle3_p3").click(function(){
 
 //COMPROBAR PUZZLE 3 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
 $("#puzzle3_btn2").click(function(){
-
+  if( angulo41 == 45 && angulo42 == 0 && angulo43 ==180 && angulo44 == 315 && angulo45 == 45 && angulo46 == 135){
     $("#puzzle3_acierto").show();
 
     $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
     $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
-});
-
-/*
-//COMPROBAR PUZZLE 3 PROVISIONAL (SIEMPRE FALLA) --> ACTIVAR CUANDO CORRESPONDA
-$("#puzzle3_btn2").click(function(){
-
+  }
+  else{
     $("#puzzle3_error").show();
 
 
     $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
     $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+  }
 });
-*/
 
     //ACERTAR PUZZLE 3
 $("#puzzle3_btn3").click(function(){
@@ -1069,6 +1075,99 @@ $("#puzzle4_btn").click(function(){
         $("#mapa").css("-webkit-filter", "blur(0px)");
     });
 
+    /* manijas */
+
+    $("#lolo41").rotate({bind:{
+      click: function(){
+        $(this).rotate({
+          angle: angulo41,
+          animateTo: angulo41+45,
+          })
+          angulo41=angulo41+45;
+          if(angulo41==360){
+            angulo41=0;
+          }
+          console.log(angulo41);
+        }
+      }
+    });
+
+    $("#lolo42").rotate({bind:{
+      click: function(){
+        $(this).rotate({
+          angle: angulo42,
+          animateTo: angulo42+45,
+          })
+          angulo42=angulo42+45;
+          if(angulo42==360){
+            angulo42=0;
+          }
+          console.log(angulo42);
+        }
+      }
+    });
+
+    $("#lolo43").rotate({bind:{
+      click: function(){
+        $(this).rotate({
+          angle: angulo43,
+          animateTo: angulo43+45,
+          })
+          angulo43=angulo43+45;
+          if(angulo43==360){
+            angulo43=0;
+          }
+          console.log(angulo43);
+        }
+      }
+    });
+
+    $("#lolo44").rotate({bind:{
+      click: function(){
+        $(this).rotate({
+          angle: angulo44,
+          animateTo: angulo44+45,
+          })
+          angulo44=angulo44+45;
+          if(angulo44==360){
+            angulo44=0;
+          }
+          console.log(angulo44);
+        }
+      }
+    });
+
+    $("#lolo45").rotate({bind:{
+      click: function(){
+        $(this).rotate({
+          angle: angulo45,
+          animateTo: angulo45+45,
+          })
+          angulo45=angulo45+45;
+          if(angulo45==360){
+            angulo45=0;
+          }
+          console.log(angulo45);
+        }
+      }
+    });
+
+    $("#lolo46").rotate({bind:{
+      click: function(){
+        $(this).rotate({
+          angle: angulo46,
+          animateTo: angulo46+45,
+          })
+          angulo46=angulo46+45;
+          if(angulo46==360){
+            angulo65=0;
+          }
+          console.log(angulo46);
+        }
+      }
+    });
+
+    /* manijas */
 
     
     //COGER PISTAS PUZLE 4
@@ -1187,26 +1286,46 @@ $("#puzzle4_p3").click(function(){
     $("#cerrar_btn4").css("-webkit-filter", "blur(0px)");
 });
     
+// $("#puzzle5_btn2").click(function(){
+//   if( angulo41 == 45 && angulo42 == 0 && angulo43 ==180 && angulo44 == 315 && angulo45 == 45 && angulo46 == 135){
+//     $("#puzzle5_acierto").show();
+
+//     $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+//     $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+//   }
+//   else{
+//         $("#puzzle5_btn2").click(function(){
+
+//     $("#puzzle5_error").show();
+
+
+//     $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
+//     $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+//   });
+//   }
+// });
     
-        //COMPROBAR PUZZLE 4 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
     $("#puzzle4_btn2").click(function(){
-    
+      if( angulo41 == 45 && angulo42 == 0 && angulo43 ==180 && angulo44 == 315 && angulo45 == 45 && angulo46 == 135){
+        $("#puzzle5_acierto").show();
         $("#puzzle4_acierto").show();
     
         $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
+      }
+      else{
+        $("#puzzle4_error").show();
+    
+        $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
+      }
     });
     
     /*
     //COMPROBAR PUZZLE 4 PROVISIONAL (SIEMPRE FALLA) --> ACTIVAR CUANDO CORRESPONDA
     $("#puzzle4_btn2").click(function(){
     
-        $("#puzzle4_error").show();
-    
-    
-        $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
-        $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
-    });
+        
     */
     
         //ACERTAR PUZZLE 4
@@ -1386,31 +1505,27 @@ $("#puzzle5_p3").click(function(){
 });
 
 
-
-
-
     
     
         //COMPROBAR PUZZLE 5 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
     $("#puzzle5_btn2").click(function(){
-    
+      if( angulo41 == 45 && angulo42 == 0 && angulo43 ==180 && angulo44 == 315 && angulo45 == 45 && angulo46 == 135){
         $("#puzzle5_acierto").show();
     
         $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
-    });
-    
-    /*
-    //COMPROBAR PUZZLE 5 PROVISIONAL (SIEMPRE FALLA) --> ACTIVAR CUANDO CORRESPONDA
-    $("#puzzle5_btn2").click(function(){
+      }
+      else{
+            $("#puzzle5_btn2").click(function(){
     
         $("#puzzle5_error").show();
     
     
         $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
+      });
+      }
     });
-    */
     
         //ACERTAR PUZZLE 5
     $("#puzzle5_btn3").click(function(){
