@@ -67,6 +67,11 @@ let puntos = 18;
 let musica_puzzle5 = document.getElementById("musica_puzzle5");
 musica_puzzle5.loop = true;
 
+let puzzle6_piezas_sound = document.getElementById("puzzle6_piezas_sound");
+
+let musica_puzzle6 = document.getElementById("musica_puzzle6");
+musica_puzzle6.loop = true;
+
 
 
 
@@ -291,27 +296,7 @@ $("#inicio_btn1").click(function(){
     $("#puzzle1_btn").css("animation-name", "mundos");
 
 
-
-
-    //TEMPORAL!!!!!!! PARA HACER PUZZLE 6!!!!!
-
-    $("#puzzle5").hide();
-    $("#help").show();
-
-    $("#western_closed").show();
-    $("#western_closed").css("-webkit-filter", "grayscale(1)");
-    $("#zombie_closed").hide();
-    $("#zombie_lock").hide();
-    $("#puzzle5_btn").css("-webkit-filter", "grayscale(1)");
-
-    $("#puzzle5_btn").css("animation-name", "none");
-    $("#puzzle6_btn").css("animation-name", "mundos");
-
-    musica_puzzle5.pause();
     
-    
-    $("#mapa").css("-webkit-filter", "blur(0px)");
-
 });
 
 
@@ -1126,6 +1111,7 @@ $("#puzzle4_p3").click(function(){
     
 
 
+
 //BOTON PUZZLE 5
 $("#puzzle5_btn").click(function(){
 
@@ -1135,6 +1121,7 @@ $("#puzzle5_btn").click(function(){
     $("#mapa").css("-webkit-filter", "blur(10px)");
     musica_puzzle5.currentTime = 0
     musica_puzzle5.play();
+    $('#musica_puzzle5').animate({volume: 1}, 0);
 });
 
 
@@ -1156,7 +1143,7 @@ $("#puzzle5_btn").click(function(){
         $("#puzzle5_cont").hide();
         $("#puzzle5_inicio").show();
 
-        musica_puzzle5.pause();
+        $('#musica_puzzle5').animate({volume: 0}, 500);
         
         //Aquí reinicializo todas las variables
     
@@ -2637,7 +2624,7 @@ $("#puzzle5_btn3").click(function(){
     $("#puzzle5_btn").css("animation-name", "none");
     $("#puzzle6_btn").css("animation-name", "mundos");
 
-    musica_puzzle5.pause();
+    $('#musica_puzzle5').animate({volume: 0}, 1500);
     
     
     $("#mapa").css("-webkit-filter", "blur(0px)");
@@ -2719,6 +2706,9 @@ $("#puzzle6_btn").click(function(){
     $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
+    musica_puzzle6.currentTime = 0
+    musica_puzzle6.play();
+    $('#musica_puzzle6').animate({volume: 1}, 0);
 });
 
 
@@ -2741,10 +2731,108 @@ $("#cerrar_btn6").click(function(){
     $("#puzzle6_cont").hide();
     $("#puzzle6_inicio").show();
 
+    $('#musica_puzzle6').animate({volume: 0}, 500);
+
 
     $("#mapa").css("-webkit-filter", "blur(0px)");
+
+    $("#puzzle6_pieza1").css("top", "2%");
+    $("#puzzle6_pieza1").css("left", "2%");
+
+    $("#puzzle6_pieza2").css("top", "22%");
+    $("#puzzle6_pieza2").css("left", "2%");
+
+    $("#puzzle6_pieza3").css("top", "42%");
+    $("#puzzle6_pieza3").css("left", "2%");
+
+    $("#puzzle6_pieza4").css("top", "62%");
+    $("#puzzle6_pieza4").css("left", "2%");
+
+    $("#puzzle6_pieza5").css("top", "82%");
+    $("#puzzle6_pieza5").css("left", "2%");
+
+    $("#puzzle6_pieza6").css("top", "22%");
+    $("#puzzle6_pieza6").css("left", "89%");
+
+    $("#puzzle6_pieza7").css("top", "42%");
+    $("#puzzle6_pieza7").css("left", "89%");
+
+    $("#puzzle6_pieza8").css("top", "62%");
+    $("#puzzle6_pieza8").css("left", "89%");
+
+    $("#puzzle6_pieza9").css("top", "82%");
+    $("#puzzle6_pieza9").css("left", "89%");
+
+    pieza1_m1 = false;
+    pieza1_m2 = false;
+    pieza1_m3 = false;
+    pieza1_m4 = false;
+    pieza1_m5 = false;
+    pieza1_m6 = false;
+    pieza1_m7 = false;
+    pieza2_m1 = false;
+    pieza2_m2 = false;
+    pieza2_m3 = false;
+    pieza2_m4 = false;
+    pieza2_m5 = false;
+    pieza2_m6 = false;
+    pieza2_m7 = false;
+    pieza3_m1 = false;
+    pieza3_m2 = false;
+    pieza3_m3 = false;
+    pieza3_m4 = false;
+    pieza3_m5 = false;
+    pieza3_m6 = false;
+    pieza3_m7 = false;
+    pieza4_m1 = false;
+    pieza4_m2 = false;
+    pieza4_m3 = false;
+    pieza4_m4 = false;
+    pieza4_m5 = false;
+    pieza4_m6 = false;
+    pieza4_m7 = false;
+    pieza5_m1 = false;
+    pieza5_m2 = false;
+    pieza5_m3 = false;
+    pieza5_m4 = false;
+    pieza5_m5 = false;
+    pieza5_m6 = false;
+    pieza5_m7 = false;
+    pieza6_m1 = false;
+    pieza6_m2 = false;
+    pieza6_m3 = false;
+    pieza6_m4 = false;
+    pieza6_m5 = false;
+    pieza6_m6 = false;
+    pieza6_m7 = false;
+    pieza7_m1 = false;
+    pieza7_m2 = false;
+    pieza7_m3 = false;
+    pieza7_m4 = false;
+    pieza7_m5 = false;
+    pieza7_m6 = false;
+    pieza7_m7 = false;
+    pieza8_m1 = false;
+    pieza8_m2 = false;
+    pieza8_m3 = false;
+    pieza8_m4 = false;
+    pieza8_m5 = false;
+    pieza8_m6 = false;
+    pieza8_m7 = false;
+    pieza9_m1 = false;
+    pieza9_m2 = false;
+    pieza9_m3 = false;
+    pieza9_m4 = false;
+    pieza9_m5 = false;
+    pieza9_m6 = false;
+    pieza9_m7 = false;
+
 });
 
+
+//HACER MOVIMIENTO DE LAS PIEZAS Y DETECTAR CUAL ESTÁ SIENDO MOVIDA. DETECTAR QUE SE ESTÁ DEJANDO UN HUECO LIBRE AL MOVER LA PIEZA.
+
+    //PIEZA1
 
 $("#puzzle6_pieza1").draggable({
     containment: "#puzzle6_puzzle",
@@ -2769,7 +2857,7 @@ $("#puzzle6_pieza1").draggable({
      
 });
 
-
+    //PIEZA2
 
 
 $("#puzzle6_pieza2").draggable({
@@ -2792,6 +2880,8 @@ $("#puzzle6_pieza2").draggable({
 });
 
 
+    //PIEZA3
+
 $("#puzzle6_pieza3").draggable({
     containment: "#puzzle6_puzzle",
     start: function( event, ui ) {
@@ -2810,6 +2900,8 @@ $("#puzzle6_pieza3").draggable({
      
 });
 
+
+    //PIEZA4
 
 $("#puzzle6_pieza4").draggable({
     containment: "#puzzle6_puzzle",
@@ -2830,6 +2922,8 @@ $("#puzzle6_pieza4").draggable({
 });
 
 
+    //PIEZA5
+
 $("#puzzle6_pieza5").draggable({
     containment: "#puzzle6_puzzle",
     start: function( event, ui ) {
@@ -2847,6 +2941,9 @@ $("#puzzle6_pieza5").draggable({
     }
      
 });
+
+
+    //PIEZA6
 
 
 $("#puzzle6_pieza6").draggable({
@@ -2868,6 +2965,8 @@ $("#puzzle6_pieza6").draggable({
 });
 
 
+    //PIEZA7
+
 $("#puzzle6_pieza7").draggable({
     containment: "#puzzle6_puzzle",
     start: function( event, ui ) {
@@ -2886,6 +2985,8 @@ $("#puzzle6_pieza7").draggable({
      
 });
 
+
+    //PIEZA8
 
 $("#puzzle6_pieza8").draggable({
     containment: "#puzzle6_puzzle",
@@ -2906,6 +3007,8 @@ $("#puzzle6_pieza8").draggable({
 });
 
 
+    //PIEZA9
+
 $("#puzzle6_pieza9").draggable({
     containment: "#puzzle6_puzzle",
     start: function( event, ui ) {
@@ -2924,6 +3027,11 @@ $("#puzzle6_pieza9").draggable({
      
 });
 
+
+//HACER QUE LAS PIEZAS DE COLOQUEN EN UNA MANCHA EN UNA POSICIÓN CONCRETA Y BLOQUEANDO ESTE HUECO PARA QUE NO ENTREN OTRAS PIEZAS.
+
+    //MANCHA1
+
 $("#puzzle6_m1").droppable({
     
     drop: function( event, ui ) {
@@ -2932,6 +3040,9 @@ $("#puzzle6_m1").droppable({
             $("#puzzle6_pieza1").css("top", "9%");
             $("#puzzle6_pieza1").css("left", "22%");
             pieza1_m1 = true;
+
+            puzzle6_piezas_sound.play();
+            
         }
 
         if (puzzle6_pieza2 == true && pieza1_m1 == false && pieza3_m1 == false && pieza4_m1 == false && pieza5_m1 == false && pieza6_m1 == false && pieza7_m1 == false && pieza8_m1 == false && pieza9_m1 == false){
@@ -2939,6 +3050,8 @@ $("#puzzle6_m1").droppable({
             $("#puzzle6_pieza2").css("top", "9%");
             $("#puzzle6_pieza2").css("left", "22%");
             pieza2_m1 = true;
+
+            puzzle6_piezas_sound.play();
     
         }
     
@@ -2947,6 +3060,8 @@ $("#puzzle6_m1").droppable({
             $("#puzzle6_pieza3").css("top", "9%");
             $("#puzzle6_pieza3").css("left", "22%");
             pieza3_m1 = true;
+
+            puzzle6_piezas_sound.play();
     
         }
     
@@ -2955,6 +3070,8 @@ $("#puzzle6_m1").droppable({
             $("#puzzle6_pieza4").css("top", "9%");
             $("#puzzle6_pieza4").css("left", "22%");
             pieza4_m1 = true;
+
+            puzzle6_piezas_sound.play();
     
         }
     
@@ -2963,6 +3080,8 @@ $("#puzzle6_m1").droppable({
             $("#puzzle6_pieza5").css("top", "9%");
             $("#puzzle6_pieza5").css("left", "22%");
             pieza5_m1 = true;
+
+            puzzle6_piezas_sound.play();
     
         }
     
@@ -2971,6 +3090,8 @@ $("#puzzle6_m1").droppable({
             $("#puzzle6_pieza6").css("top", "9%");
             $("#puzzle6_pieza6").css("left", "22%");
             pieza6_m1 = true;
+
+            puzzle6_piezas_sound.play();
     
         }
     
@@ -2979,6 +3100,8 @@ $("#puzzle6_m1").droppable({
             $("#puzzle6_pieza7").css("top", "9%");
             $("#puzzle6_pieza7").css("left", "22%");
             pieza7_m1 = true;
+
+            puzzle6_piezas_sound.play();
     
         }
     
@@ -2987,6 +3110,8 @@ $("#puzzle6_m1").droppable({
             $("#puzzle6_pieza8").css("top", "9%");
             $("#puzzle6_pieza8").css("left", "22%");
             pieza8_m1 = true;
+
+            puzzle6_piezas_sound.play();
     
         }
     
@@ -2995,14 +3120,633 @@ $("#puzzle6_m1").droppable({
             $("#puzzle6_pieza9").css("top", "9%");
             $("#puzzle6_pieza9").css("left", "22%");
             pieza9_m1 = true;
+
+            puzzle6_piezas_sound.play();
     
         }
+
 
 
     }
 });
 
 
+    //MANCHA2
+
+
+
+
+$("#puzzle6_m2").droppable({
+    
+    drop: function( event, ui ) {
+
+        if (puzzle6_pieza1 == true  && pieza2_m2 == false && pieza3_m2 == false && pieza4_m2 == false && pieza5_m2 == false && pieza6_m2 == false && pieza7_m2 == false && pieza8_m2 == false && pieza9_m2 == false){
+            $("#puzzle6_pieza1").css("top", "44%");
+            $("#puzzle6_pieza1").css("left", "22%");
+            pieza1_m2 = true;
+
+            puzzle6_piezas_sound.play();
+        }
+
+        if (puzzle6_pieza2 == true && pieza1_m2 == false && pieza3_m2 == false && pieza4_m2 == false && pieza5_m2 == false && pieza6_m2 == false && pieza7_m2 == false && pieza8_m2 == false && pieza9_m2 == false){
+       
+            $("#puzzle6_pieza2").css("top", "44%");
+            $("#puzzle6_pieza2").css("left", "22%");
+            pieza2_m2 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza3 == true && pieza2_m2 == false && pieza1_m2 == false && pieza4_m2 == false && pieza5_m2 == false && pieza6_m2 == false && pieza7_m2 == false && pieza8_m2 == false && pieza9_m2 == false){
+           
+            $("#puzzle6_pieza3").css("top", "44%");
+            $("#puzzle6_pieza3").css("left", "22%");
+            pieza3_m2 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza4 == true && pieza2_m2 == false && pieza3_m2 == false && pieza1_m2 == false && pieza5_m2 == false && pieza6_m2 == false && pieza7_m2 == false && pieza8_m2 == false && pieza9_m2 == false){
+           
+            $("#puzzle6_pieza4").css("top", "44%");
+            $("#puzzle6_pieza4").css("left", "22%");
+            pieza4_m2 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza5 == true && pieza2_m2 == false && pieza3_m2 == false && pieza4_m2 == false && pieza1_m2 == false && pieza6_m2 == false && pieza7_m2 == false && pieza8_m2 == false && pieza9_m2 == false){
+           
+            $("#puzzle6_pieza5").css("top", "44%");
+            $("#puzzle6_pieza5").css("left", "22%");
+            pieza5_m2 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza6 == true && pieza2_m2 == false && pieza3_m2 == false && pieza4_m2 == false && pieza5_m2 == false && pieza1_m2 == false && pieza7_m2 == false && pieza8_m2 == false && pieza9_m2 == false){
+           
+            $("#puzzle6_pieza6").css("top", "44%");
+            $("#puzzle6_pieza6").css("left", "22%");
+            pieza6_m2 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza7 == true && pieza2_m2 == false && pieza3_m2 == false && pieza4_m2 == false && pieza5_m2 == false && pieza6_m2 == false && pieza1_m2 == false && pieza8_m2 == false && pieza9_m2 == false){
+           
+            $("#puzzle6_pieza7").css("top", "44%");
+            $("#puzzle6_pieza7").css("left", "22%");
+            pieza7_m2 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza8 == true && pieza2_m2 == false && pieza3_m2 == false && pieza4_m2 == false && pieza5_m2 == false && pieza6_m2 == false && pieza7_m2 == false && pieza1_m2 == false && pieza9_m2 == false){
+           
+            $("#puzzle6_pieza8").css("top", "44%");
+            $("#puzzle6_pieza8").css("left", "22%");
+            pieza8_m2 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza9 == true && pieza2_m2 == false && pieza3_m2 == false && pieza4_m2 == false && pieza5_m2 == false && pieza6_m2 == false && pieza7_m2 == false && pieza8_m2 == false && pieza1_m2 == false){
+           
+            $("#puzzle6_pieza9").css("top", "44%");
+            $("#puzzle6_pieza9").css("left", "22%");
+            pieza9_m2 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+
+
+
+    }
+});
+
+
+
+    //MANCHA3
+
+
+$("#puzzle6_m3").droppable({
+    
+    drop: function( event, ui ) {
+
+        if (puzzle6_pieza1 == true  && pieza2_m3 == false && pieza3_m3 == false && pieza4_m3 == false && pieza5_m3 == false && pieza6_m3 == false && pieza7_m3 == false && pieza8_m3 == false && pieza9_m3 == false){
+            $("#puzzle6_pieza1").css("top", "76%");
+            $("#puzzle6_pieza1").css("left", "22%");
+            pieza1_m3 = true;
+
+            puzzle6_piezas_sound.play();
+        }
+
+        if (puzzle6_pieza2 == true && pieza1_m3 == false && pieza3_m3 == false && pieza4_m3 == false && pieza5_m3 == false && pieza6_m3 == false && pieza7_m3 == false && pieza8_m3 == false && pieza9_m3 == false){
+       
+            $("#puzzle6_pieza2").css("top", "76%");
+            $("#puzzle6_pieza2").css("left", "22%");
+            pieza2_m3 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza3 == true && pieza2_m3 == false && pieza1_m3 == false && pieza4_m3 == false && pieza5_m3 == false && pieza6_m3 == false && pieza7_m3 == false && pieza8_m3 == false && pieza9_m3 == false){
+           
+            $("#puzzle6_pieza3").css("top", "76%");
+            $("#puzzle6_pieza3").css("left", "22%");
+            pieza3_m3 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza4 == true && pieza2_m3 == false && pieza3_m3 == false && pieza1_m3 == false && pieza5_m3 == false && pieza6_m3 == false && pieza7_m3 == false && pieza8_m3 == false && pieza9_m3 == false){
+           
+            $("#puzzle6_pieza4").css("top", "76%");
+            $("#puzzle6_pieza4").css("left", "22%");
+            pieza4_m3 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza5 == true && pieza2_m3 == false && pieza3_m3 == false && pieza4_m3 == false && pieza1_m3 == false && pieza6_m3 == false && pieza7_m3 == false && pieza8_m3 == false && pieza9_m3 == false){
+           
+            $("#puzzle6_pieza5").css("top", "76%");
+            $("#puzzle6_pieza5").css("left", "22%");
+            pieza5_m3 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza6 == true && pieza2_m3 == false && pieza3_m3 == false && pieza4_m3 == false && pieza5_m3 == false && pieza1_m3 == false && pieza7_m3 == false && pieza8_m3 == false && pieza9_m3 == false){
+           
+            $("#puzzle6_pieza6").css("top", "76%");
+            $("#puzzle6_pieza6").css("left", "22%");
+            pieza6_m3 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza7 == true && pieza2_m3 == false && pieza3_m3 == false && pieza4_m3 == false && pieza5_m3 == false && pieza6_m3 == false && pieza1_m3 == false && pieza8_m3 == false && pieza9_m3 == false){
+           
+            $("#puzzle6_pieza7").css("top", "76%");
+            $("#puzzle6_pieza7").css("left", "22%");
+            pieza7_m3 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza8 == true && pieza2_m3 == false && pieza3_m3 == false && pieza4_m3 == false && pieza5_m3 == false && pieza6_m3 == false && pieza7_m3 == false && pieza1_m3 == false && pieza9_m3 == false){
+           
+            $("#puzzle6_pieza8").css("top", "76%");
+            $("#puzzle6_pieza8").css("left", "22%");
+            pieza8_m3 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza9 == true && pieza2_m3 == false && pieza3_m3 == false && pieza4_m3 == false && pieza5_m3 == false && pieza6_m3 == false && pieza7_m3 == false && pieza8_m3 == false && pieza1_m3 == false){
+           
+            $("#puzzle6_pieza9").css("top", "76%");
+            $("#puzzle6_pieza9").css("left", "22%");
+            pieza9_m3 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+
+        
+
+
+    }
+});
+
+
+
+
+    //MANCHA4
+
+$("#puzzle6_m4").droppable({
+    
+    drop: function( event, ui ) {
+
+        if (puzzle6_pieza1 == true  && pieza2_m4 == false && pieza3_m4 == false && pieza4_m4 == false && pieza5_m4 == false && pieza6_m4 == false && pieza7_m4 == false && pieza8_m4 == false && pieza9_m4 == false){
+            $("#puzzle6_pieza1").css("top", "44%");
+            $("#puzzle6_pieza1").css("left", "44%");
+            pieza1_m4 = true;
+
+            puzzle6_piezas_sound.play();
+        }
+
+        if (puzzle6_pieza2 == true  && pieza1_m4 == false && pieza3_m4 == false && pieza4_m4 == false && pieza5_m4 == false && pieza6_m4 == false && pieza7_m4 == false && pieza8_m4 == false && pieza9_m4 == false){
+       
+            $("#puzzle6_pieza2").css("top", "44%");
+            $("#puzzle6_pieza2").css("left", "44%");
+            pieza2_m4 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza3 == true  && pieza2_m4 == false && pieza1_m4 == false && pieza4_m4 == false && pieza5_m4 == false && pieza6_m4 == false && pieza7_m4 == false && pieza8_m4 == false && pieza9_m4 == false){
+           
+            $("#puzzle6_pieza3").css("top", "44%");
+            $("#puzzle6_pieza3").css("left", "44%");
+            pieza3_m4 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza4 == true  && pieza2_m4 == false && pieza3_m4 == false && pieza1_m4 == false && pieza5_m4 == false && pieza6_m4 == false && pieza7_m4 == false && pieza8_m4 == false && pieza9_m4 == false){
+           
+            $("#puzzle6_pieza4").css("top", "44%");
+            $("#puzzle6_pieza4").css("left", "44%");
+            pieza4_m4 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza5 == true  && pieza2_m4 == false && pieza3_m4 == false && pieza4_m4 == false && pieza1_m4 == false && pieza6_m4 == false && pieza7_m4 == false && pieza8_m4 == false && pieza9_m4 == false){
+           
+            $("#puzzle6_pieza5").css("top", "44%");
+            $("#puzzle6_pieza5").css("left", "44%");
+            pieza5_m4 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza6 == true  && pieza2_m4 == false && pieza3_m4 == false && pieza4_m4 == false && pieza5_m4 == false && pieza1_m4 == false && pieza7_m4 == false && pieza8_m4 == false && pieza9_m4 == false){
+           
+            $("#puzzle6_pieza6").css("top", "44%");
+            $("#puzzle6_pieza6").css("left", "44%");
+            pieza6_m4 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza7 == true  && pieza2_m4 == false && pieza3_m4 == false && pieza4_m4 == false && pieza5_m4 == false && pieza6_m4 == false && pieza1_m4 == false && pieza8_m4 == false && pieza9_m4 == false){
+           
+            $("#puzzle6_pieza7").css("top", "44%");
+            $("#puzzle6_pieza7").css("left", "44%");
+            pieza7_m4 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza8 == true  && pieza2_m4 == false && pieza3_m4 == false && pieza4_m4 == false && pieza5_m4 == false && pieza6_m4 == false && pieza7_m4 == false && pieza1_m4 == false && pieza9_m4 == false){
+           
+            $("#puzzle6_pieza8").css("top", "44%");
+            $("#puzzle6_pieza8").css("left", "44%");
+            pieza8_m4 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza9 == true  && pieza2_m4 == false && pieza3_m4 == false && pieza4_m4 == false && pieza5_m4 == false && pieza6_m4 == false && pieza7_m4 == false && pieza8_m4 == false && pieza1_m4 == false){
+           
+            $("#puzzle6_pieza9").css("top", "44%");
+            $("#puzzle6_pieza9").css("left", "44%");
+            pieza9_m4 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+
+        
+
+
+    }
+});
+
+
+
+    //MANCHA5
+
+$("#puzzle6_m5").droppable({
+    
+    drop: function( event, ui ) {
+
+        if (puzzle6_pieza1 == true  && pieza2_m5 == false && pieza3_m5 == false && pieza4_m5 == false && pieza5_m5 == false && pieza6_m5 == false && pieza7_m5 == false && pieza8_m5 == false && pieza9_m5 == false){
+            $("#puzzle6_pieza1").css("top", "11%");
+            $("#puzzle6_pieza1").css("left", "67%");
+            pieza1_m5 = true;
+
+            puzzle6_piezas_sound.play();
+        }
+
+        if (puzzle6_pieza2 == true  && pieza1_m5 == false && pieza3_m5 == false && pieza4_m5 == false && pieza5_m5 == false && pieza6_m5 == false && pieza7_m5 == false && pieza8_m5 == false && pieza9_m5 == false){
+       
+            $("#puzzle6_pieza2").css("top", "11%");
+            $("#puzzle6_pieza2").css("left", "67%");
+            pieza2_m5 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza3 == true  && pieza2_m5 == false && pieza1_m5 == false && pieza4_m5 == false && pieza5_m5 == false && pieza6_m5 == false && pieza7_m5 == false && pieza8_m5 == false && pieza9_m5 == false){
+           
+            $("#puzzle6_pieza3").css("top", "11%");
+            $("#puzzle6_pieza3").css("left", "67%");
+            pieza3_m5 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza4 == true  && pieza2_m5 == false && pieza3_m5 == false && pieza1_m5 == false && pieza5_m5 == false && pieza6_m5 == false && pieza7_m5 == false && pieza8_m5 == false && pieza9_m5 == false){
+           
+            $("#puzzle6_pieza4").css("top", "11%");
+            $("#puzzle6_pieza4").css("left", "67%");
+            pieza4_m5 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza5 == true  && pieza2_m5 == false && pieza3_m5 == false && pieza4_m5 == false && pieza1_m5 == false && pieza6_m5 == false && pieza7_m5 == false && pieza8_m5 == false && pieza9_m5 == false){
+           
+            $("#puzzle6_pieza5").css("top", "11%");
+            $("#puzzle6_pieza5").css("left", "67%");
+            pieza5_m5 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza6 == true  && pieza2_m5 == false && pieza3_m5 == false && pieza4_m5 == false && pieza5_m5 == false && pieza1_m5 == false && pieza7_m5 == false && pieza8_m5 == false && pieza9_m5 == false){
+           
+            $("#puzzle6_pieza6").css("top", "11%");
+            $("#puzzle6_pieza6").css("left", "67%");
+            pieza6_m5 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza7 == true  && pieza2_m5 == false && pieza3_m5 == false && pieza4_m5 == false && pieza5_m5 == false && pieza6_m5 == false && pieza1_m5 == false && pieza8_m5 == false && pieza9_m5 == false){
+           
+            $("#puzzle6_pieza7").css("top", "11%");
+            $("#puzzle6_pieza7").css("left", "67%");
+            pieza7_m5 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza8 == true  && pieza2_m5 == false && pieza3_m5 == false && pieza4_m5 == false && pieza5_m5 == false && pieza6_m5 == false && pieza7_m5 == false && pieza1_m5 == false && pieza9_m5 == false){
+           
+            $("#puzzle6_pieza8").css("top", "11%");
+            $("#puzzle6_pieza8").css("left", "67%");
+            pieza8_m5 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza9 == true  && pieza2_m5 == false && pieza3_m5 == false && pieza4_m5 == false && pieza5_m5 == false && pieza6_m5 == false && pieza7_m5 == false && pieza8_m5 == false && pieza1_m5 == false){
+           
+            $("#puzzle6_pieza9").css("top", "11%");
+            $("#puzzle6_pieza9").css("left", "67%");
+            pieza9_m5 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+
+        
+
+
+    }
+});
+
+
+
+    //MANCHA6
+
+
+$("#puzzle6_m6").droppable({
+    
+    drop: function( event, ui ) {
+
+        if (puzzle6_pieza1 == true  && pieza2_m6 == false && pieza3_m6 == false && pieza4_m6 == false && pieza5_m6 == false && pieza6_m6 == false && pieza7_m6 == false && pieza8_m6 == false && pieza9_m6 == false){
+            $("#puzzle6_pieza1").css("top", "44%");
+            $("#puzzle6_pieza1").css("left", "67%");
+            pieza1_m6 = true;
+
+            puzzle6_piezas_sound.play();
+        }
+
+        if (puzzle6_pieza2 == true  && pieza1_m6 == false && pieza3_m6 == false && pieza4_m6 == false && pieza5_m6 == false && pieza6_m6 == false && pieza7_m6 == false && pieza8_m6 == false && pieza9_m6 == false){
+       
+            $("#puzzle6_pieza2").css("top", "44%");
+            $("#puzzle6_pieza2").css("left", "67%");
+            pieza2_m6 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza3 == true  && pieza2_m6 == false && pieza1_m6 == false && pieza4_m6 == false && pieza5_m6 == false && pieza6_m6 == false && pieza7_m6 == false && pieza8_m6 == false && pieza9_m6 == false){
+           
+            $("#puzzle6_pieza3").css("top", "44%");
+            $("#puzzle6_pieza3").css("left", "67%");
+            pieza3_m6 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza4 == true  && pieza2_m6 == false && pieza3_m6 == false && pieza1_m6 == false && pieza5_m6 == false && pieza6_m6 == false && pieza7_m6 == false && pieza8_m6 == false && pieza9_m6 == false){
+           
+            $("#puzzle6_pieza4").css("top", "44%");
+            $("#puzzle6_pieza4").css("left", "67%");
+            pieza4_m6 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza5 == true  && pieza2_m6 == false && pieza3_m6 == false && pieza4_m6 == false && pieza1_m6 == false && pieza6_m6 == false && pieza7_m6 == false && pieza8_m6 == false && pieza9_m6 == false){
+           
+            $("#puzzle6_pieza5").css("top", "44%");
+            $("#puzzle6_pieza5").css("left", "67%");
+            pieza5_m6 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza6 == true  && pieza2_m6 == false && pieza3_m6 == false && pieza4_m6 == false && pieza5_m6 == false && pieza1_m6 == false && pieza7_m6 == false && pieza8_m6 == false && pieza9_m6 == false){
+           
+            $("#puzzle6_pieza6").css("top", "44%");
+            $("#puzzle6_pieza6").css("left", "67%");
+            pieza6_m6 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza7 == true  && pieza2_m6 == false && pieza3_m6 == false && pieza4_m6 == false && pieza5_m6 == false && pieza6_m6 == false && pieza1_m6 == false && pieza8_m6 == false && pieza9_m6 == false){
+           
+            $("#puzzle6_pieza7").css("top", "44%");
+            $("#puzzle6_pieza7").css("left", "67%");
+            pieza7_m6 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza8 == true  && pieza2_m6 == false && pieza3_m6 == false && pieza4_m6 == false && pieza5_m6 == false && pieza6_m6 == false && pieza7_m6 == false && pieza1_m6 == false && pieza9_m6 == false){
+           
+            $("#puzzle6_pieza8").css("top", "44%");
+            $("#puzzle6_pieza8").css("left", "67%");
+            pieza8_m6 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza9 == true  && pieza2_m6 == false && pieza3_m6 == false && pieza4_m6 == false && pieza5_m6 == false && pieza6_m6 == false && pieza7_m6 == false && pieza8_m6 == false && pieza1_m6 == false){
+           
+            $("#puzzle6_pieza9").css("top", "44%");
+            $("#puzzle6_pieza9").css("left", "67%");
+            pieza9_m6 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+
+        
+
+
+    }
+});
+
+
+
+
+
+    //MANCHA7
+
+$("#puzzle6_m7").droppable({
+    
+    drop: function( event, ui ) {
+
+        if (puzzle6_pieza1 == true  && pieza2_m7 == false && pieza3_m7 == false && pieza4_m7 == false && pieza5_m7 == false && pieza6_m7 == false && pieza7_m7 == false && pieza8_m7 == false && pieza9_m7 == false){
+            $("#puzzle6_pieza1").css("top", "78%");
+            $("#puzzle6_pieza1").css("left", "68%");
+            pieza1_m7 = true;
+
+            puzzle6_piezas_sound.play();
+        }
+
+        if (puzzle6_pieza2 == true  && pieza1_m7 == false && pieza3_m7 == false && pieza4_m7 == false && pieza5_m7 == false && pieza6_m7 == false && pieza7_m7 == false && pieza8_m7 == false && pieza9_m7 == false){
+       
+            $("#puzzle6_pieza2").css("top", "78%");
+            $("#puzzle6_pieza2").css("left", "68%");
+            pieza2_m7 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza3 == true  && pieza2_m7 == false && pieza1_m7 == false && pieza4_m7 == false && pieza5_m7 == false && pieza6_m7 == false && pieza7_m7 == false && pieza8_m7 == false && pieza9_m7 == false){
+           
+            $("#puzzle6_pieza3").css("top", "78%");
+            $("#puzzle6_pieza3").css("left", "68%");
+            pieza3_m7 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza4 == true  && pieza2_m7 == false && pieza3_m7 == false && pieza1_m7 == false && pieza5_m7 == false && pieza6_m7 == false && pieza7_m7 == false && pieza8_m7 == false && pieza9_m7 == false){
+           
+            $("#puzzle6_pieza4").css("top", "78%");
+            $("#puzzle6_pieza4").css("left", "68%");
+            pieza4_m7 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza5 == true  && pieza2_m7 == false && pieza3_m7 == false && pieza4_m7 == false && pieza1_m7 == false && pieza6_m7 == false && pieza7_m7 == false && pieza8_m7 == false && pieza9_m7 == false){
+           
+            $("#puzzle6_pieza5").css("top", "78%");
+            $("#puzzle6_pieza5").css("left", "68%");
+            pieza5_m7 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza6 == true  && pieza2_m7 == false && pieza3_m7 == false && pieza4_m7 == false && pieza5_m7 == false && pieza1_m7 == false && pieza7_m7 == false && pieza8_m7 == false && pieza9_m7 == false){
+           
+            $("#puzzle6_pieza6").css("top", "78%");
+            $("#puzzle6_pieza6").css("left", "68%");
+            pieza6_m7 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza7 == true  && pieza2_m7 == false && pieza3_m7 == false && pieza4_m7 == false && pieza5_m7 == false && pieza6_m7 == false && pieza1_m7 == false && pieza8_m7 == false && pieza9_m7 == false){
+           
+            $("#puzzle6_pieza7").css("top", "78%");
+            $("#puzzle6_pieza7").css("left", "68%");
+            pieza7_m7 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza8 == true  && pieza2_m7 == false && pieza3_m7 == false && pieza4_m7 == false && pieza5_m7 == false && pieza6_m7 == false && pieza7_m7 == false && pieza1_m7 == false && pieza9_m7 == false){
+           
+            $("#puzzle6_pieza8").css("top", "78%");
+            $("#puzzle6_pieza8").css("left", "68%");
+            pieza8_m7 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+    
+        if (puzzle6_pieza9 == true  && pieza2_m7 == false && pieza3_m7 == false && pieza4_m7 == false && pieza5_m7 == false && pieza6_m7 == false && pieza7_m7 == false && pieza8_m7 == false && pieza1_m7 == false){
+           
+            $("#puzzle6_pieza9").css("top", "78%");
+            $("#puzzle6_pieza9").css("left", "68%");
+            pieza9_m7 = true;
+
+            puzzle6_piezas_sound.play();
+    
+        }
+
+        
+
+
+    }
+});
 
 
 
@@ -3132,11 +3876,37 @@ $("#puzzle6_p3").click(function(){
         //COMPROBAR PUZZLE 6 
     $("#puzzle6_btn2").click(function(){
 
-        if ( pieza3_m1 == true && pieza4_m2 == true && pieza6_m3 == true && pieza2_m4 == true && pieza1_m5 == true && pieza9_m6 == true && pieza8 == true){
+        if ( pieza3_m1 == true && pieza4_m2 == true && pieza6_m3 == true && pieza2_m4 == true && pieza1_m5 == true && pieza9_m6 == true && pieza8_m7 == true){
             $("#puzzle6_acierto").show();
     
             $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+            
+
+        } else if (pieza3_m3 == true && pieza4_m2 == true && pieza6_m1 == true && pieza2_m4 == true && pieza1_m5 == true && pieza9_m6 == true && pieza8_m7 == true){
+
+            $("#puzzle6_acierto").show();
+    
+            $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+            
+
+
+        } else if (pieza3_m1 == true && pieza4_m2 == true && pieza6_m3 == true && pieza2_m4 == true && pieza1_m7 == true && pieza9_m6 == true && pieza8_m5 == true){
+
+            $("#puzzle6_acierto").show();
+    
+            $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+            
+
+        } else if (pieza3_m3 == true && pieza4_m2 == true && pieza6_m1 == true && pieza2_m4 == true && pieza1_m7 == true && pieza9_m6 == true && pieza8_m5 == true){
+
+            $("#puzzle6_acierto").show();
+    
+            $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+            
 
         } else {
 
@@ -3169,6 +3939,12 @@ $("#puzzle6_p3").click(function(){
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
 
+        
+        $('#musica_puzzle6').animate({volume: 0}, 1500);
+
+
+        //FINALES
+
         if( puntos < 6 ){
 
             $("#final_txt").html('Esta es el final 3, es decir, la puntuación obtenida está entre 0 y 5');
@@ -3186,6 +3962,8 @@ $("#puzzle6_p3").click(function(){
         
     });
     
+
+
     //FALLAR PUZZLE 6
     $("#puzzle6_btn4").click(function(){
     
@@ -3193,10 +3971,103 @@ $("#puzzle6_p3").click(function(){
         
         $("#puzzle6_cont").css("-webkit-filter", "blur(0px)");
         $("#cerrar_btn6").css("-webkit-filter", "blur(0px)");
+
+
+
+            
+        $("#puzzle6_pieza1").css("top", "2%");
+        $("#puzzle6_pieza1").css("left", "2%");
+
+        $("#puzzle6_pieza2").css("top", "22%");
+        $("#puzzle6_pieza2").css("left", "2%");
+
+        $("#puzzle6_pieza3").css("top", "42%");
+        $("#puzzle6_pieza3").css("left", "2%");
+
+        $("#puzzle6_pieza4").css("top", "62%");
+        $("#puzzle6_pieza4").css("left", "2%");
+
+        $("#puzzle6_pieza5").css("top", "82%");
+        $("#puzzle6_pieza5").css("left", "2%");
+
+        $("#puzzle6_pieza6").css("top", "22%");
+        $("#puzzle6_pieza6").css("left", "89%");
+
+        $("#puzzle6_pieza7").css("top", "42%");
+        $("#puzzle6_pieza7").css("left", "89%");
+
+        $("#puzzle6_pieza8").css("top", "62%");
+        $("#puzzle6_pieza8").css("left", "89%");
+
+        $("#puzzle6_pieza9").css("top", "82%");
+        $("#puzzle6_pieza9").css("left", "89%");
+
+        pieza1_m1 = false;
+        pieza1_m2 = false;
+        pieza1_m3 = false;
+        pieza1_m4 = false;
+        pieza1_m5 = false;
+        pieza1_m6 = false;
+        pieza1_m7 = false;
+        pieza2_m1 = false;
+        pieza2_m2 = false;
+        pieza2_m3 = false;
+        pieza2_m4 = false;
+        pieza2_m5 = false;
+        pieza2_m6 = false;
+        pieza2_m7 = false;
+        pieza3_m1 = false;
+        pieza3_m2 = false;
+        pieza3_m3 = false;
+        pieza3_m4 = false;
+        pieza3_m5 = false;
+        pieza3_m6 = false;
+        pieza3_m7 = false;
+        pieza4_m1 = false;
+        pieza4_m2 = false;
+        pieza4_m3 = false;
+        pieza4_m4 = false;
+        pieza4_m5 = false;
+        pieza4_m6 = false;
+        pieza4_m7 = false;
+        pieza5_m1 = false;
+        pieza5_m2 = false;
+        pieza5_m3 = false;
+        pieza5_m4 = false;
+        pieza5_m5 = false;
+        pieza5_m6 = false;
+        pieza5_m7 = false;
+        pieza6_m1 = false;
+        pieza6_m2 = false;
+        pieza6_m3 = false;
+        pieza6_m4 = false;
+        pieza6_m5 = false;
+        pieza6_m6 = false;
+        pieza6_m7 = false;
+        pieza7_m1 = false;
+        pieza7_m2 = false;
+        pieza7_m3 = false;
+        pieza7_m4 = false;
+        pieza7_m5 = false;
+        pieza7_m6 = false;
+        pieza7_m7 = false;
+        pieza8_m1 = false;
+        pieza8_m2 = false;
+        pieza8_m3 = false;
+        pieza8_m4 = false;
+        pieza8_m5 = false;
+        pieza8_m6 = false;
+        pieza8_m7 = false;
+        pieza9_m1 = false;
+        pieza9_m2 = false;
+        pieza9_m3 = false;
+        pieza9_m4 = false;
+        pieza9_m5 = false;
+        pieza9_m6 = false;
+        pieza9_m7 = false;
     });
 
 
-//FINALES
   
 
 //VOLVER A JUGAR 

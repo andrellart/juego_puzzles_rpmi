@@ -2159,7 +2159,7 @@ body {
     font-size: 150pt;
     position: absolute;
     top: 15%;
-    color: rgb(104, 1, 1);
+    color: rgb(150, 1, 1);
     
 }
 
@@ -2196,6 +2196,7 @@ body {
 #puzzle6_cont h1{
     font-family: mb;
     font-size: 50pt;
+    color: rgb(150, 1, 1);
 }
 
 #puzzle6_txt{
@@ -2331,7 +2332,6 @@ body {
 
 #puzzle6_m1, #puzzle6_m2, #puzzle6_m3, #puzzle6_m4, #puzzle6_m5, #puzzle6_m6, #puzzle6_m7{
     z-index: 5;
-    background-color: rgba(137, 43, 226, 0.377);
     width: 16%;
     height: 24%;
     position: absolute;
