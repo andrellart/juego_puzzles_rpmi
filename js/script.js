@@ -157,6 +157,89 @@ let n_botellas_izq = 3;
 let n_botellas_der = 0;
 
 
+    //INICIALIZACÓN DEL PUZZLE 6
+let puzzle6_pieza1 = false;
+let puzzle6_pieza2 = false;
+let puzzle6_pieza3 = false;
+let puzzle6_pieza4 = false;
+let puzzle6_pieza5 = false;
+let puzzle6_pieza6 = false;
+let puzzle6_pieza7 = false;
+let puzzle6_pieza8 = false;
+let puzzle6_pieza9 = false;
+
+let pieza1_m1 = false;
+let pieza1_m2 = false;
+let pieza1_m3 = false;
+let pieza1_m4 = false;
+let pieza1_m5 = false;
+let pieza1_m6 = false;
+let pieza1_m7 = false;
+
+let pieza2_m1 = false;
+let pieza2_m2 = false;
+let pieza2_m3 = false;
+let pieza2_m4 = false;
+let pieza2_m5 = false;
+let pieza2_m6 = false;
+let pieza2_m7 = false;
+
+let pieza3_m1 = false;
+let pieza3_m2 = false;
+let pieza3_m3 = false;
+let pieza3_m4 = false;
+let pieza3_m5 = false;
+let pieza3_m6 = false;
+let pieza3_m7 = false;
+
+let pieza4_m1 = false;
+let pieza4_m2 = false;
+let pieza4_m3 = false;
+let pieza4_m4 = false;
+let pieza4_m5 = false;
+let pieza4_m6 = false;
+let pieza4_m7 = false;
+
+let pieza5_m1 = false;
+let pieza5_m2 = false;
+let pieza5_m3 = false;
+let pieza5_m4 = false;
+let pieza5_m5 = false;
+let pieza5_m6 = false;
+let pieza5_m7 = false;
+
+let pieza6_m1 = false;
+let pieza6_m2 = false;
+let pieza6_m3 = false;
+let pieza6_m4 = false;
+let pieza6_m5 = false;
+let pieza6_m6 = false;
+let pieza6_m7 = false;
+
+let pieza7_m1 = false;
+let pieza7_m2 = false;
+let pieza7_m3 = false;
+let pieza7_m4 = false;
+let pieza7_m5 = false;
+let pieza7_m6 = false;
+let pieza7_m7 = false;
+
+let pieza8_m1 = false;
+let pieza8_m2 = false;
+let pieza8_m3 = false;
+let pieza8_m4 = false;
+let pieza8_m5 = false;
+let pieza8_m6 = false;
+let pieza8_m7 = false;
+
+let pieza9_m1 = false;
+let pieza9_m2 = false;
+let pieza9_m3 = false;
+let pieza9_m4 = false;
+let pieza9_m5 = false;
+let pieza9_m6 = false;
+let pieza9_m7 = false;
+
 
 
 
@@ -2664,64 +2747,261 @@ $("#cerrar_btn6").click(function(){
 
 
 $("#puzzle6_pieza1").draggable({
-    containment: "#puzzle6_puzzle"
+    containment: "#puzzle6_puzzle",
+
+    start: function( event, ui ) {
+        puzzle6_pieza1 = true;
+
+        pieza1_m1 = false;
+        pieza1_m2 = false;
+        pieza1_m3 = false;
+        pieza1_m4 = false;
+        pieza1_m5 = false;
+        pieza1_m6 = false;
+        pieza1_m7 = false;
+
+
+    },
+    stop: function( event, ui ) {
+        puzzle6_pieza1 = false;
+    }
+    
      
 });
 
 
+
+
 $("#puzzle6_pieza2").draggable({
-    containment: "#puzzle6_puzzle"
+    containment: "#puzzle6_puzzle",
+
+    start: function( event, ui ) {
+        puzzle6_pieza2 = true;
+        pieza2_m1 = false;
+        pieza2_m2 = false;
+        pieza2_m3 = false;
+        pieza2_m4 = false;
+        pieza2_m5 = false;
+        pieza2_m6 = false;
+        pieza2_m7 = false;
+    },
+    stop: function( event, ui ) {
+        puzzle6_pieza2 = false;
+    }
      
 });
 
 
 $("#puzzle6_pieza3").draggable({
-    containment: "#puzzle6_puzzle"
+    containment: "#puzzle6_puzzle",
+    start: function( event, ui ) {
+        puzzle6_pieza3 = true;
+        pieza3_m1 = false;
+        pieza3_m2 = false;
+        pieza3_m3 = false;
+        pieza3_m4 = false;
+        pieza3_m5 = false;
+        pieza3_m6 = false;
+        pieza3_m7 = false;
+    },
+    stop: function( event, ui ) {
+        puzzle6_pieza3 = false;
+    }
      
 });
 
 
 $("#puzzle6_pieza4").draggable({
-    containment: "#puzzle6_puzzle"
+    containment: "#puzzle6_puzzle",
+    start: function( event, ui ) {
+        puzzle6_pieza4 = true;
+        pieza4_m1 = false;
+        pieza4_m2 = false;
+        pieza4_m3 = false;
+        pieza4_m4 = false;
+        pieza4_m5 = false;
+        pieza4_m6 = false;
+        pieza4_m7 = false;
+    },
+    stop: function( event, ui ) {
+        puzzle6_pieza4 = false;
+    }
      
 });
 
 
 $("#puzzle6_pieza5").draggable({
-    containment: "#puzzle6_puzzle"
+    containment: "#puzzle6_puzzle",
+    start: function( event, ui ) {
+        puzzle6_pieza5 = true;
+        pieza5_m1 = false;
+        pieza5_m2 = false;
+        pieza5_m3 = false;
+        pieza5_m4 = false;
+        pieza5_m5 = false;
+        pieza5_m6 = false;
+        pieza5_m7 = false;
+    },
+    stop: function( event, ui ) {
+        puzzle6_pieza5 = false;
+    }
      
 });
 
 
 $("#puzzle6_pieza6").draggable({
-    containment: "#puzzle6_puzzle"
+    containment: "#puzzle6_puzzle",
+    start: function( event, ui ) {
+        puzzle6_pieza6 = true;
+        pieza6_m1 = false;
+        pieza6_m2 = false;
+        pieza6_m3 = false;
+        pieza6_m4 = false;
+        pieza6_m5 = false;
+        pieza6_m6 = false;
+        pieza6_m7 = false;
+    },
+    stop: function( event, ui ) {
+        puzzle6_pieza6 = false;
+    }
      
 });
 
 
 $("#puzzle6_pieza7").draggable({
-    containment: "#puzzle6_puzzle"
+    containment: "#puzzle6_puzzle",
+    start: function( event, ui ) {
+        puzzle6_pieza7 = true;
+        pieza7_m1 = false;
+        pieza7_m2 = false;
+        pieza7_m3 = false;
+        pieza7_m4 = false;
+        pieza7_m5 = false;
+        pieza7_m6 = false;
+        pieza7_m7 = false;
+    },
+    stop: function( event, ui ) {
+        puzzle6_pieza7 = false;
+    }
      
 });
 
 
 $("#puzzle6_pieza8").draggable({
-    containment: "#puzzle6_puzzle"
+    containment: "#puzzle6_puzzle",
+    start: function( event, ui ) {
+        puzzle6_pieza8 = true;
+        pieza8_m1 = false;
+        pieza8_m2 = false;
+        pieza8_m3 = false;
+        pieza8_m4 = false;
+        pieza8_m5 = false;
+        pieza8_m6 = false;
+        pieza8_m7 = false;
+    },
+    stop: function( event, ui ) {
+        puzzle6_pieza8 = false;
+    }
      
 });
 
 
 $("#puzzle6_pieza9").draggable({
-    containment: "#puzzle6_puzzle"
+    containment: "#puzzle6_puzzle",
+    start: function( event, ui ) {
+        puzzle6_pieza9 = true;
+        pieza9_m1 = false;
+        pieza9_m2 = false;
+        pieza9_m3 = false;
+        pieza9_m4 = false;
+        pieza9_m5 = false;
+        pieza9_m6 = false;
+        pieza9_m7 = false;
+    },
+    stop: function( event, ui ) {
+        puzzle6_pieza9 = false;
+    }
      
 });
 
+$("#puzzle6_m1").droppable({
+    
+    drop: function( event, ui ) {
 
-$("#puzzle6_m1").droppable(function(){
-    $(ui.draggable).css("top", "9%");
-    $(ui.draggable).css("left", "22%");
+        if (puzzle6_pieza1 == true  && pieza2_m1 == false && pieza3_m1 == false && pieza4_m1 == false && pieza5_m1 == false && pieza6_m1 == false && pieza7_m1 == false && pieza8_m1 == false && pieza9_m1 == false){
+            $("#puzzle6_pieza1").css("top", "9%");
+            $("#puzzle6_pieza1").css("left", "22%");
+            pieza1_m1 = true;
+        }
 
+        if (puzzle6_pieza2 == true && pieza1_m1 == false && pieza3_m1 == false && pieza4_m1 == false && pieza5_m1 == false && pieza6_m1 == false && pieza7_m1 == false && pieza8_m1 == false && pieza9_m1 == false){
+       
+            $("#puzzle6_pieza2").css("top", "9%");
+            $("#puzzle6_pieza2").css("left", "22%");
+            pieza2_m1 = true;
+    
+        }
+    
+        if (puzzle6_pieza3 == true && pieza2_m1 == false && pieza1_m1 == false && pieza4_m1 == false && pieza5_m1 == false && pieza6_m1 == false && pieza7_m1 == false && pieza8_m1 == false && pieza9_m1 == false){
+           
+            $("#puzzle6_pieza3").css("top", "9%");
+            $("#puzzle6_pieza3").css("left", "22%");
+            pieza3_m1 = true;
+    
+        }
+    
+        if (puzzle6_pieza4 == true && pieza2_m1 == false && pieza3_m1 == false && pieza1_m1 == false && pieza5_m1 == false && pieza6_m1 == false && pieza7_m1 == false && pieza8_m1 == false && pieza9_m1 == false){
+           
+            $("#puzzle6_pieza4").css("top", "9%");
+            $("#puzzle6_pieza4").css("left", "22%");
+            pieza4_m1 = true;
+    
+        }
+    
+        if (puzzle6_pieza5 == true && pieza2_m1 == false && pieza3_m1 == false && pieza4_m1 == false && pieza1_m1 == false && pieza6_m1 == false && pieza7_m1 == false && pieza8_m1 == false && pieza9_m1 == false){
+           
+            $("#puzzle6_pieza5").css("top", "9%");
+            $("#puzzle6_pieza5").css("left", "22%");
+            pieza5_m1 = true;
+    
+        }
+    
+        if (puzzle6_pieza6 == true && pieza2_m1 == false && pieza3_m1 == false && pieza4_m1 == false && pieza5_m1 == false && pieza1_m1 == false && pieza7_m1 == false && pieza8_m1 == false && pieza9_m1 == false){
+           
+            $("#puzzle6_pieza6").css("top", "9%");
+            $("#puzzle6_pieza6").css("left", "22%");
+            pieza6_m1 = true;
+    
+        }
+    
+        if (puzzle6_pieza7 == true && pieza2_m1 == false && pieza3_m1 == false && pieza4_m1 == false && pieza5_m1 == false && pieza6_m1 == false && pieza1_m1 == false && pieza8_m1 == false && pieza9_m1 == false){
+           
+            $("#puzzle6_pieza7").css("top", "9%");
+            $("#puzzle6_pieza7").css("left", "22%");
+            pieza7_m1 = true;
+    
+        }
+    
+        if (puzzle6_pieza8 == true && pieza2_m1 == false && pieza3_m1 == false && pieza4_m1 == false && pieza5_m1 == false && pieza6_m1 == false && pieza7_m1 == false && pieza1_m1 == false && pieza9_m1 == false){
+           
+            $("#puzzle6_pieza8").css("top", "9%");
+            $("#puzzle6_pieza8").css("left", "22%");
+            pieza8_m1 = true;
+    
+        }
+    
+        if (puzzle6_pieza9 == true && pieza2_m1 == false && pieza3_m1 == false && pieza4_m1 == false && pieza5_m1 == false && pieza6_m1 == false && pieza7_m1 == false && pieza8_m1 == false && pieza1_m1 == false){
+           
+            $("#puzzle6_pieza9").css("top", "9%");
+            $("#puzzle6_pieza9").css("left", "22%");
+            pieza9_m1 = true;
+    
+        }
+
+
+    }
 });
+
 
 
 
@@ -2849,26 +3129,29 @@ $("#puzzle6_p3").click(function(){
 
     
     
-        //COMPROBAR PUZZLE 6 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
+        //COMPROBAR PUZZLE 6 
     $("#puzzle6_btn2").click(function(){
+
+        if ( pieza3_m1 == true && pieza4_m2 == true && pieza6_m3 == true && pieza2_m4 == true && pieza1_m5 == true && pieza9_m6 == true && pieza8 == true){
+            $("#puzzle6_acierto").show();
     
-        $("#puzzle6_acierto").show();
+            $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+
+        } else {
+
+            $("#puzzle6_error").show();
     
-        $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
-        $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+    
+            $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
+            $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
+
+        }
+    
+        
     });
     
-    /*
-    //COMPROBAR PUZZLE 6 PROVISIONAL (SIEMPRE FALLA) --> ACTIVAR CUANDO CORRESPONDA
-    $("#puzzle6_btn2").click(function(){
     
-        $("#puzzle6_error").show();
-    
-    
-        $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
-        $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
-    });
-    */
     
         //ACERTAR PUZZLE 6
     $("#puzzle6_btn3").click(function(){
