@@ -64,6 +64,9 @@ let puzzle6_pt = 0;
 
 let puntos = 18;
 
+let musica_puzzle1 = document.getElementById("musica_puzzle1");
+musica_puzzle1.loop = true;
+
 let musica_puzzle5 = document.getElementById("musica_puzzle5");
 musica_puzzle5.loop = true;
 
@@ -309,6 +312,9 @@ $("#puzzle1_btn").click(function(){
     $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
+    musica_puzzle1.currentTime = 0
+    musica_puzzle1.play();
+    $('#musica_puzzle1').animate({volume: 1}, 0);
 });
 
 
@@ -332,6 +338,8 @@ $("#cerrar_btn1").click(function(){
     $("#puzzle1_cont").hide();
     $("#puzzle1_inicio").show();
 
+    $('#musica_puzzle1').animate({volume: 0}, 500);
+
 
     $("#mapa").css("-webkit-filter", "blur(0px)");
 });
@@ -350,7 +358,7 @@ $("#pista1_btn").click(function(){
             $("#puzzle1_p1").css("background-color", "chocolate");
             $("#puzzle1_p1").css("cursor", "pointer");
 
-            $("#puzzle1_pt_txt").html('Esta es la PRIMERA pista del puzzle 1');
+            $("#puzzle1_pt_txt").html('Las caras de los dados que hacen contacto suman 5 puntos, por tanto, cada una de las caras que hacen contacto entre sí deben tener un valor entre 1 y 4.');
 
             puzzle1_pt++;
             puntos--;
@@ -365,7 +373,7 @@ $("#pista1_btn").click(function(){
             $("#puzzle1_p2").css("background-color", "chocolate");
             $("#puzzle1_p2").css("cursor", "pointer");
 
-            $("#puzzle1_pt_txt").html('Esta es la SEGUNDA pista del puzzle 1');
+            $("#puzzle1_pt_txt").html('Los puntos de la cara superior del dado inferior son limitados. En esa cara solo podría haber 2, 3 o 4 puntos.');
 
             puzzle1_pt++;
             puntos--;
@@ -383,7 +391,7 @@ $("#pista1_btn").click(function(){
             $("#puzzle1_p3").css("background-color", "chocolate");
             $("#puzzle1_p3").css("cursor", "pointer");
 
-            $("#puzzle1_pt_txt").html('Esta es la TERCERA pista del puzzle 1');
+            $("#puzzle1_pt_txt").html('Imagina por un momento que la cara superior del dado inferior es un 4. Si es así, entonces la cara inferior del dado del medio debe ser 1, lo que haría que la cara superior de este segundo dado fuera un 6. Ahora has descartado una posibilidad, ya que esta no puede ser la respuesta.');
 
             puzzle1_pt++;
             puntos--;
@@ -404,7 +412,7 @@ $("#puzzle1_p1").click(function(){
         $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle1_pt_txt").html('Esta es la PRIMERA pista del puzzle 1');
+        $("#puzzle1_pt_txt").html('Las caras de los dados que hacen contacto suman 5 puntos, por tanto, cada una de las caras que hacen contacto entre sí deben tener un valor entre 1 y 4.');
 
     }
 
@@ -420,7 +428,7 @@ $("#puzzle1_p2").click(function(){
         $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle1_pt_txt").html('Esta es la SEGUNDA pista del puzzle 1');
+        $("#puzzle1_pt_txt").html('Los puntos de la cara superior del dado inferior son limitados. En esa cara solo podría haber 2, 3 o 4 puntos.');
 
     }
 
@@ -435,7 +443,7 @@ $("#puzzle1_p3").click(function(){
         $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle1_pt_txt").html('Esta es la TERCERA pista del puzzle 1');
+        $("#puzzle1_pt_txt").html('Imagina por un momento que la cara superior del dado inferior es un 4. Si es así, entonces la cara inferior del dado del medio debe ser 1, lo que haría que la cara superior de este segundo dado fuera un 6. Ahora has descartado una posibilidad, ya que esta no puede ser la respuesta.');
 
     }
 
@@ -488,6 +496,8 @@ $("#puzzle1_btn3").click(function(){
     $("#mapa").css("-webkit-filter", "blur(0px)");
     $("#puzzle1_btn").css("animation-name", "none");
     $("#puzzle2_btn").css("animation-name", "mundos");
+
+    $('#musica_puzzle1').animate({volume: 0}, 1500);
 });
 
 //FALLAR PUZZLE 1

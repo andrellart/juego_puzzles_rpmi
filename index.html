@@ -42,6 +42,16 @@
                 font-family: city;
                 src: url(fonts/cityburn-®.ttf);
             }
+
+            @font-face {
+                font-family: pirata_txt;
+                src: url(fonts/PirataOne-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: pirata_tit;
+                src: url(fonts/JackPirate_PERSONAL_USE_ONLY.ttf);
+            }
             
         </style>
         <title>Multiverse Wrap</title>
@@ -51,6 +61,14 @@
     </head>
 
     <body>
+
+        <audio id="musica_puzzle1">
+            <source src="sounds/piratas.mp3" type="audio/wav">
+        </audio>
+
+        <audio id="puzzle1_dado_sound">
+            <source src="sounds/dado.mp3" type="audio/wav">
+        </audio>
 
         <audio id="musica_puzzle5">
             <source src="sounds/western.mp3" type="audio/wav">
@@ -127,19 +145,19 @@
             <div id="puzzles">
 
                 <div id="puzzle1_btn">
-                    <img  src="img/bosque.png">
+                    <img  src="img/pirata.png">
                 </div>
                 <div id="pirata_closed">
-                    <img  src="img/bosque.png">
+                    <img  src="img/pirata.png">
                 </div>
 
 
                 
                 <div id="puzzle2_btn">
-                    <img  src="img/bosque.png">
+                    <img  src="img/narco.png">
                 </div>
                 <div id="narco_closed">
-                    <img  src="img/bosque.png">
+                    <img  src="img/narco.png">
                 </div>
                 <div id="narco_lock">
                     <img src="img/lock.png"> 
@@ -196,14 +214,17 @@
 
         <!-- PUZZLE 1 -->
         <div id="puzzle1">
+
+            <img src="img/fondo_papel_puzzle1.png" id="fondo_papel_puzzle1">
+
             <div id="cerrar_btn1">
-                <img src="img/x.png">
+                <img src="img/x_puzzle1.png">
             </div>
 
             <!-- PÁGINA DE INICIO DEL PUZZLE 1 -->
 
             <div id="puzzle1_inicio">
-                <h1>BIENVENIDA/O AL MUNDO PIRATA</h1>
+                <h1>Has llegado a "Isla Tortuga"</h1>
 
                 <div id="puzzle1_btn1">
                     <p>Comenzar</p>
@@ -216,8 +237,8 @@
 
             <div id="puzzle1_cont">
                 <div id="puzzle1_txt">
-                    <h1>PUZZLE 1 (NOMBRE)</h1>
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <h1>Dados Piratas</h1>
+                    <P>Al llegar a "Isla Tortuga", un grupo de piratas te han secuestrado para intercambiarte por una caja de naranjas con el fin de paliar su escorbuto. Sin embargo, has conseguido llegar a un acuerdo para que te liberen. La capitana ha cogido tres dados y te los ha lanzado planteándote el siguiente problema: <br> " Imagina que tienes tres dados idénticos con caras sin numerar y los apilas en una columna. Si el dado que está en la base tiene una cara visible que marca 1 punto y los puntos de las caras con las que se tocan los dados suman un total de 5 puntos, ¿Cuántos puntos valdrá la cara superior del dado de arriba? <br> Pulsa la cara superior del dado de arriba para cambiar los puntos de ésta y dale a comprobar para saber si has acertado y así quedar libre.</P>
                     
                 </div>
 
@@ -243,7 +264,7 @@
 
                     </div>
 
-                    <!-- ¡¡AQUÍ AÑADÍS VUESTRO PUZZLE!! -->
+                    <img id="puzzle1_fondo" src="img/puzzle1_fondo.png" >
 
                 </div>
 
@@ -254,8 +275,11 @@
 
             <!-- VENTANA DE PISTAS PUZZLE 1 -->
             <div id="puzzle1_pt">
+
+                <img src="img/fondo_ventanas_puzzle1.png" id="fondo_pistas_puzzle1">
+
                 <div id="cerrar_pista_p1">
-                    <img src="img/x.png">
+                    <img src="img/x_puzzle1.png">
                 </div>
 
                 <p id="puzzle1_pt_txt"> <!--  Aquí escribimos las pistas a través del script --> </p>
@@ -265,6 +289,9 @@
             <!-- SI HAS ACERTADO PUZZLE 1 -->
 
             <div id="puzzle1_acierto">
+
+                <img src="img/fondo_ventanas_puzzle1.png" id="fondo_acierto_puzzle1">
+
                 <div id="puzzle1_acierto_txt">
 
                     <h1>¡Puzzle resuelto!</h1>
@@ -281,6 +308,8 @@
             <!-- SI HAS FALLADO PUZZLE 1 -->
 
             <div id="puzzle1_error">
+
+                <img src="img/fondo_ventanas_puzzle1.png" id="fondo_error_puzzle1">
 
                 <div id="puzzle1_error_txt">
                     <h1>Respuesta incorrecta</h1>

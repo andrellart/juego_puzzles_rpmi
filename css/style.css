@@ -459,11 +459,11 @@ body {
 /*PUZZLE 1*/
 #puzzle1{
     position: absolute;
-    height: 95%;
-    width: 95%;
+    height: 98%;
+    width: 98%;
     top: 2.5%;
     left: 2.5%;
-    background-color: teal;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -471,6 +471,14 @@ body {
     border-radius: 10px;
     
     
+}
+
+
+#fondo_papel_puzzle1{
+    height: 100%;
+    width: 102%;
+    position: relative;
+    left: -1.5%;
 }
 
 #cerrar_btn1{
@@ -485,6 +493,7 @@ body {
 
 #cerrar_btn1 img{
     height: 100%;
+    
 }
 
 
@@ -503,7 +512,7 @@ body {
 }
 
 #puzzle1_inicio h1{
-    font-family: wash;
+    font-family: pirata_tit;
     font-size: 100pt;
     position: absolute;
     top: 15%;
@@ -511,7 +520,7 @@ body {
 }
 
 #puzzle1_btn1{
-    background-color: seagreen;
+    background-color: rgb(255, 208, 0);
     height: 6%;
     width: 12%;
     position: absolute;
@@ -521,7 +530,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: pirata_tit;
     font-size: 40pt;
 }
 
@@ -535,18 +544,20 @@ body {
     height: 90%;
     width: 98%;
     display: flex;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: pirata_txt;
+    font-size: 20pt;
     
 }
 
 #puzzle1_cont h1{
-    font-family: wash;
-    font-size: 40pt;
+    font-family: pirata_tit;
+    font-size: 47pt;
+    position: relative;
+    top: -3%;
 }
 
 #puzzle1_txt{
-    background-color: blue;
+    
     height: 100%;
     width: 20%;
     display: flex;
@@ -556,8 +567,13 @@ body {
     
 }
 
+#puzzle1_txt p{
+    position: relative;
+    bottom: 11%;
+}
+
 #puzzle1_puzzle{
-    background-color: red;
+    
     height: 100%;
     width: 80%;
     display: flex;
@@ -566,7 +582,7 @@ body {
 }
 
 #puzzle1_btn2{
-    background-color: seagreen;
+    background-color: rgb(255, 208, 0);
     height: 6%;
     width: 12%;
     position: absolute;
@@ -578,7 +594,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: pirata_tit;
     font-size: 40pt;
 }
 
@@ -591,8 +607,16 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: wash;
+    font-family: pirata_txt;
     font-size: 25pt;
+}
+
+#fondo_pistas_puzzle1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+   
 }
 
 #pista1_btn{
@@ -616,7 +640,7 @@ body {
 
 
 #puzzle1_pt{
-    background-color: blueviolet;
+    
     position: absolute;
     top: 15%;
     height: 40%;
@@ -627,10 +651,15 @@ body {
     justify-content: center;
     padding: 1%;
     border-radius: 10px;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: pirata_txt;
+    font-size: 20pt;
     text-align: center;
     
+}
+
+#puzzle1_pt_txt, #puzzle1_acierto_txt, #puzzle1_error_txt{
+    z-index: 10;
+    width: 75%;
 }
 
 #cerrar_pista_p1{
@@ -640,7 +669,7 @@ body {
     height: 15%;
     width: 15%;
     cursor: pointer;
-    z-index: 5;
+    z-index: 10;
 }
 
 #cerrar_pista_p1 img{
@@ -648,7 +677,14 @@ body {
 }
 
 
-
+    /*PUZZLE DEL MUNDO 1 (DADOS PIRATAS)*/
+#puzzle1_fondo{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
 
 
 
@@ -664,8 +700,17 @@ body {
     
 }
 
+#fondo_error_puzzle1, #fondo_acierto_puzzle1{
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    z-index: 5;
+    
+}
+
 #puzzle1_acierto_txt{
-    background-color: blueviolet;
+    
     position: absolute;
     top: 15%;
     height: 40%;
@@ -674,20 +719,20 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: pirata_txt;
+    font-size: 20pt;
     text-align: center;
 
 }
 
 #puzzle1_acierto_txt h1{
-    font-family: wash;
+    font-family: pirata_tit;
     font-size: 40pt;
     
 }
 
 #puzzle1_btn3{
-    background-color: seagreen;
+    background-color: rgb(255, 208, 0);
     height: 6%;
     width: 12%;
     position: absolute;
@@ -699,7 +744,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: pirata_tit;
     font-size: 40pt;
 }
   
@@ -718,7 +763,7 @@ body {
 }
 
 #puzzle1_error_txt{
-    background-color: blueviolet;
+    
     position: absolute;
     top: 15%;
     height: 40%;
@@ -727,20 +772,20 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: pirata_txt;
+    font-size: 20pt;
     text-align: center;
 
 }
 
 #puzzle1_error_txt h1{
-    font-family: wash;
+    font-family: pirata_tit;
     font-size: 40pt;
     
 }
 
 #puzzle1_btn4{
-    background-color: seagreen;
+    background-color: rgb(255, 208, 0);
     height: 6%;
     width: 12%;
     position: absolute;
@@ -752,7 +797,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: pirata_tit;
     font-size: 40pt;
 }
     
