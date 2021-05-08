@@ -223,6 +223,49 @@ body {
     top: 8%;
     left: 40%;
 } 
+#puzzle2 {
+    
+    width: 600px;
+    height: 600px;
+  }
+  
+  table {
+    width: 200%;
+    height: 200%;
+    cursor: pointer;
+    position: center;
+    
+  }
+  
+  td {
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+
+
+    
+  }
+  
+  .letra {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  input {
+    width: 90px;
+    height: 30px;
+    position: absolute;
+  }
+  
+  .botton {
+    margin-left: 210px;
+    position: relative;
+
+  }
 
 
 #puzzle2_btn img{
