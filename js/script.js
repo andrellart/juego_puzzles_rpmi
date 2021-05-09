@@ -67,6 +67,8 @@ let puntos = 18;
 let musica_puzzle1 = document.getElementById("musica_puzzle1");
 musica_puzzle1.loop = true;
 
+let puzzle1_dado_sound = document.getElementById("puzzle1_dado_sound");
+
 let musica_puzzle5 = document.getElementById("musica_puzzle5");
 musica_puzzle5.loop = true;
 
@@ -77,6 +79,24 @@ musica_puzzle6.loop = true;
 
 
 
+
+    //INICIALIZACIÓN DEL PUZZLE 1
+
+$("#puzzle1_dado_btn0").show();
+$("#puzzle1_dado_btn1").hide();
+$("#puzzle1_dado_btn2").hide();
+$("#puzzle1_dado_btn3").hide();
+$("#puzzle1_dado_btn4").hide();
+$("#puzzle1_dado_btn5").hide();
+$("#puzzle1_dado_btn6").hide();
+
+let puzzle1_dado_btn0 = true;
+let puzzle1_dado_btn1 = false;
+let puzzle1_dado_btn2 = false;
+let puzzle1_dado_btn3 = false;
+let puzzle1_dado_btn4 = false;
+let puzzle1_dado_btn5 = false;
+let puzzle1_dado_btn6 = false;
 
 
     //INICIALIZACIÓN DEL PUZZLE 5
@@ -342,6 +362,23 @@ $("#cerrar_btn1").click(function(){
 
 
     $("#mapa").css("-webkit-filter", "blur(0px)");
+
+    $("#puzzle1_dado_btn0").show();
+    $("#puzzle1_dado_btn1").hide();
+    $("#puzzle1_dado_btn2").hide();
+    $("#puzzle1_dado_btn3").hide();
+    $("#puzzle1_dado_btn4").hide();
+    $("#puzzle1_dado_btn5").hide();
+    $("#puzzle1_dado_btn6").hide();
+
+
+    puzzle1_dado_btn0 = true;
+    puzzle1_dado_btn1 = false;
+    puzzle1_dado_btn2 = false;
+    puzzle1_dado_btn3 = false;
+    puzzle1_dado_btn4 = false;
+    puzzle1_dado_btn5 = false;
+    puzzle1_dado_btn6 = false;
 });
 
     //COGER PISTAS PUZLE 1
@@ -461,26 +498,114 @@ $("#puzzle1_p3").click(function(){
 });
 
 
-    //COMPROBAR PUZZLE 1 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
-$("#puzzle1_btn2").click(function(){
 
-    $("#puzzle1_acierto").show();
 
-    $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
-    $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
+    //PUZZLE 1, PUZZLE DADOS PIRATAS
+
+//CUANDO CLICO EL DADO, SE DESVISUALIZA UN BOTÓN Y APARECE EL SIGUIENTE
+$("#puzzle1_dado_btn0").click(function(){
+
+    $("#puzzle1_dado_btn1").show();
+    $("#puzzle1_dado_btn0").hide();
+    puzzle1_dado_btn0 = false;
+    puzzle1_dado_btn1 = true;
+    
+    puzzle1_dado_sound.play();
+
 });
 
-/*
-//COMPROBAR PUZZLE 1 PROVISIONAL (SIEMPRE FALLA) --> ACTIVAR CUANDO CORRESPONDA
+$("#puzzle1_dado_btn1").click(function(){
+
+    $("#puzzle1_dado_btn2").show();
+    $("#puzzle1_dado_btn1").hide();
+    puzzle1_dado_btn1 = false;
+    puzzle1_dado_btn2 = true;
+    puzzle1_dado_sound.play();
+
+});
+
+
+$("#puzzle1_dado_btn2").click(function(){
+
+    $("#puzzle1_dado_btn3").show();
+    $("#puzzle1_dado_btn2").hide();
+    puzzle1_dado_btn2 = false;
+    puzzle1_dado_btn3 = true;
+    puzzle1_dado_sound.play();
+
+});
+
+$("#puzzle1_dado_btn3").click(function(){
+
+    $("#puzzle1_dado_btn4").show();
+    $("#puzzle1_dado_btn3").hide();
+    puzzle1_dado_btn3 = false;
+    puzzle1_dado_btn4 = true;
+    puzzle1_dado_sound.play();
+
+});
+
+$("#puzzle1_dado_btn4").click(function(){
+
+    $("#puzzle1_dado_btn5").show();
+    $("#puzzle1_dado_btn4").hide();
+    puzzle1_dado_btn4 = false;
+    puzzle1_dado_btn5 = true;
+    puzzle1_dado_sound.play();
+
+});
+
+$("#puzzle1_dado_btn5").click(function(){
+
+    $("#puzzle1_dado_btn6").show();
+    $("#puzzle1_dado_btn5").hide();
+    puzzle1_dado_btn5 = false;
+    puzzle1_dado_btn6 = true;
+    puzzle1_dado_sound.play();
+
+});
+
+$("#puzzle1_dado_btn6").click(function(){
+
+    $("#puzzle1_dado_btn1").show();
+    $("#puzzle1_dado_btn6").hide();
+    puzzle1_dado_btn6 = false;
+    puzzle1_dado_btn1 = true;
+    puzzle1_dado_sound.play();
+
+});
+
+
+
+
+
+
+
+
+
+    //COMPROBAR SI HE ACERTADO EL PUZZLE 1 
 $("#puzzle1_btn2").click(function(){
 
-    $("#puzzle1_error").show();
+    if (puzzle1_dado_btn6 == true){
 
+        $("#puzzle1_acierto").show();
 
-    $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
-    $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
+        $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
+
+    } else {
+
+        $("#puzzle1_error").show();
+
+        $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
+        $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
+
+    }
+
+    
 });
-*/
+
+
 
     //ACERTAR PUZZLE 1
 $("#puzzle1_btn3").click(function(){
@@ -507,6 +632,23 @@ $("#puzzle1_btn4").click(function(){
     
     $("#puzzle1_cont").css("-webkit-filter", "blur(0px)");
     $("#cerrar_btn1").css("-webkit-filter", "blur(0px)");
+
+    $("#puzzle1_dado_btn0").show();
+    $("#puzzle1_dado_btn1").hide();
+    $("#puzzle1_dado_btn2").hide();
+    $("#puzzle1_dado_btn3").hide();
+    $("#puzzle1_dado_btn4").hide();
+    $("#puzzle1_dado_btn5").hide();
+    $("#puzzle1_dado_btn6").hide();
+
+    puzzle1_dado_btn0 = true;
+    puzzle1_dado_btn1 = false;
+    puzzle1_dado_btn2 = false;
+    puzzle1_dado_btn3 = false;
+    puzzle1_dado_btn4 = false;
+    puzzle1_dado_btn5 = false;
+    puzzle1_dado_btn6 = false;
+
 });
 
 
