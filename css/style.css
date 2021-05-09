@@ -234,7 +234,6 @@ body {
     height: 200%;
     cursor: pointer;
     position: center;
-    
   }
   
   td {
@@ -258,12 +257,11 @@ body {
   input {
     width: 90px;
     height: 30px;
-    position: absolute;
   }
   
   .botton {
     margin-left: 210px;
-    position: relative;
+    position: absolute;
 
   }
 
