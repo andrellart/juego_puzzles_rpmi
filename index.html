@@ -52,12 +52,22 @@
                 font-family: pirata_tit;
                 src: url(fonts/JackPirate_PERSONAL_USE_ONLY.ttf);
             }
+
+            @font-face {
+                font-family: eth;
+                src: url(fonts/ethnocentric\ rg.ttf);
+            }
+
+            @font-face {
+                font-family: nasa;
+                src: url(fonts/nasalization-rg.ttf);
+            }
             
         </style>
         <title>Multiverse Wrap</title>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+        
     </head>
 
     <body>
@@ -89,18 +99,25 @@
 
 
                 <div id="titulo">
-                    <h1>MULTIVERSE WRAP</h1>
-        
+                    <img src="img/titulo_inicio.png">
+                </div>
+
+                <div id="bucle_inicio">
+                    <img src="img/Bucle_.png">
+
                 </div>
         
                 <div id="inicio_op">
         
                     <div id="inicio_btn1">
+
+                        <img src="img/botones_inicio.png">
                         <p>Comenzar</p>
             
                     </div>
             
                     <div id="inicio_btn2">
+                        <img src="img/botones_inicio.png">
                         <p>Instrucciones del juego</p>
             
                     </div>
@@ -111,7 +128,7 @@
 
             <div id="inst">
 
-                <img src="img/pergamino.png" id="pergamino">
+                <img src="img/inst_ventana.png" id="pergamino">
                 
                 <div id="instrucciones">
 
@@ -121,7 +138,7 @@
 
                     <h1>INSTRUCCIONES</h1>
 
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <P>Tras decidir embarcarte a esta aventura por el multiverso, encontrarás 6 realidades paralelas a la que tú conoces. Podrás explorar estos mundos, aunque debes tener mucho cuidado, ya que no podrás avanzar para llegar a casa hasta que resuelvas un puzzle en cada uno de ellos. Pero no te preocupes si no encuentras la solución, ya que puedes coger hasta un máximo de 3 pistas en cada uno de los puzzles. Esto tiene su riesgo, ya que cuantas más pistas cojas, más probable es que al regresar a tu mundo la realidad que conocías se haya alterado. <br> También debes tener en cuenta que debes seguir un orden determinado en tu travesía, los mundos se irán desbloqueando conforme pases por el anterior y resuelvas su puzzle. <br> ¡Mucha suerte!</P>
 
                     
 
@@ -135,11 +152,17 @@
         <!-- MAPA  -->
 
         <div id="mapa">
+
+            <div id="fondo_negro_inicio"></div>
             
             <img src="img/mapa2.png" id="mapaimg">
 
             <div id="help">
                 <img src="img/help.png">
+            </div>
+            
+            <div id="bucle_mapa">
+                <img src="img/Bucle_.png" id="bucle_mapa_img">
             </div>
 
             <div id="puzzles">
@@ -587,7 +610,7 @@
             <div id="puzzle4_cont">
                 <div id="puzzle4_txt">
                     <h1>PUZZLE 4 (NOMBRE)</h1>
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. <br> Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. <br> Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
                     
                 </div>
 
@@ -922,11 +945,12 @@
 
         <div id="final">
 
-            <img id="final_img" src="">
+            <img id="final_img" src="img/finales_ventana.png">
 
             <p id="final_txt"> <!-- Aquí va escrito el texto de los finales en el script --> </p> 
             
             <div id="final_btn">
+                <img src="img/botones_inicio.png">
                 <p>Volver a jugar</p>
             </div>
 

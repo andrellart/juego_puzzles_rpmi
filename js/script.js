@@ -3,6 +3,7 @@
 $("#inst").hide();
 $("#help").hide();
 
+
 $("#puzzle1").hide();
 $("#pirata_closed").hide();
 $("#puzzle1_cont").hide();
@@ -309,6 +310,10 @@ $("#inicio_btn1").click(function(){
 
     $("#inicio").hide();
     $("#help").show();
+    $("#fondo_negro_inicio").fadeOut(3000);
+
+    $("#bucle_mapa_img").css("animation-name", "bucle_scale");
+    
 
     $("#narco_lock").show();
     $("#bosque_lock").show();
@@ -330,6 +335,8 @@ $("#puzzle1_btn").click(function(){
 
     $("#puzzle1").show();
     $("#help").hide();
+
+    $("#bucle_mapa_img").css("animation-name", "none");
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
     musica_puzzle1.currentTime = 0
@@ -622,6 +629,10 @@ $("#puzzle1_btn3").click(function(){
     $("#puzzle1_btn").css("animation-name", "none");
     $("#puzzle2_btn").css("animation-name", "mundos");
 
+    $("#bucle_mapa_img").css("animation-name", "bucle_scale");
+    $("#bucle_mapa").css("top", "9%");
+    $("#bucle_mapa").css("left", "54.5%");
+
     $('#musica_puzzle1').animate({volume: 0}, 1500);
 });
 
@@ -658,6 +669,8 @@ $("#puzzle2_btn").click(function(){
 
     $("#puzzle2").show();
     $("#help").hide();
+
+    $("#bucle_mapa_img").css("animation-name", "none");
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
@@ -832,6 +845,10 @@ $("#puzzle2_p3").click(function(){
     
         $("#puzzle2").hide();
         $("#help").show();
+
+        $("#bucle_mapa_img").css("animation-name", "bucle_scale");
+        $("#bucle_mapa").css("top", "14%");
+        $("#bucle_mapa").css("left", "75%");
     
         $("#narco_closed").show();
         $("#bosque_closed").hide();
@@ -863,6 +880,8 @@ $("#puzzle3_btn").click(function(){
 
     $("#puzzle3").show();
     $("#help").hide();
+
+    $("#bucle_mapa_img").css("animation-name", "none");
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
 });
@@ -1035,6 +1054,10 @@ $("#puzzle3_btn3").click(function(){
     $("#puzzle3").hide();
     $("#help").show();
 
+    $("#bucle_mapa_img").css("animation-name", "bucle_scale");
+    $("#bucle_mapa").css("top", "59%");
+    $("#bucle_mapa").css("left", "72.5%");
+
     $("#bosque_closed").show();
     $("#bosque_closed").css("-webkit-filter", "grayscale(1)");
     $("#alien_closed").hide();
@@ -1063,6 +1086,8 @@ $("#puzzle3_btn4").click(function(){
 
 //BOTON PUZZLE 4
 $("#puzzle4_btn").click(function(){
+
+    $("#bucle_mapa_img").css("animation-name", "none");
 
     $("#puzzle4").show();
     $("#help").hide();
@@ -1238,6 +1263,10 @@ $("#puzzle4_p3").click(function(){
     
         $("#puzzle4").hide();
         $("#help").show();
+
+        $("#bucle_mapa_img").css("animation-name", "bucle_scale");
+        $("#bucle_mapa").css("top", "43%");
+        $("#bucle_mapa").css("left", "42.5%");
     
         $("#alien_closed").show();
         $("#alien_closed").css("-webkit-filter", "grayscale(1)");
@@ -1269,6 +1298,8 @@ $("#puzzle5_btn").click(function(){
 
     $("#puzzle5").show();
     $("#help").hide();
+
+    $("#bucle_mapa_img").css("animation-name", "none");
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
     musica_puzzle5.currentTime = 0
@@ -2767,6 +2798,10 @@ $("#puzzle5_btn3").click(function(){
     $("#puzzle5").hide();
     $("#help").show();
 
+    $("#bucle_mapa_img").css("animation-name", "bucle_scale");
+    $("#bucle_mapa").css("top", "62%");
+    $("#bucle_mapa").css("left", "20%");
+
     $("#western_closed").show();
     $("#western_closed").css("-webkit-filter", "grayscale(1)");
     $("#zombie_closed").hide();
@@ -2856,6 +2891,8 @@ $("#puzzle6_btn").click(function(){
 
     $("#puzzle6").show();
     $("#help").hide();
+
+    $("#bucle_mapa_img").css("animation-name", "none");
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
     musica_puzzle6.currentTime = 0
@@ -4090,6 +4127,7 @@ $("#puzzle6_p3").click(function(){
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
+        $("#fondo_negro_inicio").fadeIn(3000);
 
         
         $('#musica_puzzle6').animate({volume: 0}, 1500);
@@ -4100,16 +4138,16 @@ $("#puzzle6_p3").click(function(){
         if( puntos < 6 ){
 
             $("#final_txt").html('Esta es el final 3, es decir, la puntuación obtenida está entre 0 y 5');
-            $("#final_img").attr("src", "img/final3_prov.png");
+            
         
         } else if ( puntos < 13 ){
 
             $("#final_txt").html('Esta es el final 2, es decir, la puntuación obtenida está entre 6 y 12');
-            $("#final_img").attr("src", "img/final2_prov.jpg");
+            
         } else {
 
             $("#final_txt").html('Esta es el final 1, es decir, la puntuación obtenida está entre 13 y 18');
-            $("#final_img").attr("src", "img/final1_prov.png");
+            
         } 
         
     });
