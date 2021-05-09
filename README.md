@@ -1,8 +1,13 @@
-# juego_puzzles_rpmi
-Este juego consiste en un mapa de búsqueda del tesoro donde habrá que realizar varios puzzles para llegar al final.
-En el mapa del tesoro aparecerán diferentes zonas numeradas por donde habrá que pasar para llegar hasta el final (no puedes acceder al siguiente puzzle si no ha resuelto el anterior).
-El juego consta de un total de 6 puzzles de diferente dificultad y de la página de inicio donde veríamos el mapa. La distribución de tareas sería:
-Daria: 2 puzzles
-Sandra: 2 puzzles + parte gráfica del mapa.
-Andrea: 2 puzzles + código del mapa.
+# multiverse_wrap
+Este juego consiste en un viaje a través de un mapa explorando diferentes multiversos, donde habrá que realizar un puzzle en cada uno de ellos para poder volver a casa.
+En el mapa aparecerán diferentes mundos bloqueados (a exepción del primero) que se irán desbloqueando conforme superes los puzzles del mundo anterior hasta el final (no se puede acceder al siguiente puzzle si no se ha resuelto el anterior). En cada puzzle se podrá coger un máximo de 3 pistas, pero cada vez que se coge una pista se resta 1 punto del puntuaje base del que parte el jugador(18 puntos). Dependiendo del número de puntos con el que finalice el jugador el recorrido, el resultado final variará. No se muestra en ningún momento la puntuación que lleva el jugador, pero en las instrucciones del juego se le explica ésto.
+
+La distribución de tareas sería:
+
+Daria: Puzzle 2 (con su respectivo diseño).
+
+Sandra: Puzzle 3 y 4 (con sus respectivos diseños), ilustración de los mundos 2, 3, 4, 5 y 6 que aparecen en el mapa.
+
+Andrea: Puzzle 1, 5 y 6 (con sus respectivos diseños), ilustración del mundo 1 que aparece en el mapa, navegación completa por el mapa, navegación y diseño de las ventanas de los puzzles, sistema de puntos en función de las pistas utilizadas (y ventanas de las pistas que se van modificando en el script), diseño (ilustración) del mapa base, así como de los iconos del mapa y de las ventanas y botones del mismo.
+
 
