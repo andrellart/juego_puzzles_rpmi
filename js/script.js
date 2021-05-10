@@ -395,6 +395,7 @@ $("#pista1_btn").click(function(){
     switch(puzzle1_pt){
         case 0:
             $("#puzzle1_pt").show();
+            $("#puzzle1_pistas").hide();
 
             $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
@@ -410,6 +411,7 @@ $("#pista1_btn").click(function(){
 
         case 1:
             $("#puzzle1_pt").show();
+            $("#puzzle1_pistas").hide();
 
             $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
@@ -425,6 +427,7 @@ $("#pista1_btn").click(function(){
 
         case 2:
             $("#puzzle1_pt").show();
+            $("#puzzle1_pistas").hide();
 
             $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
@@ -452,6 +455,7 @@ $("#puzzle1_p1").click(function(){
     if(puzzle1_pt > 0){
 
         $("#puzzle1_pt").show();
+        $("#puzzle1_pistas").hide();
 
         $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
@@ -468,6 +472,7 @@ $("#puzzle1_p2").click(function(){
     if(puzzle1_pt > 1){
 
         $("#puzzle1_pt").show();
+        $("#puzzle1_pistas").hide();
 
         $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
@@ -483,6 +488,7 @@ $("#puzzle1_p3").click(function(){
     if(puzzle1_pt > 2){
 
         $("#puzzle1_pt").show();
+        $("#puzzle1_pistas").hide();
 
         $("#puzzle1_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn1").css("-webkit-filter", "blur(10px)");
@@ -499,6 +505,7 @@ $("#puzzle1_p3").click(function(){
  $("#cerrar_pista_p1").click(function(){
 
     $("#puzzle1_pt").hide();
+    $("#puzzle1_pistas").show();
 
     $("#puzzle1_cont").css("-webkit-filter", "blur(0px)");
     $("#cerrar_btn1").css("-webkit-filter", "blur(0px)");
@@ -707,6 +714,7 @@ $("#pista2_btn").click(function(){
     switch(puzzle2_pt){
         case 0:
             $("#puzzle2_pt").show();
+            $("#puzzle2_pistas").hide();
 
             $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
@@ -722,6 +730,7 @@ $("#pista2_btn").click(function(){
 
         case 1:
             $("#puzzle2_pt").show();
+            $("#puzzle2_pistas").hide();
 
             $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
@@ -737,6 +746,7 @@ $("#pista2_btn").click(function(){
 
         case 2:
             $("#puzzle2_pt").show();
+            $("#puzzle2_pistas").hide();
 
             $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
@@ -764,6 +774,7 @@ $("#puzzle2_p1").click(function(){
     if(puzzle2_pt > 0){
 
         $("#puzzle2_pt").show();
+        $("#puzzle2_pistas").hide();
 
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
@@ -780,6 +791,7 @@ $("#puzzle2_p2").click(function(){
     if(puzzle2_pt > 1){
 
         $("#puzzle2_pt").show();
+        $("#puzzle2_pistas").hide();
 
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
@@ -795,6 +807,7 @@ $("#puzzle2_p3").click(function(){
     if(puzzle2_pt > 2){
 
         $("#puzzle2_pt").show();
+        $("#puzzle2_pistas").hide();
 
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
@@ -811,6 +824,7 @@ $("#puzzle2_p3").click(function(){
  $("#cerrar_pista_p2").click(function(){
 
     $("#puzzle2_pt").hide();
+    $("#puzzle2_pistas").show();
 
     $("#puzzle2_cont").css("-webkit-filter", "blur(0px)");
     $("#cerrar_btn2").css("-webkit-filter", "blur(0px)");
@@ -916,6 +930,7 @@ $("#cerrar_btn3").click(function(){
     switch(puzzle3_pt){
         case 0:
             $("#puzzle3_pt").show();
+            $("#puzzle3_pistas").hide();
 
             $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
@@ -931,6 +946,7 @@ $("#cerrar_btn3").click(function(){
 
         case 1:
             $("#puzzle3_pt").show();
+            $("#puzzle3_pistas").hide();
 
             $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
@@ -946,6 +962,7 @@ $("#cerrar_btn3").click(function(){
 
         case 2:
             $("#puzzle3_pt").show();
+            $("#puzzle3_pistas").hide();
 
             $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
@@ -973,6 +990,7 @@ $("#puzzle3_p1").click(function(){
     if(puzzle3_pt > 0){
 
         $("#puzzle3_pt").show();
+        $("#puzzle3_pistas").hide();
 
         $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
@@ -989,6 +1007,7 @@ $("#puzzle3_p2").click(function(){
     if(puzzle3_pt > 1){
 
         $("#puzzle3_pt").show();
+        $("#puzzle3_pistas").hide();
 
         $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
@@ -1004,6 +1023,7 @@ $("#puzzle3_p3").click(function(){
     if(puzzle3_pt > 2){
 
         $("#puzzle3_pt").show();
+        $("#puzzle3_pistas").hide();
 
         $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
@@ -1020,6 +1040,7 @@ $("#puzzle3_p3").click(function(){
  $("#cerrar_pista_p3").click(function(){
 
     $("#puzzle3_pt").hide();
+    $("#puzzle3_pistas").show();
 
     $("#puzzle3_cont").css("-webkit-filter", "blur(0px)");
     $("#cerrar_btn3").css("-webkit-filter", "blur(0px)");
@@ -1127,6 +1148,7 @@ $("#pista4_btn").click(function(){
     switch(puzzle4_pt){
         case 0:
             $("#puzzle4_pt").show();
+            $("#puzzle4_pistas").hide();
 
             $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
@@ -1142,6 +1164,7 @@ $("#pista4_btn").click(function(){
 
         case 1:
             $("#puzzle4_pt").show();
+            $("#puzzle4_pistas").hide();
 
             $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
@@ -1157,6 +1180,7 @@ $("#pista4_btn").click(function(){
 
         case 2:
             $("#puzzle4_pt").show();
+            $("#puzzle4_pistas").hide();
 
             $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
@@ -1184,6 +1208,7 @@ $("#puzzle4_p1").click(function(){
     if(puzzle4_pt > 0){
 
         $("#puzzle4_pt").show();
+        $("#puzzle4_pistas").hide();
 
         $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
@@ -1200,6 +1225,7 @@ $("#puzzle4_p2").click(function(){
     if(puzzle4_pt > 1){
 
         $("#puzzle4_pt").show();
+        $("#puzzle4_pistas").hide();
 
         $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
@@ -1215,6 +1241,7 @@ $("#puzzle4_p3").click(function(){
     if(puzzle4_pt > 2){
 
         $("#puzzle4_pt").show();
+        $("#puzzle4_pistas").hide();
 
         $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
@@ -1231,6 +1258,7 @@ $("#puzzle4_p3").click(function(){
  $("#cerrar_pista_p4").click(function(){
 
     $("#puzzle4_pt").hide();
+    $("#puzzle4_pistas").show();
 
     $("#puzzle4_cont").css("-webkit-filter", "blur(0px)");
     $("#cerrar_btn4").css("-webkit-filter", "blur(0px)");
@@ -1402,6 +1430,7 @@ $("#pista5_btn").click(function(){
         //Coger la primera pista
         case 0:
             $("#puzzle5_pt").show();
+            $("#puzzle5_pistas").hide();
 
             $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
@@ -1420,6 +1449,7 @@ $("#pista5_btn").click(function(){
 
         case 1:
             $("#puzzle5_pt").show();
+            $("#puzzle5_pistas").hide();
 
             $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
@@ -1438,6 +1468,7 @@ $("#pista5_btn").click(function(){
 
         case 2:
             $("#puzzle5_pt").show();
+            $("#puzzle5_pistas").hide();
 
             $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
@@ -1468,6 +1499,7 @@ $("#puzzle5_p1").click(function(){
     if(puzzle5_pt > 0){
 
         $("#puzzle5_pt").show();
+        $("#puzzle5_pistas").hide();
 
         $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
@@ -1487,6 +1519,7 @@ $("#puzzle5_p2").click(function(){
     if(puzzle5_pt > 1){
 
         $("#puzzle5_pt").show();
+        $("#puzzle5_pistas").hide();
 
         $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
@@ -1505,6 +1538,7 @@ $("#puzzle5_p3").click(function(){
     if(puzzle5_pt > 2){
 
         $("#puzzle5_pt").show();
+        $("#puzzle5_pistas").hide();
 
         $("#puzzle5_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn5").css("-webkit-filter", "blur(10px)");
@@ -1522,6 +1556,7 @@ $("#puzzle5_p3").click(function(){
  $("#cerrar_pista_p5").click(function(){
 
     $("#puzzle5_pt").hide();
+    $("#puzzle5_pistas").show();
 
     $("#puzzle5_cont").css("-webkit-filter", "blur(0px)");
     $("#cerrar_btn5").css("-webkit-filter", "blur(0px)");
@@ -3948,6 +3983,7 @@ $("#pista6_btn").click(function(){
     switch(puzzle6_pt){
         case 0:
             $("#puzzle6_pt").show();
+            $("#puzzle6_pistas").hide();
 
             $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
@@ -3963,6 +3999,7 @@ $("#pista6_btn").click(function(){
 
         case 1:
             $("#puzzle6_pt").show();
+            $("#puzzle6_pistas").hide();
 
             $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
@@ -3978,6 +4015,7 @@ $("#pista6_btn").click(function(){
 
         case 2:
             $("#puzzle6_pt").show();
+            $("#puzzle6_pistas").hide();
 
             $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
             $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
@@ -4005,6 +4043,7 @@ $("#puzzle6_p1").click(function(){
     if(puzzle6_pt > 0){
 
         $("#puzzle6_pt").show();
+        $("#puzzle6_pistas").hide();
 
         $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
@@ -4021,6 +4060,7 @@ $("#puzzle6_p2").click(function(){
     if(puzzle6_pt > 1){
 
         $("#puzzle6_pt").show();
+        $("#puzzle6_pistas").hide();
 
         $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
@@ -4036,6 +4076,7 @@ $("#puzzle6_p3").click(function(){
     if(puzzle6_pt > 2){
 
         $("#puzzle6_pt").show();
+        $("#puzzle6_pistas").hide();
 
         $("#puzzle6_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn6").css("-webkit-filter", "blur(10px)");
@@ -4052,6 +4093,7 @@ $("#puzzle6_p3").click(function(){
  $("#cerrar_pista_p6").click(function(){
 
     $("#puzzle6_pt").hide();
+    $("#puzzle6_pistas").show();
 
     $("#puzzle6_cont").css("-webkit-filter", "blur(0px)");
     $("#cerrar_btn6").css("-webkit-filter", "blur(0px)");
@@ -4137,16 +4179,16 @@ $("#puzzle6_p3").click(function(){
 
         if( puntos < 6 ){
 
-            $("#final_txt").html('Esta es el final 3, es decir, la puntuación obtenida está entre 0 y 5');
+            $("#final_txt").html('¡Sí, por fin has vuelto a tu universo! pero...¡¡Oh no!! ¿¡Qué ha pasado aquí!? ¡¡Aquí no hay nada!! Se ve que cogiste demasiadas pistas y ahora la humanidad ha desaparecido... Tu mundo es un yermo, aunque... espera un momento... ¡Parece que aún queda una persona! Ese es... ¡Es Fernando Simón! ¡Corre! ¡¡¡Huye!!!');
             
         
         } else if ( puntos < 13 ){
 
-            $("#final_txt").html('Esta es el final 2, es decir, la puntuación obtenida está entre 6 y 12');
+            $("#final_txt").html('¡Sí, por fin has vuelto a tu universo! pero... ¿¡Qué c*jones!? ¿¡Quienes son esta gente!? Mira que te avisamos de que cada pista que cogías aumentaba las probablidad de que se alterara la realidad que conocías... Ahora en tu mundo no existe la raza humana, en su lugar todos son reptilianos. Bueno... podría ser peor... supongo...');
             
         } else {
 
-            $("#final_txt").html('Esta es el final 1, es decir, la puntuación obtenida está entre 13 y 18');
+            $("#final_txt").html('¡Sí, por fin has vuelto a tu universo! Se nota que has necesitado poca ayuda para acertar los puzzles y recorrer todos los mundos, ya que parece que todo está tal y como lo recordabas. Tu familia, tus amistades... como en casa no se está en ningún sitio, pero cuando quieras volver a vivir una aventura por el multiverso aquí te esperamos.');
             
         } 
         
