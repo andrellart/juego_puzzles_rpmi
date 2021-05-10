@@ -64,6 +64,15 @@ let puzzle6_pt = 0;
 
 let puntos = 18;
 
+let musica_puzzle2 = document.getElementById("musica_puzzle2")
+musica_puzzle2.loop = true
+
+let musica_puzzle3 = document.getElementById("musica_puzzle3")
+musica_puzzle3.loop = true
+
+let musica_puzzle4 = document.getElementById("musica_puzzle4")
+musica_puzzle4.loop = true
+
 //puzle2
 
 let narcoa = false
@@ -358,6 +367,9 @@ $("#puzzle2_btn").click(function(){
     $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
+    musica_puzzle2.currenttime = 0
+    musica_puzzle2.play();
+    $("#musica_puzzle2").animate({volume:1}, 0);
 });
 
 
@@ -433,7 +445,8 @@ $("#puzzle2_btn").click(function(){
         $("#puzzle2_inicio").show();
         $("#help").show();
     
-    
+        $("#musica_puzzle2").animate({volume: 0}, 500);
+        
         $("#mapa").css("-webkit-filter", "blur(0px)");
     });
 
@@ -587,6 +600,8 @@ $("#puzzle2_p3").click(function(){
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
+
+        $("#musica_puzzle2").animate({volume: 0}, 1500);
     });
     
     //FALLAR PUZZLE 2
@@ -608,6 +623,9 @@ $("#puzzle3_btn").click(function(){
     $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
+    musica_puzzle3.currenttime = 0
+    musica_puzzle3.play();
+    $("#musica_puzzle3").animate({volume:1}, 0);
 });
 
     //COMENZAR PUZZLE 3
@@ -628,6 +646,7 @@ $("#cerrar_btn3").click(function(){
     $("#puzzle3_cont").hide();
     $("#puzzle3_inicio").show();
 
+    $("#musica_puzzle3").animate({volume: 0}, 500);
 
     $("#mapa").css("-webkit-filter", "blur(0px)");
 });
@@ -1083,6 +1102,8 @@ $("#puzzle3_btn3").click(function(){
     
     
     $("#mapa").css("-webkit-filter", "blur(0px)");
+
+    $("#musica_puzzle3").animate({volume: 0}, 1500);
 });
 
 //FALLAR PUZZLE 3
@@ -1105,6 +1126,9 @@ $("#puzzle4_btn").click(function(){
     $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
+    musica_puzzle3.currenttime = 0
+    musica_puzzle3.play();
+    $(musica_puzzle3).animate({volume:1}, 0);
 });
 
 
@@ -1115,6 +1139,7 @@ $("#puzzle4_btn").click(function(){
         $("#puzzle4_cont").show();
         $("#puzzle4_inicio").hide();
         
+        $("#musica_puzzle4").animate({volume:1}, 0);
         
     });
     
@@ -1128,6 +1153,8 @@ $("#puzzle4_btn").click(function(){
     
     
         $("#mapa").css("-webkit-filter", "blur(0px)");
+
+        $("#musica_puzzle4").animate({volume: 0}, 500);
     });
 
     /* manijas */
@@ -1239,7 +1266,7 @@ $("#pista4_btn").click(function(){
             $("#puzzle4_p1").css("background-color", "chocolate");
             $("#puzzle4_p1").css("cursor", "pointer");
 
-            $("#puzzle4_pt_txt").html('Esta es la PRIMERA pista del puzzle 4');
+            $("#puzzle4_pt_txt").html('Haz click sobre las manijas para girarlas.');
 
             puzzle4_pt++;
             puntos--;
@@ -1254,7 +1281,7 @@ $("#pista4_btn").click(function(){
             $("#puzzle4_p2").css("background-color", "chocolate");
             $("#puzzle4_p2").css("cursor", "pointer");
 
-            $("#puzzle4_pt_txt").html('Esta es la SEGUNDA pista del puzzle 4');
+            $("#puzzle4_pt_txt").html('El orden normal es de derecha a izquierda y de arriba a abajo.');
 
             puzzle4_pt++;
             puntos--;
@@ -1272,7 +1299,7 @@ $("#pista4_btn").click(function(){
             $("#puzzle4_p3").css("background-color", "chocolate");
             $("#puzzle4_p3").css("cursor", "pointer");
 
-            $("#puzzle4_pt_txt").html('Esta es la TERCERA pista del puzzle 4');
+            $("#puzzle4_pt_txt").html('Busca las respuestas en google y marcalas crack.');
 
             puzzle4_pt++;
             puntos--;
@@ -1396,6 +1423,8 @@ $("#puzzle4_p3").click(function(){
         
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
+
+        $("#musica_puzzle3").animate({volume: 0}, 1500);
     });
     
     //FALLAR PUZZLE 4
