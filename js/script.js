@@ -64,6 +64,10 @@ let puzzle6_pt = 0;
 
 let puntos = 18;
 
+//puzle2
+
+let respuestapz2 = false
+
 //Puzle 3 
 /* Ramitas */
 
@@ -364,6 +368,8 @@ $("#puzzle2_btn").click(function(){
         
         
     });
+
+    $("#narcoa").click(function(){
     
         //CERRAR PUZZLE 2
     $("#cerrar_btn2").click(function(){
@@ -447,7 +453,7 @@ $("#puzzle2_p1").click(function(){
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle2_pt_txt").html('Esta es la PRIMERA pista del puzzle 2');
+        $("#puzzle2_pt_txt").html('El area se calculaba Base x Altura');
 
     }
 
@@ -463,7 +469,7 @@ $("#puzzle2_p2").click(function(){
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle2_pt_txt").html('Esta es la SEGUNDA pista del puzzle 2');
+        $("#puzzle2_pt_txt").html('Hay otro método... puedes encontrar la solución si sumas la longitud de valla de todas las parcelas');
 
     }
 
@@ -478,7 +484,7 @@ $("#puzzle2_p3").click(function(){
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle2_pt_txt").html('Esta es la TERCERA pista del puzzle 1');
+        $("#puzzle2_pt_txt").html('Señala la que tiene mas laditos de cuadraditos.');
 
     }
 
@@ -497,10 +503,25 @@ $("#puzzle2_p3").click(function(){
 
 
     
+if( angulo1_6 == 270 && angulo1_1 == 0 && angulo1_2 == 0 && angulo1_3 == 90 && angulo1_8 == 90 && angulo1_13 == 90 && angulo1_19 == 270 && angulo1_14 == 270 && angulo1_9 == 0 && angulo1_10 == 90 && angulo1_15 == 0){
+  $("#puzzle3_acierto").show();
+
+  $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
+  $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+ }
+ else{
+   $("#puzzle3_error").show();
+
+
+   $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
+   $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+ }
+
     
         //COMPROBAR PUZZLE 2 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
+  
     $("#puzzle2_btn2").click(function(){
-    
+
         $("#puzzle2_acierto").show();
     
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
@@ -1000,19 +1021,19 @@ $("#puzzle3_p3").click(function(){
 
 //COMPROBAR PUZZLE 3 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
 $("#puzzle3_btn2").click(function(){
-  if( angulo41 == 45 && angulo42 == 0 && angulo43 ==180 && angulo44 == 315 && angulo45 == 45 && angulo46 == 135){
+   if( angulo1_6 == 270 && angulo1_1 == 0 && angulo1_2 == 0 && angulo1_3 == 90 && angulo1_8 == 90 && angulo1_13 == 90 && angulo1_19 == 270 && angulo1_14 == 270 && angulo1_9 == 0 && angulo1_10 == 90 && angulo1_15 == 0){
     $("#puzzle3_acierto").show();
 
     $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
     $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
-  }
-  else{
-    $("#puzzle3_error").show();
+   }
+   else{
+     $("#puzzle3_error").show();
 
 
-    $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
-    $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
-  }
+     $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
+     $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
+   }
 });
 
     //ACERTAR PUZZLE 3
@@ -1777,11 +1798,4 @@ $("#final_btn").click(function(){
     
     location.reload();
 });
-
-
-
-
-
-
-
 
