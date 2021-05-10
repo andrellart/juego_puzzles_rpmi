@@ -771,6 +771,7 @@ body {
     top: 2.5%;
     left: 2.5%;
     background-image: url(../img/narco_fondo.png);
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -791,7 +792,7 @@ body {
     height: 29%;
     position: absolute;
     top: 35%;
-    left: 49%;
+    left: 50%;
     z-index: 8;
     cursor: pointer;
 }
@@ -800,7 +801,7 @@ body {
     height: 14%;
     position: absolute;
     top: 70%;
-    left: 49%;
+    left: 50%;
     z-index: 8;
     cursor: pointer;
 }
@@ -809,7 +810,7 @@ body {
     height: 28%;
     position: absolute;
     top: 21%;
-    left: 62%;
+    left: 63%;
     z-index: 8;
     cursor: pointer;
 }

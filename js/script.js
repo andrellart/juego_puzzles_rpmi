@@ -66,7 +66,9 @@ let puntos = 18;
 
 //puzle2
 
-let respuestapz2 = false
+let narcoa = false
+let narcob = false
+let narcoc = false
 
 //Puzle 3 
 /* Ramitas */
@@ -370,7 +372,59 @@ $("#puzzle2_btn").click(function(){
     });
 
     $("#narcoa").click(function(){
-    
+      if(narcoa == false){
+        narcoa = true ;
+        narcob = false ;
+        narcoc = false ;
+        document.getElementById("narcoa").src="../img/narco_a_choose.png";
+        document.getElementById("narcob").src="../img/narco_b.png";
+        document.getElementById("narcoc").src="../img/narco_c.png";
+      }
+      else{
+        narcoa = false ;
+        narcob = false ;
+        narcoc = false ;
+        document.getElementById("narcoa").src="../img/narco_a.png";
+      }
+    });
+
+    $("#narcob").click(function(){
+      if(narcob == false){
+        
+        narcoa = false ;
+        narcob = true ;
+        narcoc = false ;
+        document.getElementById("narcob").src="../img/narco_b_choose.png";
+        document.getElementById("narcoa").src="../img/narco_a.png";
+        document.getElementById("narcoc").src="../img/narco_c.png"
+        
+      }
+      else{
+        narcoa = false ;
+        narcob = false ;
+        narcoc = false ;
+        document.getElementById("narcob").src="../img/narco_b.png";
+      }
+    });
+
+    $("#narcoc").click(function(){
+      if(narcoc == false){
+        
+        narcoa = false ;
+        narcob = false ;
+        narcoc = true ;
+        document.getElementById("narcoc").src="../img/narco_c_choose.png";
+        document.getElementById("narcoa").src="../img/narco_a.png";
+        document.getElementById("narcob").src="../img/narco_b.png";
+      }
+      else{
+        narcoa = false ;
+        narcob = false ;
+        narcoc = false ;
+        document.getElementById("narcoc").src="../img/narco_c.png"
+      }
+    });
+
         //CERRAR PUZZLE 2
     $("#cerrar_btn2").click(function(){
     
@@ -502,43 +556,23 @@ $("#puzzle2_p3").click(function(){
 });
 
 
-    
-if( angulo1_6 == 270 && angulo1_1 == 0 && angulo1_2 == 0 && angulo1_3 == 90 && angulo1_8 == 90 && angulo1_13 == 90 && angulo1_19 == 270 && angulo1_14 == 270 && angulo1_9 == 0 && angulo1_10 == 90 && angulo1_15 == 0){
-  $("#puzzle3_acierto").show();
-
-  $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
-  $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
- }
- else{
-   $("#puzzle3_error").show();
-
-
-   $("#puzzle3_cont").css("-webkit-filter", "blur(10px)");
-   $("#cerrar_btn3").css("-webkit-filter", "blur(10px)");
- }
-
-    
         //COMPROBAR PUZZLE 2 PROVISIONAL (SIEMPRE ACIERTA) --> ACTIVAR CUANDO CORRESPONDA
   
     $("#puzzle2_btn2").click(function(){
-
+        if(narcoa == true){
         $("#puzzle2_acierto").show();
     
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
-    });
-    
-    /*
-    //COMPROBAR PUZZLE 2 PROVISIONAL (SIEMPRE FALLA) --> ACTIVAR CUANDO CORRESPONDA
-    $("#puzzle2_btn2").click(function(){
-    
+      }
+      else{
         $("#puzzle2_error").show();
-    
     
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
+      }
     });
-    */
+    
     
         //ACERTAR PUZZLE 2
     $("#puzzle2_btn3").click(function(){
