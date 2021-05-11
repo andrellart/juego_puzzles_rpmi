@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="img/Bucle_.png">
         <style>
 
             @font-face {
@@ -22,27 +23,127 @@
                 font-family: shine;
                 src: url(fonts/Shine\ Brighter.ttf);
             }
-            
+
+            @font-face {
+                font-family: western1;
+                src: url(fonts/WEST____.TTF);
+            }
+
+            @font-face {
+                font-family: western2;
+                src: url(fonts/Go\ 2\ Old\ Western.otf);
+            }
+
+            @font-face {
+                font-family: mb;
+                src: url(fonts/MB-ThinkTwice_Regular.ttf);
+            }
+
+            @font-face {
+                font-family: city;
+                src: url(fonts/cityburn-®.ttf);
+            }
+
+            @font-face {
+                font-family: pirata_txt;
+                src: url(fonts/PirataOne-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: pirata_tit;
+                src: url(fonts/JackPirate_PERSONAL_USE_ONLY.ttf);
+            }
+
+            @font-face {
+                font-family: eth;
+                src: url(fonts/ethnocentric\ rg.ttf);
+            }
+
+            @font-face {
+                font-family: nasa;
+                src: url(fonts/nasalization-rg.ttf);
+            }
+
+            @font-face{
+                font-family: narc;
+                src: url(fonts/Royante.ttf);
+            }
+
+            @font-face{
+                font-family: narctxt;
+                src: url(fonts/Hey\ August.ttf);
+            }
+
+            @font-face{
+                font-family: animal;
+                src: url(../fonts/CartooNature.ttf);
+            }
+
+            @font-face{
+                font-family: animalnormal;
+                src: url(../fonts/PinkChicken-Regular.ttf);
+            }
+
+            @font-face{
+                font-family: alienss;
+                src: url(../fonts/Varino\ -\ Normal.otf);
+            }
+
+            @font-face{
+                font-family: alienss2;
+                src: url(../fonts/Rocket\ Rinder.otf);
+            }
+                        
         </style>
         <title>Multiverse Wrap</title>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="js/Rotate.js"></script>
+        
     </head>
 
     <body>
 
+        <audio id="musica_puzzle1">
+            <source src="sounds/piratas.mp3" type="audio/wav">
+        </audio>
+
+        <audio id="puzzle1_dado_sound">
+            <source src="sounds/dado.mp3" type="audio/wav">
+        </audio>
+
+        <audio id="musica_puzzle5">
+            <source src="sounds/western.mp3" type="audio/wav">
+        </audio>
+
+        <audio id="puzzle6_piezas_sound">
+            <source src="sounds/puzzle6_fichas.wav" type="audio/wav">
+        </audio>
+
+        <audio id="musica_puzzle6">
+            <source src="sounds/zombies.mp3" type="audio/wav">
+        </audio>
+
         <audio id="musica_puzzle2">
-            <source src="songs/narco.mp3" type="audio/wav">
+            <source src="sounds/narco.mp3" type="audio/wav">
         </audio>
 
         <audio id="musica_puzzle3">
-            <source src="songs/bosque.mp3" type="audio/wav">
+            <source src="sounds/bosque.mp3" type="audio/wav">
         </audio>
 
         <audio id="musica_puzzle4">
-            <source src="songs/alien.mp3" type="audio/wav">
+            <source src="sounds/alien.mp3" type="audio/wav">
         </audio>
+
+        <audio id="sonido_base">
+            <source src="sounds/sonido_base.mp3" type="audio/wav">
+        </audio>
+
+        <audio id="boton_sonido">
+            <source src="sounds/boton_sonido.mp3" type="audio/wav">
+        </audio>
+
 
         <!-- PÁGINA DE INICIO -->
 
@@ -50,18 +151,25 @@
 
 
                 <div id="titulo">
-                    <h1>MULTIVERSE WRAP</h1>
-        
+                    <img src="img/titulo_inicio.png">
+                </div>
+
+                <div id="bucle_inicio">
+                    <img src="img/Bucle_.png">
+
                 </div>
         
                 <div id="inicio_op">
         
                     <div id="inicio_btn1">
+
+                        <img src="img/botones_inicio.png">
                         <p>Comenzar</p>
             
                     </div>
             
                     <div id="inicio_btn2">
+                        <img src="img/botones_inicio.png">
                         <p>Instrucciones del juego</p>
             
                     </div>
@@ -72,7 +180,7 @@
 
             <div id="inst">
 
-                <img src="img/pergamino.png" id="pergamino">
+                <img src="img/inst_ventana.png" id="pergamino">
                 
                 <div id="instrucciones">
 
@@ -82,7 +190,7 @@
 
                     <h1>INSTRUCCIONES</h1>
 
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <P>Tras decidir embarcarte a esta aventura por el multiverso, encontrarás 6 realidades paralelas a la que tú conoces. Podrás explorar estos mundos, aunque debes tener mucho cuidado, ya que no podrás avanzar para llegar a casa hasta que resuelvas un puzzle en cada uno de ellos. Pero no te preocupes si no encuentras la solución, ya que puedes coger hasta un máximo de 3 pistas en cada uno de los puzzles. Esto tiene su riesgo, ya que cuantas más pistas cojas, más probable es que al regresar a tu mundo la realidad que conocías se haya alterado. <br> También debes tener en cuenta que debes seguir un orden determinado en tu travesía, los mundos se irán desbloqueando conforme pases por el anterior y resuelvas su puzzle. <br> ¡Mucha suerte!</P>
 
                     
 
@@ -96,29 +204,35 @@
         <!-- MAPA  -->
 
         <div id="mapa">
+
+            <div id="fondo_negro_inicio"></div>
             
-            <img src="img/mapa.jpg" id="mapaimg">
+            <img src="img/mapa2.png" id="mapaimg">
 
             <div id="help">
                 <img src="img/help.png">
+            </div>
+            
+            <div id="bucle_mapa">
+                <img src="img/Bucle_.png" id="bucle_mapa_img">
             </div>
 
             <div id="puzzles">
 
                 <div id="puzzle1_btn">
-                    <img  src="img/pirata_prov.png">
+                    <img  src="img/pirata.png">
                 </div>
                 <div id="pirata_closed">
-                    <img  src="img/pirata_prov.png">
+                    <img  src="img/pirata.png">
                 </div>
 
 
                 
                 <div id="puzzle2_btn">
-                    <img  src="img/narco_prov.png">
+                    <img  src="img/narco.png">
                 </div>
                 <div id="narco_closed">
-                    <img  src="img/narco_prov.png">
+                    <img  src="img/narco.png">
                 </div>
                 <div id="narco_lock">
                     <img src="img/lock.png"> 
@@ -126,10 +240,10 @@
 
 
                 <div id="puzzle3_btn">
-                    <img  src="img/bosque_prov.png">
+                    <img  src="img/bosque.png">
                 </div>
                 <div id="bosque_closed">
-                    <img  src="img/bosque_prov.png">
+                    <img  src="img/bosque.png">
                 </div>
                 <div id="bosque_lock">
                     <img src="img/lock.png"> 
@@ -137,10 +251,10 @@
 
 
                 <div id="puzzle4_btn">
-                    <img  src="img/alien_prov.png">
+                    <img  src="img/alien.png">
                 </div>
                 <div id="alien_closed">
-                    <img  src="img/alien_prov.png">
+                    <img  src="img/alien.png">
                 </div>
                 <div id="alien_lock">
                     <img src="img/lock.png"> 
@@ -148,10 +262,10 @@
 
 
                 <div id="puzzle5_btn">
-                    <img  src="img/western_prov.png">
+                    <img  src="img/western.png">
                 </div>
                 <div id="western_closed">
-                    <img  src="img/western_prov.png">
+                    <img  src="img/western.png">
                 </div>
                 <div id="western_lock">
                     <img src="img/lock.png"> 
@@ -159,10 +273,10 @@
 
 
                 <div id="puzzle6_btn">
-                    <img  src="img/zombie_prov.png">
+                    <img  src="img/zombie.png">
                 </div>
                 <div id="zombie_closed">
-                    <img  src="img/zombie_prov.png">
+                    <img  src="img/zombie.png">
                 </div>
                 <div id="zombie_lock">
                     <img src="img/lock.png"> 
@@ -175,14 +289,17 @@
 
         <!-- PUZZLE 1 -->
         <div id="puzzle1">
+
+            <img src="img/fondo_papel_puzzle1.png" id="fondo_papel_puzzle1">
+
             <div id="cerrar_btn1">
-                <img src="img/x.png">
+                <img src="img/x_pirata.png">
             </div>
 
             <!-- PÁGINA DE INICIO DEL PUZZLE 1 -->
 
             <div id="puzzle1_inicio">
-                <h1>BIENVENIDA/O AL MUNDO PIRATA</h1>
+                <h1>Has llegado a Isla Tortuga</h1>
 
                 <div id="puzzle1_btn1">
                     <p>Comenzar</p>
@@ -195,8 +312,8 @@
 
             <div id="puzzle1_cont">
                 <div id="puzzle1_txt">
-                    <h1>PUZZLE 1 (NOMBRE)</h1>
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <h1>Dados Piratas</h1>
+                    <P>Al llegar a "Isla Tortuga", un grupo de piratas te han secuestrado para intercambiarte por una caja de naranjas con el fin de paliar su escorbuto. Sin embargo, has conseguido llegar a un acuerdo para que te liberen. La capitana ha cogido tres dados y te los ha lanzado planteándote el siguiente problema: <br> " Imagina que tienes tres dados idénticos con caras sin numerar y los apilas en una columna. Si el dado que está en la base tiene una cara visible que marca 1 punto y los puntos de las caras con las que se tocan los dados suman un total de 5 puntos, ¿Cuántos puntos valdrá la cara superior del dado de arriba? <br> Pulsa el dado de arriba para cambiar los puntos de su cara superior y dale a comprobar para saber si has acertado y así quedar libre.</P>
                     
                 </div>
 
@@ -222,7 +339,35 @@
 
                     </div>
 
-                    <!-- ¡¡AQUÍ AÑADÍS VUESTRO PUZZLE!! -->
+                    <img id="puzzle1_fondo" src="img/puzzle1_fondo.png" >
+
+                    <div id="puzzle1_dado_btn0">
+                        <img src="img/dado0.png" >
+                    </div>
+
+                    <div id="puzzle1_dado_btn1">
+                        <img src="img/dado1.png" >
+                    </div>
+
+                    <div id="puzzle1_dado_btn2">
+                        <img src="img/dado2.png" >
+                    </div>
+
+                    <div id="puzzle1_dado_btn3">
+                        <img src="img/dado3.png" >
+                    </div>
+
+                    <div id="puzzle1_dado_btn4">
+                        <img src="img/dado4.png" >
+                    </div>
+
+                    <div id="puzzle1_dado_btn5">
+                        <img src="img/dado5.png" >
+                    </div>
+
+                    <div id="puzzle1_dado_btn6">
+                        <img src="img/dado6.png" >
+                    </div>
 
                 </div>
 
@@ -233,8 +378,11 @@
 
             <!-- VENTANA DE PISTAS PUZZLE 1 -->
             <div id="puzzle1_pt">
+
+                <img src="img/fondo_ventanas_puzzle1.png" id="fondo_pistas_puzzle1">
+
                 <div id="cerrar_pista_p1">
-                    <img src="img/x.png">
+                    <img src="img/x_pirata.png">
                 </div>
 
                 <p id="puzzle1_pt_txt"> <!--  Aquí escribimos las pistas a través del script --> </p>
@@ -244,10 +392,13 @@
             <!-- SI HAS ACERTADO PUZZLE 1 -->
 
             <div id="puzzle1_acierto">
+
+                <img src="img/fondo_ventanas_puzzle1.png" id="fondo_acierto_puzzle1">
+
                 <div id="puzzle1_acierto_txt">
 
                     <h1>¡Puzzle resuelto!</h1>
-                    <p>Enhorabuena, has resuelto el primer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
+                    <p>Enhorabuena, has resuelto el puzzle de Isla Tortuga y la capitana te ha liberado (un trato es un trato). Ahora puedes continuar explorando los siguientes universos.</p>
 
                 </div>
                 
@@ -261,9 +412,11 @@
 
             <div id="puzzle1_error">
 
+                <img src="img/fondo_ventanas_puzzle1.png" id="fondo_error_puzzle1">
+
                 <div id="puzzle1_error_txt">
                     <h1>Respuesta incorrecta</h1>
-                    <p>Parece que esa no era la solución al puzzle. Vuelve a intentarlo.</p>
+                    <p>Parece que esa no era la solución al puzzle. ¿Estás en disposición de dejarte vender por unas naranjas o vas a volver a intentarlo?</p>
 
                 </div>
                 
@@ -279,14 +432,17 @@
 
         <!-- PUZZLE 2 -->
         <div id="puzzle2">
+
+            <img src="img/narco_fondo.png" id="fondo_papel_puzzle2">
+
             <div id="cerrar_btn2">
-                <img src="img/x.png">
+                <img src="img/x_narco.png">
             </div>
 
             <!-- PÁGINA DE INICIO DEL PUZZLE 2 -->
 
             <div id="puzzle2_inicio">
-                <h1>Bienvendia/o a Monte rey</h1>
+                <h1>Has llegado a Monte Rey</h1>
 
                 <div id="puzzle2_btn1">
                     <p>Comenzar</p>
@@ -342,7 +498,7 @@
             <!-- VENTANA DE PISTAS PUZZLE 2 -->
             <div id="puzzle2_pt">
                 <div id="cerrar_pista_p2">
-                    <img src="img/x.png">
+                    <img src="img/x_narco.png">
                 </div>
 
                 <p id="puzzle2_pt_txt"> <!--  Aquí escribimos las pistas a través del script --> </p>
@@ -396,7 +552,7 @@
             <!-- PÁGINA DE INICIO DEL PUZZLE 3 -->
 
             <div id="puzzle3_inicio">
-                <h1>Bienvenida/o al bosque de Panacea.</h1>
+                <h1>HAS LLEGADO AL BOSQUE DE PANACEA</h1>
 
                 <div id="puzzle3_btn1">
                     <p>Comenzar</p>
@@ -436,7 +592,7 @@
 
                     </div>
 
-                    <!-- ¡¡AQUÍ AÑADÍS VUESTRO PUZZLE!! -->
+                    
                     <img id="lab" src="img/arbusti.png">
                     <img id="lolo1_1" src="img/ramit.png">
                     <img id="lolo1_2" src="img/ramit.png">
@@ -520,7 +676,7 @@
             <!-- PÁGINA DE INICIO DEL PUZZLE 4 -->
 
             <div id="puzzle4_inicio">
-                <h1>Bienvenida/o a la nave nodriza.</h1>
+                <h1>HAS LLEGADO A LA NAVE NODRIZA</h1>
 
                 <div id="puzzle4_btn1">
                     <p>Comenzar</p>
@@ -559,7 +715,7 @@
                         </div>
 
                     </div>
-<!-- ¡¡AQUÍ AÑADÍS VUESTRO PUZZLE!! -->
+                    
                     
                     <img id="cerr" src="img/cerrao.png">
                     <img id="lolo41" src="img/manijacf.png">
@@ -592,7 +748,7 @@
 
             </div>
 
-            <!-- SI HAS ACERTADO PUZZLE 1 -->
+            <!-- SI HAS ACERTADO PUZZLE 4 -->
 
             <div id="puzzle4_acierto">
                 <div id="puzzle4_acierto_txt">
@@ -626,17 +782,21 @@
 
         </div>
 
+
+        
         <!-- PUZZLE 5 -->
         <div id="puzzle5">
 
+            <img src="img/fondo_papel_puzzle5.jpg" id="fondo_papel_puzzle5">
+
             <div id="cerrar_btn5">
-                <img src="img/x.png">
+                <img src="img/x_puzzle5.png">
             </div>
 
             <!-- PÁGINA DE INICIO DEL PUZZLE 5 -->
 
             <div id="puzzle5_inicio">
-                <h1>BIENVENIDA/O AL MUNDO WESTERN</h1>
+                <h1>HAS LLEGADO A EL DORADO</h1>
 
                 <div id="puzzle5_btn1">
                     <p>Comenzar</p>
@@ -649,8 +809,8 @@
 
             <div id="puzzle5_cont">
                 <div id="puzzle5_txt">
-                    <h1>PUZZLE 5 (NOMBRE)</h1>
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <h1>VACAS Y ALCOHOL</h1>
+                    <P>Al llegar al mundo de "El Dorado" lo primero que te encuentras es a un vaquero con un dilema horrible. Tiene que cruzar un río para poder llevar a tres de sus vacas a un extorsionador para que no mate a toda su familia y, además, tres botellas de alcohol (que ha destilado él mismo) a la cantina que se encuentra en la otra rivera del río para vendérselas al dueño y así ganarse el sueldo del mes. Lleva a las vacas y el alcohol a la otra orilla cumpliendo las siguientes normas: <br> 1- No puedes ocupar más de dos plazas en cada viaje.<br> 2- Para que la balsa se mueva, tiene que haber al menos una plaza ocupada en ella.<br> 3- Si en una de las dos orillas hay más vacas que botellas de alcohol, las vacas se beberán el alcohol y tendrás que volver a empezar. <br>Para montar a los animales o las botellas en la balsa sólo tienes que clicarlos. Para que la balsa se desplace a la otra orilla, pusa el botón "Mover". Si quieres rectificar aquello que has montado en la balsa, solo tienes que volver a clicarlo y se colocará donde estaba anteriormente.</P>
                     
                 </div>
 
@@ -676,19 +836,29 @@
 
                     </div>
 
-                    <!-- ¡¡AQUÍ AÑADÍS VUESTRO PUZZLE!! -->
+                    <img id="puzzle5_fondo" src="img/puzzle5_fondo.png" >
+                    <img id="puzzle5_balsa" src="img/puzzle5_balsa.png" >
+                    <img id="puzzle5_vaca1" src="img/puzzle5_vaca.png" >
+                    <img id="puzzle5_vaca2" src="img/puzzle5_vaca.png" >
+                    <img id="puzzle5_vaca3" src="img/puzzle5_vaca.png" >
+                    <img id="puzzle5_botella1" src="img/puzzle5_botella.png" >
+                    <img id="puzzle5_botella2" src="img/puzzle5_botella.png" >
+                    <img id="puzzle5_botella3" src="img/puzzle5_botella.png" >
 
                 </div>
 
                 <div id="puzzle5_btn2">
-                    <p>Comprobar</p>
+                    <p>Mover</p>
                 </div>
             </div>
 
             <!-- VENTANA DE PISTAS PUZZLE 5 -->
             <div id="puzzle5_pt">
+
+                <img src="img/fondo_ventanas_puzzle5.png" id="fondo_pistas_puzzle5">
+
                 <div id="cerrar_pista_p5">
-                    <img src="img/x.png">
+                    <img src="img/x_puzzle5.png">
                 </div>
 
                 <p id="puzzle5_pt_txt"> <!--  Aquí escribimos las pistas a través del script --> </p>
@@ -698,10 +868,12 @@
             <!-- SI HAS ACERTADO PUZZLE 5 -->
 
             <div id="puzzle5_acierto">
+                <img src="img/fondo_ventanas_puzzle5.png" id="fondo_acierto_puzzle5">
+
                 <div id="puzzle5_acierto_txt">
 
                     <h1>¡Puzzle resuelto!</h1>
-                    <p>Enhorabuena, has resuelto el primer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
+                    <p>Enhorabuena, has resuelto el puzzle de El Dorado y el vaquero te lo agradece con una de sus botellas. Ahora puedes continuar explorando el siguiente universo.</p>
 
                 </div>
                 
@@ -715,9 +887,11 @@
 
             <div id="puzzle5_error">
 
+                <img src="img/fondo_ventanas_puzzle5.png" id="fondo_error_puzzle5">
+
                 <div id="puzzle5_error_txt">
                     <h1>Respuesta incorrecta</h1>
-                    <p>Parece que esa no era la solución al puzzle. Vuelve a intentarlo.</p>
+                    <p> Has dejado más vacas que alcohol en una de las orillas y se lo bebieron todo. Ahora el extorsionador irá a por la familia del vaquero por intentar colarle vacas ebrias y el vaquero no tiene nada que vender en la cantina.</p>
 
                 </div>
                 
@@ -732,14 +906,17 @@
         <!-- PUZZLE 6 -->
 
         <div id="puzzle6">
+
+            <img src="img/fondo_papel_puzzle6.png" id="fondo_papel_puzzle6">
+
             <div id="cerrar_btn6">
-                <img src="img/x.png">
+                <img src="img/x_puzzle6.png">
             </div>
 
             <!-- PÁGINA DE INICIO DEL PUZZLE 6 -->
 
             <div id="puzzle6_inicio">
-                <h1>BIENVENIDA/O AL MUNDO ZOMBIE</h1>
+                <h1>HAS LLEGADO A SANTA CLARITA</h1>
 
                 <div id="puzzle6_btn1">
                     <p>Comenzar</p>
@@ -752,8 +929,8 @@
 
             <div id="puzzle6_cont">
                 <div id="puzzle6_txt">
-                    <h1>PUZZLE 6 (NOMBRE)</h1>
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <h1>MATEMÁTICAS ZOMBIES</h1>
+                    <P>Santa Clarita es un lugar famoso en todo el universo por su acogedor ambiente postapocalíptico, los habitantes zombies, la comida local basada en turistas frescos y los locales clandestinos movidos por los juegos y apuestas. Siguiendo la común ruta turística de este universo, llegas a uno de estos locales y te aventuras a participar en uno de los juegos, pero la participación no te saldrá gratis. Si solucionas el puzzle, podrás salir íntegramente del universo, por el contrario, si fallas, los otros jugadores zombies te comerán vio. <br> Este puzzle consiste en colocar 7 de las fichas numeradas del 1 al 9 sobre esas manchas verdes tan sospechosas, de manera que den el mismo resultado cuando se multipliquen los números horizontal y verticalmente.</P>
                     
                 </div>
 
@@ -779,7 +956,25 @@
 
                     </div>
 
-                    <!-- ¡¡AQUÍ AÑADÍS VUESTRO PUZZLE!! -->
+                    <img  id="puzzle6_fondo" src="img/puzzle6_fondo.png">
+
+                    <div id="puzzle6_m1"></div>
+                    <div id="puzzle6_m2"></div>
+                    <div id="puzzle6_m3"></div>
+                    <div id="puzzle6_m4"></div>
+                    <div id="puzzle6_m5"></div>
+                    <div id="puzzle6_m6"></div>
+                    <div id="puzzle6_m7"></div>
+
+                    <img  id="puzzle6_pieza1" src="img/puzzle6_pieza1.png">
+                    <img  id="puzzle6_pieza2" src="img/puzzle6_pieza2.png">
+                    <img  id="puzzle6_pieza3" src="img/puzzle6_pieza3.png">
+                    <img  id="puzzle6_pieza4" src="img/puzzle6_pieza4.png">
+                    <img  id="puzzle6_pieza5" src="img/puzzle6_pieza5.png">
+                    <img  id="puzzle6_pieza6" src="img/puzzle6_pieza6.png">
+                    <img  id="puzzle6_pieza7" src="img/puzzle6_pieza7.png">
+                    <img  id="puzzle6_pieza8" src="img/puzzle6_pieza8.png">
+                    <img  id="puzzle6_pieza9" src="img/puzzle6_pieza9.png">
 
                 </div>
 
@@ -790,8 +985,11 @@
 
              <!-- VENTANA DE PISTAS PUZZLE 6 -->
              <div id="puzzle6_pt">
+
+                <img src="img/fondo_ventanas_puzzle6.png" id="fondo_pistas_puzzle6">
+                
                 <div id="cerrar_pista_p6">
-                    <img src="img/x.png">
+                    <img src="img/x_puzzle6.png">
                 </div>
 
                 <p id="puzzle6_pt_txt"> <!--  Aquí escribimos las pistas a través del script --> </p>
@@ -801,10 +999,12 @@
             <!-- SI HAS ACERTADO PUZZLE 6 -->
 
             <div id="puzzle6_acierto">
+
+                <img src="img/fondo_ventanas_puzzle6.png" id="fondo_acierto_puzzle6">
                 <div id="puzzle6_acierto_txt">
 
                     <h1>¡Puzzle resuelto!</h1>
-                    <p>Enhorabuena, has resuelto el primer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
+                    <p>¡Enhorabuena! Has resuelto el puzzle de Santa Clarita y los zombies no te han tocado ni un pelo. Ya has recorrido todos los universos, ahora puedes volver a casa... ¿Seguirá todo tal y como lo recordabas?</p>
 
                 </div>
                 
@@ -818,9 +1018,11 @@
 
             <div id="puzzle6_error">
 
+                <img src="img/fondo_ventanas_puzzle6.png" id="fondo_error_puzzle6">
+
                 <div id="puzzle6_error_txt">
                     <h1>Respuesta incorrecta</h1>
-                    <p>Parece que esa no era la solución al puzzle. Vuelve a intentarlo.</p>
+                    <p>Parece que esa no era la solución al puzzle, están tus órganos en juego ¿Lo vas a dejar así?</p>
 
                 </div>
                 
@@ -838,11 +1040,12 @@
 
         <div id="final">
 
-            <img id="final_img" src="">
+            <img id="final_img" src="img/finales_ventana.png">
 
             <p id="final_txt"> <!-- Aquí va escrito el texto de los finales en el script --> </p> 
             
             <div id="final_btn">
+                <img src="img/botones_inicio.png">
                 <p>Volver a jugar</p>
             </div>
 
