@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="img/Bucle_.png">
         <style>
 
             @font-face {
@@ -62,11 +63,42 @@
                 font-family: nasa;
                 src: url(fonts/nasalization-rg.ttf);
             }
-            
+
+            @font-face{
+                font-family: narc;
+                src: url(fonts/Royante.ttf);
+            }
+
+            @font-face{
+                font-family: narctxt;
+                src: url(fonts/Hey\ August.ttf);
+            }
+
+            @font-face{
+                font-family: animal;
+                src: url(../fonts/CartooNature.ttf);
+            }
+
+            @font-face{
+                font-family: animalnormal;
+                src: url(../fonts/PinkChicken-Regular.ttf);
+            }
+
+            @font-face{
+                font-family: alienss;
+                src: url(../fonts/Varino\ -\ Normal.otf);
+            }
+
+            @font-face{
+                font-family: alienss2;
+                src: url(../fonts/Rocket\ Rinder.otf);
+            }
+                        
         </style>
         <title>Multiverse Wrap</title>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/Rotate.js"></script>
         
     </head>
 
@@ -90,6 +122,18 @@
 
         <audio id="musica_puzzle6">
             <source src="sounds/zombies.mp3" type="audio/wav">
+        </audio>
+
+        <audio id="musica_puzzle2">
+            <source src="sounds/narco.mp3" type="audio/wav">
+        </audio>
+
+        <audio id="musica_puzzle3">
+            <source src="sounds/bosque.mp3" type="audio/wav">
+        </audio>
+
+        <audio id="musica_puzzle4">
+            <source src="sounds/alien.mp3" type="audio/wav">
         </audio>
 
 
@@ -387,7 +431,7 @@
             <!-- PÁGINA DE INICIO DEL PUZZLE 2 -->
 
             <div id="puzzle2_inicio">
-                <h1>BIENVENIDA/O AL MUNDO NARCO</h1>
+                <h1>Bienvendia/o a Monte rey</h1>
 
                 <div id="puzzle2_btn1">
                     <p>Comenzar</p>
@@ -400,9 +444,8 @@
 
             <div id="puzzle2_cont">
                 <div id="puzzle2_txt">
-                    <h1>PUZZLE 2 (NOMBRE)</h1>
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
-                    
+                    <h1>La parcelita</h1>
+                    <P>Has aterrizado en los terrenos privados de Mariano José Felipe Ramirez de la Rosa, pero estás de suerte: te necesita para asesorarle qué parcela comprarse. Le han ofrecido tres distintas, el alquiler de cada parcela se calcula según el área, pero la valla que rodea cada una de ellas se cobra aparte. Teniendo esto en cuenta, ¿cuál le saldrá mejor de precio?</P>                    
                 </div>
 
                 <div id="puzzle2_puzzle">
@@ -429,6 +472,11 @@
 
                     <!-- ¡¡AQUÍ AÑADÍS VUESTRO PUZZLE!! -->
 
+                    <img id="narcoju" src="img/narcojuego.png">
+                    <img id="narcoa" src="img/narco_a.png">
+                    <img id="narcob" src="img/narco_b.png">
+                    <img id="narcoc" src="img/narco_c.png">
+
                 </div>
 
                 <div id="puzzle2_btn2">
@@ -453,7 +501,7 @@
                 <div id="puzzle2_acierto_txt">
 
                     <h1>¡Puzzle resuelto!</h1>
-                    <p>Enhorabuena, has resuelto el primer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
+                    <p>Enhorabuena, has resuelto el segundo puzzle, ahora puedes continuar explorando los siguientes universos.</p>
 
                 </div>
                 
@@ -493,7 +541,7 @@
             <!-- PÁGINA DE INICIO DEL PUZZLE 3 -->
 
             <div id="puzzle3_inicio">
-                <h1>BIENVENIDA/O AL MUNDO DEL BOSQUE ENCANTANDO</h1>
+                <h1>Bienvenida/o al bosque de Panacea.</h1>
 
                 <div id="puzzle3_btn1">
                     <p>Comenzar</p>
@@ -506,8 +554,8 @@
 
             <div id="puzzle3_cont">
                 <div id="puzzle3_txt">
-                    <h1>PUZZLE 3 (NOMBRE)</h1>
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <h1>El camino a la felicidad</h1>
+                    <P>LLegas a este extraño pero bonito lugar. Te quedas mirando esas curiosísimas luces flotantes hmm si, tienen cierta pinta de huevo frito totalmente de acuerdo contigo. Cuando te quieres dar cuenta no sabes dónde estás y tienes un extraño sentimiento de hambre. Has visto una de esas luces al final de unos arbustos, ¿serán huevos fritos de verdad? LLega hasta ella para comprobarlo y si tienes un poco de suerte saciar tu hambruna.</P>
                     
                 </div>
 
@@ -533,8 +581,29 @@
 
                     </div>
 
-                    <!-- ¡¡AQUÍ AÑADÍS VUESTRO PUZZLE!! -->
-
+                    
+                    <img id="lab" src="img/arbusti.png">
+                    <img id="lolo1_1" src="img/ramit.png">
+                    <img id="lolo1_2" src="img/ramit.png">
+                    <img id="lolo1_3" src="img/ramit.png">
+                    <img id="lolo1_4" src="img/ramit.png">
+                    <img id="lolo1_5" src="img/ramit.png">
+                    <img id="lolo1_6" src="img/ramit.png">
+                    <img id="lolo1_7" src="img/ramit.png">
+                    <img id="lolo1_8" src="img/ramit.png">
+                    <img id="lolo1_9" src="img/ramit.png">
+                    <img id="lolo1_10" src="img/ramit.png">
+                    <img id="lolo1_11" src="img/ramit.png">
+                    <img id="lolo1_12" src="img/ramit.png">
+                    <img id="lolo1_13" src="img/ramit.png">
+                    <img id="lolo1_14" src="img/ramit.png">
+                    <img id="lolo1_15" src="img/ramit.png">
+                    <img id="lolo1_16" src="img/ramit.png">
+                    <img id="lolo1_17" src="img/ramit.png">
+                    <img id="lolo1_18" src="img/ramit.png">
+                    <img id="lolo1_19" src="img/ramit.png">
+                    <img id="lolo1_20" src="img/ramit.png">
+                    <img id="luz" src="img/huevinxo.png">
                 </div>
 
                 <div id="puzzle3_btn2">
@@ -558,7 +627,7 @@
                 <div id="puzzle3_acierto_txt">
 
                     <h1>¡Puzzle resuelto!</h1>
-                    <p>Enhorabuena, has resuelto el primer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
+                    <p>Enhorabuena, has resuelto el tercer puzzle, ahora puedes continuar explorando los siguientes universos.</p>
 
                 </div>
                 
@@ -574,7 +643,7 @@
 
                 <div id="puzzle3_error_txt">
                     <h1>Respuesta incorrecta</h1>
-                    <p>Parece que esa no era la solución al puzzle. Vuelve a intentarlo.</p>
+                    <p>Parece que esa no era la respuesta al puzzle. Vuelve a intentarlo.</p>
 
                 </div>
                 
@@ -596,7 +665,7 @@
             <!-- PÁGINA DE INICIO DEL PUZZLE 4 -->
 
             <div id="puzzle4_inicio">
-                <h1>BIENVENIDA/O AL MUNDO ALIEN</h1>
+                <h1>Bienvenida/o a la nave nodriza.</h1>
 
                 <div id="puzzle4_btn1">
                     <p>Comenzar</p>
@@ -609,8 +678,8 @@
 
             <div id="puzzle4_cont">
                 <div id="puzzle4_txt">
-                    <h1>PUZZLE 4 (NOMBRE)</h1>
-                    <P>Si te embarcas en esta aventura del multiverso podrás explorar diferentes universos con realidades muy diferentes, pero debes tener en cuenta que para poder salir de allí tendrás que resolver un puzzle en cada universo. <br> Una vez resuelto el puzzle podrás pasar al siguiente universo y cuando pases por todos podrás volver a casa. <br> Si el puzzle te parece muy complicado tendrás un máximo de 3 pistas en cada uno de ellos, pero ten en cuenta que en función del número de pistas que utilices durante la travesía la realidad del universo en el que vives puede verse modificada.</P>
+                    <h1>La caja</h1>
+                    <P>Te has quedado sin baterías de plutonio en la nave. Con tu ingenio asombroso has pensado que los aliens tendrían algunas en la caja fuerte super secreta que no has visto pero sabes que tiene que haber una caja fuerte super secreta. Hay una nota al lado "1. Cerditos en el cuento 2. Hermanas de Marge 3. 3x2 4. Sobrinas del pato Donald  5. Deseos 6. Marrón. Vaya, parece que estos aliens han cogido costumbres bastantes humanas.</P>
                     
                 </div>
 
@@ -635,8 +704,21 @@
                         </div>
 
                     </div>
-
-                    <!-- ¡¡AQUÍ AÑADÍS VUESTRO PUZZLE!! -->
+                    
+                    
+                    <img id="cerr" src="img/cerrao.png">
+                    <img id="lolo41" src="img/manijacf.png">
+                    <img id="rodi41" src="img/cajaf.png">
+                    <img id="lolo42" src="img/manijacf_2.png">
+                    <img id="rodi42" src="img/cajaf.png">
+                    <img id="lolo43" src="img/manijacf.png">
+                    <img id="rodi43" src="img/cajaf.png">
+                    <img id="lolo44" src="img/manijacf_2.png">
+                    <img id="rodi44" src="img/cajaf.png">
+                    <img id="lolo45" src="img/manijacf.png">
+                    <img id="rodi45" src="img/cajaf.png">
+                    <img id="lolo46" src="img/manijacf_2.png">
+                    <img id="rodi46" src="img/cajaf.png">
 
                 </div>
 
@@ -655,7 +737,7 @@
 
             </div>
 
-            <!-- SI HAS ACERTADO PUZZLE 1 -->
+            <!-- SI HAS ACERTADO PUZZLE 4 -->
 
             <div id="puzzle4_acierto">
                 <div id="puzzle4_acierto_txt">
@@ -689,6 +771,8 @@
 
         </div>
 
+
+        
         <!-- PUZZLE 5 -->
         <div id="puzzle5">
 

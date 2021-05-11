@@ -928,19 +928,56 @@ body {
 
 
 /*PUZZLE 2*/
+
 #puzzle2{
     position: absolute;
     height: 95%;
     width: 95%;
     top: 2.5%;
     left: 2.5%;
-    background-color: red;
+    background-image: url(../img/narco_fondo.png);
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
-    
+}
+
+#narcoju{
+
+    height: 100%;
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    z-index: 3;
+}
+
+#narcoa{
+    height: 29%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    z-index: 8;
+    cursor: pointer;
+}
+
+#narcob{
+    height: 14%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index: 8;
+    cursor: pointer;
+}
+
+#narcoc{
+    height: 28%;
+    position: absolute;
+    top: 21%;
+    left: 63%;
+    z-index: 8;
+    cursor: pointer;
 }
 
 #cerrar_btn2{
@@ -950,7 +987,7 @@ body {
     height: 6%;
     width: 7%;
     cursor: pointer;
-    z-index: 5;
+    z-index: 900;
 }
 
 #cerrar_btn2 img{
@@ -973,7 +1010,7 @@ body {
 }
 
 #puzzle2_inicio h1{
-    font-family: wash;
+    font-family: narc;
     font-size: 100pt;
     position: absolute;
     top: 15%;
@@ -991,7 +1028,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: narc;
     font-size: 40pt;
 }
 
@@ -1005,18 +1042,19 @@ body {
     height: 90%;
     width: 98%;
     display: flex;
-    font-family: shine;
+    font-family: narctxt;
     font-size: 28.5pt;
     
 }
 
 #puzzle2_cont h1{
-    font-family: wash;
+    font-family: narc;
     font-size: 40pt;
 }
 
 #puzzle2_txt{
-    background-color: blue;
+    background-color: rgba(0, 255, 76, 0.513);
+    border-radius: 20%;
     height: 100%;
     width: 20%;
     display: flex;
@@ -1027,7 +1065,7 @@ body {
 }
 
 #puzzle2_puzzle{
-    background-color: green;
+    
     height: 100%;
     width: 80%;
     display: flex;
@@ -1049,12 +1087,13 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: narc;
     font-size: 40pt;
 }
 
 
 /*PISTAS DEL PUZZLE 2*/
+
 #puzzle2_pistas{
     width: 20%;
     height: 5%;
@@ -1063,7 +1102,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: wash;
+    font-family: narc;
     font-size: 25pt;
 }
 
@@ -1074,6 +1113,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
+    z-index: 900;
     cursor: pointer; 
 }
 
@@ -1084,6 +1124,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
+    z-index: 850;
 }
 
 
@@ -1099,7 +1140,7 @@ body {
     justify-content: center;
     padding: 1%;
     border-radius: 10px;
-    font-family: shine;
+    font-family: narc;
     font-size: 28.5pt;
     text-align: center;
     
@@ -1112,7 +1153,7 @@ body {
     height: 15%;
     width: 15%;
     cursor: pointer;
-    z-index: 5;
+    z-index: 900;
 }
 
 #cerrar_pista_p2 img{
@@ -1143,14 +1184,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: narctxt;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle2_acierto_txt h1{
-    font-family: wash;
+    font-family: narc;
     font-size: 40pt;
     
 }
@@ -1168,7 +1209,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: narc;
     font-size: 40pt;
 }
   
@@ -1196,14 +1237,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: narctxt;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle2_error_txt h1{
-    font-family: wash;
+    font-family: narc;
     font-size: 40pt;
     
 }
@@ -1221,7 +1262,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: narc;
     font-size: 40pt;
 }
 
@@ -1233,7 +1274,7 @@ body {
     width: 95%;
     top: 2.5%;
     left: 2.5%;
-    background-color: yellow;
+    background-image: url(../img/cartel_3.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1242,6 +1283,226 @@ body {
     
 }
 
+#lab{
+    height: 98%;
+    width: 80%;
+    top:1%;
+    position: absolute;
+    z-index: 400;
+}
+
+#luz{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 90%;
+    z-index: 800;
+}
+
+/* RAMItas */
+
+#lolo1_1{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_2{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_3{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_4{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_5{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_6{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_7{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_8{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_9{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_10{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_11{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_12{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_13{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_14{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_15{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_16{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_17{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_18{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_19{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#lolo1_20{
+    height: 15%;
+    width: 7%;
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    z-index: 800;
+    cursor: pointer;
+}
+/* RAMItas */
+
 #cerrar_btn3{
     position: absolute;
     top: 1%;
@@ -1249,7 +1510,7 @@ body {
     height: 6%;
     width: 7%;
     cursor: pointer;
-    z-index: 5;
+    z-index: 850;
 }
 
 #cerrar_btn3 img{
@@ -1272,7 +1533,7 @@ body {
 }
 
 #puzzle3_inicio h1{
-    font-family: wash;
+    font-family: animal;
     font-size: 100pt;
     position: absolute;
     top: 15%;
@@ -1290,7 +1551,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: animal;
     font-size: 40pt;
 }
 
@@ -1304,18 +1565,17 @@ body {
     height: 90%;
     width: 98%;
     display: flex;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: animalnormal;
+    font-size: 20pt;
     
 }
 
 #puzzle3_cont h1{
-    font-family: wash;
+    font-family: animal;
     font-size: 40pt;
 }
 
 #puzzle3_txt{
-    background-color: blue;
     height: 100%;
     width: 20%;
     display: flex;
@@ -1326,7 +1586,7 @@ body {
 }
 
 #puzzle3_puzzle{
-    background-color: red;
+    background-image: url("../img/cesped_pzz3.png");
     height: 100%;
     width: 80%;
     display: flex;
@@ -1348,11 +1608,13 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
 }
 
 /*PISTAS DEL PUZZLE 3*/
+
+
 #puzzle3_pistas{
     width: 20%;
     height: 5%;
@@ -1361,8 +1623,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 25pt;
+   
 }
 
 #pista3_btn{
@@ -1372,7 +1635,8 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    cursor: pointer; 
+    cursor: pointer;  
+    z-index: 850;
 }
 
 #puzzle3_p1, #puzzle3_p2, #puzzle3_p3{
@@ -1382,6 +1646,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
+    z-index: 850;
 }
 
 
@@ -1397,7 +1662,7 @@ body {
     justify-content: center;
     padding: 1%;
     border-radius: 10px;
-    font-family: shine;
+    font-family: animalnormal;
     font-size: 28.5pt;
     text-align: center;
     
@@ -1410,7 +1675,7 @@ body {
     height: 15%;
     width: 15%;
     cursor: pointer;
-    z-index: 5;
+    z-index: 900;
 }
 
 #cerrar_pista_p3 img{
@@ -1442,14 +1707,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: animalnormal;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle3_acierto_txt h1{
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
     
 }
@@ -1467,7 +1732,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
 }
   
@@ -1495,14 +1760,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: animalnormal;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle3_error_txt h1{
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
     
 }
@@ -1520,7 +1785,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: animalnormal;
     font-size: 40pt;
 }
     
@@ -1533,7 +1798,7 @@ body {
     width: 95%;
     top: 2.5%;
     left: 2.5%;
-    background-color: blueviolet;
+    background-image: url(../img/escrincho.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1542,6 +1807,121 @@ body {
     
 }
 
+#cerr{
+    height: 100%;
+    position: absolute;
+    top: 1%;
+    left: 20%;
+    z-index: 120;
+
+}
+
+/*manijas*/
+
+#lolo41{
+    height: 30%;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#rodi41{
+    height: 30%;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    z-index: 700;
+}
+
+#lolo42{
+    height: 30%;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#rodi42{
+    height: 30%;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    z-index: 700;
+}
+
+#lolo43{
+    height: 30%;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#rodi43{
+    height: 30%;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    z-index: 700;
+}
+
+#lolo44{
+    height: 30%;
+    position: absolute;
+    top: 40%;
+    left: 53%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#rodi44{
+    height: 30%;
+    position: absolute;
+    top: 40%;
+    left: 53%;
+    z-index: 700;
+}
+
+#lolo45{
+    height: 30%;
+    position: absolute;
+    top: 65%;
+    left: 46%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#rodi45{
+    height: 30%;
+    position: absolute;
+    top: 65%;
+    left: 46%;
+    z-index: 700;
+}
+
+#lolo46{
+    height: 30%;
+    position: absolute;
+    top: 65%;
+    left: 61%;
+    z-index: 800;
+    cursor: pointer;
+}
+
+#rodi46{
+    height: 30%;
+    position: absolute;
+    top: 65%;
+    left: 61%;
+    z-index: 700;
+}
+
+/*manijas*/
+
 #cerrar_btn4{
     position: absolute;
     top: 1%;
@@ -1549,7 +1929,7 @@ body {
     height: 6%;
     width: 7%;
     cursor: pointer;
-    z-index: 5;
+    z-index: 900;
 }
 
 #cerrar_btn4 img{
@@ -1590,7 +1970,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: alienss;
     font-size: 40pt;
 }
 
@@ -1604,18 +1984,18 @@ body {
     height: 90%;
     width: 98%;
     display: flex;
-    font-family: shine;
-    font-size: 28.5pt;
+    font-family: alienss;
+    font-size: 20pt;
     
 }
 
 #puzzle4_cont h1{
-    font-family: wash;
+    font-family: alienss2;
     font-size: 40pt;
 }
 
 #puzzle4_txt{
-    background-color: blue;
+    background-color: rgba(46, 139, 86, 0.445);
     height: 100%;
     width: 20%;
     display: flex;
@@ -1626,7 +2006,6 @@ body {
 }
 
 #puzzle4_puzzle{
-    background-color: red;
     height: 100%;
     width: 80%;
     display: flex;
@@ -1648,8 +2027,8 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
-    font-size: 40pt;
+    font-family: alienss2;
+    font-size: 35pt;
 }
 
 
@@ -1662,7 +2041,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: wash;
+    font-family: alienss2;
     font-size: 25pt;
 }
 
@@ -1674,6 +2053,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer; 
+    z-index: 850;
 }
 
 #puzzle4_p1, #puzzle4_p2, #puzzle4_p3{
@@ -1683,6 +2063,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 10px;
+    z-index: 850;
 }
 
 
@@ -1698,7 +2079,7 @@ body {
     justify-content: center;
     padding: 1%;
     border-radius: 10px;
-    font-family: shine;
+    font-family: alienss;
     font-size: 28.5pt;
     text-align: center;
     
@@ -1742,14 +2123,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: alienss;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle4_acierto_txt h1{
-    font-family: wash;
+    font-family: alienss2;
     font-size: 40pt;
     
 }
@@ -1767,7 +2148,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: alienss2;
     font-size: 40pt;
 }
   
@@ -1795,14 +2176,14 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: shine;
+    font-family: alienss2;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle4_error_txt h1{
-    font-family: wash;
+    font-family: alienss;
     font-size: 40pt;
     
 }
@@ -1820,7 +2201,7 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: wash;
+    font-family: alienss;
     font-size: 40pt;
 }
     
