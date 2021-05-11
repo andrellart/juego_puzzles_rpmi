@@ -935,7 +935,7 @@ body {
     width: 95%;
     top: 2.5%;
     left: 2.5%;
-    background-image: url(../img/narco_fondo.png);
+    /* background-image: url(../img/narco_fondo.png); */
     background-size: 100%;
     display: flex;
     flex-direction: column;
@@ -944,11 +944,18 @@ body {
     border-radius: 10px;
 }
 
+#fondo_papel_puzzle2{
+    height: 100%;
+    width: 115%;
+    position: relative;
+    
+}
+
 #narcoju{
 
     height: 100%;
     position: absolute;
-    top: 1%;
+    top: 6%;
     left: 40%;
     z-index: 3;
 }
@@ -956,8 +963,8 @@ body {
 #narcoa{
     height: 29%;
     position: absolute;
-    top: 35%;
-    left: 50%;
+    top: 40%;
+    left: 49.5%;
     z-index: 8;
     cursor: pointer;
 }
@@ -965,8 +972,8 @@ body {
 #narcob{
     height: 14%;
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 75%;
+    left: 49.5%;
     z-index: 8;
     cursor: pointer;
 }
@@ -974,18 +981,18 @@ body {
 #narcoc{
     height: 28%;
     position: absolute;
-    top: 21%;
-    left: 63%;
+    top: 27%;
+    left: 62.5%;
     z-index: 8;
     cursor: pointer;
 }
 
 #cerrar_btn2{
     position: absolute;
-    top: 1%;
-    right: -3%;
-    height: 6%;
-    width: 7%;
+    top: 5%;
+    right: -4%;
+    height: 7%;
+    width: 8%;
     cursor: pointer;
     z-index: 900;
 }
@@ -1011,7 +1018,7 @@ body {
 
 #puzzle2_inicio h1{
     font-family: narc;
-    font-size: 100pt;
+    font-size: 150pt;
     position: absolute;
     top: 15%;
     
@@ -1029,7 +1036,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     font-family: narc;
-    font-size: 40pt;
+    font-size: 50pt;
 }
 
 
@@ -1043,25 +1050,40 @@ body {
     width: 98%;
     display: flex;
     font-family: narctxt;
-    font-size: 28.5pt;
+    font-size: 35pt;
     
 }
 
 #puzzle2_cont h1{
     font-family: narc;
-    font-size: 40pt;
+    font-size: 70pt;
+    position: relative;
+    top: -8%;
 }
 
 #puzzle2_txt{
-    background-color: rgba(0, 255, 76, 0.513);
-    border-radius: 20%;
-    height: 100%;
+
+    height: 85%;
     width: 20%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
+    top: 8%;
+    left: 5%;
+    background-color: rgba(46, 139, 86, 0.781);
+    border-radius: 100px;
+    color: white;
+
+
     
+}
+
+#puzzle2_txt p{
+    position: relative;
+    bottom: 15%;
 }
 
 #puzzle2_puzzle{
@@ -1079,16 +1101,16 @@ body {
     height: 6%;
     width: 12%;
     position: absolute;
-    bottom: -8%;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -5%;
+    left: 57%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
     font-family: narc;
-    font-size: 40pt;
+    font-size: 50pt;
+    z-index: 50;
 }
 
 
@@ -1098,12 +1120,12 @@ body {
     width: 20%;
     height: 5%;
     position: absolute;
-    top: 1%;
+    top: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: narc;
-    font-size: 25pt;
+    font-size: 30pt;
 }
 
 #pista2_btn{
@@ -1123,16 +1145,17 @@ body {
     padding: 2%;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
     z-index: 850;
 }
 
 
 #puzzle2_pt{
-    background-color: blueviolet;
+    background-color: seagreen;
     position: absolute;
     top: 15%;
-    height: 40%;
+    height: 30%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1141,7 +1164,8 @@ body {
     padding: 1%;
     border-radius: 10px;
     font-family: narc;
-    font-size: 28.5pt;
+    font-size: 35pt;
+    color: white;
     text-align: center;
     
 }
@@ -1175,7 +1199,7 @@ body {
 }
 
 #puzzle2_acierto_txt{
-    background-color: blueviolet;
+    background-color: seagreen;
     position: absolute;
     top: 15%;
     height: 40%;
@@ -1185,14 +1209,15 @@ body {
     align-items: center;
     border-radius: 10px;
     font-family: narctxt;
-    font-size: 28.5pt;
+    font-size: 35pt;
+    color: white;
     text-align: center;
 
 }
 
 #puzzle2_acierto_txt h1{
     font-family: narc;
-    font-size: 40pt;
+    font-size: 70pt;
     
 }
 
@@ -1210,7 +1235,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     font-family: narc;
-    font-size: 40pt;
+    font-size: 50pt;
 }
   
 
@@ -1228,7 +1253,7 @@ body {
 }
 
 #puzzle2_error_txt{
-    background-color: blueviolet;
+    background-color: seagreen;
     position: absolute;
     top: 15%;
     height: 40%;
@@ -1238,14 +1263,15 @@ body {
     align-items: center;
     border-radius: 10px;
     font-family: narctxt;
-    font-size: 28.5pt;
+    font-size: 35pt;
+    color: white;
     text-align: center;
 
 }
 
 #puzzle2_error_txt h1{
     font-family: narc;
-    font-size: 40pt;
+    font-size: 70pt;
     
 }
 
@@ -1263,7 +1289,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     font-family: narc;
-    font-size: 40pt;
+    font-size: 50pt;
 }
 
 /*PUZZLE 3*/
@@ -1289,6 +1315,7 @@ body {
     top:1%;
     position: absolute;
     z-index: 400;
+    border-radius: 100px;
 }
 
 #luz{
