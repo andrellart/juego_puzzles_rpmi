@@ -466,7 +466,7 @@ $("#pista2_btn").click(function(){
             $("#puzzle2_p1").css("background-color", "chocolate");
             $("#puzzle2_p1").css("cursor", "pointer");
 
-            $("#puzzle2_pt_txt").html('Esta es la PRIMERA pista del puzzle 2');
+            $("#puzzle2_pt_txt").html('El area se calculaba Base x Altura');
 
             puzzle2_pt++;
             puntos--;
@@ -481,7 +481,7 @@ $("#pista2_btn").click(function(){
             $("#puzzle2_p2").css("background-color", "chocolate");
             $("#puzzle2_p2").css("cursor", "pointer");
 
-            $("#puzzle2_pt_txt").html('Esta es la SEGUNDA pista del puzzle 2');
+            $("#puzzle2_pt_txt").html('Hay otro método... puedes encontrar la solución si sumas la longitud de valla de todas las parcelas');
 
             puzzle2_pt++;
             puntos--;
@@ -499,7 +499,7 @@ $("#pista2_btn").click(function(){
             $("#puzzle2_p3").css("background-color", "chocolate");
             $("#puzzle2_p3").css("cursor", "pointer");
 
-            $("#puzzle2_pt_txt").html('Esta es la TERCERA pista del puzzle 2');
+            $("#puzzle2_pt_txt").html('Señala la parcela que tenga mas laditos de cuadraditos.');
 
             puzzle2_pt++;
             puntos--;
@@ -551,7 +551,7 @@ $("#puzzle2_p3").click(function(){
         $("#puzzle2_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn2").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle2_pt_txt").html('Señala la que tiene mas laditos de cuadraditos.');
+        $("#puzzle2_pt_txt").html('Señala la parcela que tenga mas laditos de cuadraditos.');
 
     }
 
@@ -1126,9 +1126,9 @@ $("#puzzle4_btn").click(function(){
     $("#help").hide();
 
     $("#mapa").css("-webkit-filter", "blur(10px)");
-    musica_puzzle3.currenttime = 0
-    musica_puzzle3.play();
-    $(musica_puzzle3).animate({volume:1}, 0);
+    musica_puzzle4.currenttime = 0
+    musica_puzzle4.play();
+    $("#musica_puzzle4").animate({volume:1}, 0);
 });
 
 
@@ -1320,7 +1320,7 @@ $("#puzzle4_p1").click(function(){
         $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle4_pt_txt").html('Esta es la PRIMERA pista del puzzle 4');
+        $("#puzzle4_pt_txt").html('Haz click sobre las manijas para girarlas.');
 
     }
 
@@ -1336,7 +1336,7 @@ $("#puzzle4_p2").click(function(){
         $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle4_pt_txt").html('Esta es la SEGUNDA pista del puzzle 4');
+        $("#puzzle4_pt_txt").html('El orden normal es de derecha a izquierda y de arriba a abajo.');
 
     }
 
@@ -1351,7 +1351,7 @@ $("#puzzle4_p3").click(function(){
         $("#puzzle4_cont").css("-webkit-filter", "blur(10px)");
         $("#cerrar_btn4").css("-webkit-filter", "blur(10px)");
 
-        $("#puzzle4_pt_txt").html('Esta es la TERCERA pista del puzzle 4');
+        $("#puzzle4_pt_txt").html('Busca las respuestas en google y marcalas crack.');
 
     }
 
@@ -1424,7 +1424,7 @@ $("#puzzle4_p3").click(function(){
         
         $("#mapa").css("-webkit-filter", "blur(0px)");
 
-        $("#musica_puzzle3").animate({volume: 0}, 1500);
+        $("#musica_puzzle4").animate({volume: 0}, 1500);
     });
     
     //FALLAR PUZZLE 4
