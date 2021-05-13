@@ -1979,17 +1979,18 @@ body {
 }
 
 #puzzle4_inicio h1{
-    font-family: wash;
-    font-size: 100pt;
+    font-family: alienss2;
+    font-size: 110pt;
     position: absolute;
-    top: 15%;
+    top: 18%;
+    color: white;
     
 }
 
 #puzzle4_btn1{
-    background-color: seagreen;
+    background-color: blueviolet;
     height: 6%;
-    width: 12%;
+    width: 16%;
     position: absolute;
     bottom: 20%;
     display: flex;
@@ -1998,7 +1999,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     font-family: alienss;
-    font-size: 40pt;
+    font-size: 38pt;
 }
 
 
@@ -2042,19 +2043,18 @@ body {
 }
 
 #puzzle4_btn2{
-    background-color: seagreen;
+    background-color: blueviolet;
     height: 6%;
-    width: 12%;
+    width: 16%;
     position: absolute;
     bottom: -8%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 53%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: alienss2;
+    font-family: alienss;
     font-size: 35pt;
 }
 
@@ -2163,9 +2163,9 @@ body {
 }
 
 #puzzle4_btn3{
-    background-color: seagreen;
+    background-color: blueviolet;
     height: 6%;
-    width: 12%;
+    width: 16%;
     position: absolute;
     bottom: 35%;
     left: 50%;
@@ -2175,8 +2175,8 @@ body {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
-    font-family: alienss2;
-    font-size: 40pt;
+    font-family: alienss;
+    font-size: 35pt;
 }
   
 
@@ -2203,22 +2203,22 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-family: alienss2;
+    font-family: alienss;
     font-size: 28.5pt;
     text-align: center;
 
 }
 
 #puzzle4_error_txt h1{
-    font-family: alienss;
+    font-family: alienss2;
     font-size: 40pt;
     
 }
 
 #puzzle4_btn4{
-    background-color: seagreen;
+    background-color: blueviolet;
     height: 6%;
-    width: 12%;
+    width: 17%;
     position: absolute;
     bottom: 35%;
     left: 50%;
@@ -2229,7 +2229,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     font-family: alienss;
-    font-size: 40pt;
+    font-size: 35pt;
 }
     
 
